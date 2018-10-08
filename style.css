@@ -1,5 +1,5 @@
 body{
-    background-color: lightgray
+    background-color: white
 }
 div{
     background-color:white;
@@ -8,6 +8,18 @@ div{
 }
 .row{
     margin: 0 5% 0 5%;  
+    
+}
+.backup_arrow{
+    opacity: 0.5;
+    position: fixed;
+    bottom:1%;
+    right:1%;
+    width:3%;
+    height: auto;
+}
+.backup_arrow:hover{
+opacity: 1;
 }
 .imgright{
    width: 50%;
@@ -60,10 +72,12 @@ right:0
     list-style-type: none;
     margin: 0 0% 0 0%;  
     padding: 0;
-    /* width:30%;
+    width:80%;
+    height: auto;
     float:right;
     position: absolute;
-    bottom:0;left:20% */
+    bottom:0;
+    left:20%
 }
 .sidenav {
     /* height: 100%;
@@ -87,13 +101,19 @@ right:0
 .dropbtn {
     background-color:   white;
     color: black;
-    padding: 16px;
+    padding: 1%;
     font-size: 16px;
     border: none;
     cursor: pointer;
     margin-right:5%;
-    float:left
-    
+    float:left;
+    /* border:green solid 3px; */
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
+}
+
+.impactfont{
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
+
 }
 .imglink{
     height:auto;
@@ -103,9 +123,14 @@ right:0
     margin-top:8%
     
 }
+
 .imglink:hover{
     opacity: 0.5;
+    
   }
+.newitemimg:hover{
+    opacity: 0.5;
+}
 .dropbtn:hover {
     background-color: gray;
 }
@@ -114,6 +139,12 @@ right:0
     position: relative;
     display: inline-block;
     float: right;
+}
+.dropdownimg {
+    position: relative;
+    display: inline-block;
+    float: right;
+    background-color: #f2f2f2
 }
 
 .dropdown-content {
@@ -124,6 +155,18 @@ right:0
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
 }
+.dropdownimg-content {
+    display: none;
+    position: absolute;
+    left :100%;
+    top:0%;
+    background-color: #f9f9f9;
+    width:auto;
+    margin:0;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+
+}
 
 .dropdown-content a {
     color: black;
@@ -131,14 +174,27 @@ right:0
     text-decoration: none;
     display: block;
 }
-
-.dropdown-content a:hover {background-color: #f1f1f1}
-
-.dropdown:hover .dropdown-content {
+.dropdownimg-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
     display: block;
 }
 
+.dropdown-content a:hover {background-color: #f1f1f1}
+.dropdownimg-content a:hover {background-color: #f1f1f1}
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+.dropdownimg:hover .dropdownimg-content {
+    display: block;
+}
+
+
 .dropdown:hover .dropbtn {
+    background-color: #2c199b;
+}
+.dropdownimg:hover .dropbtn {
     background-color: #2c199b;
 }
 .imgsep{
@@ -149,6 +205,7 @@ right:0
     width: 30%;
     padding: 1%;
     height: auto; 
+    background-color: #f2f2f2
 }
 .columnmain{
     float:right;
@@ -178,7 +235,14 @@ right:0
     height: auto; 
     border: white solid 1px;
     margin:1.666666%;
-    background-color:lightblue
+    background-color:;
+}
+.row50{
+    height:50%;
+    margin:0;
+    padding: 0;
+    background-color:
+
 }
 hr {
     display: block;
@@ -187,6 +251,35 @@ hr {
     border-top: 1px solid #000000;
     padding: 0; 
 }
-@media (max-width: 800px){
+#emailsignup{
+    background-color: lightgray;
+    margin-top:2%;
+    border:orange solid 3px
 
+}
+#emails{
+    background-color: lightgray;
+
+}
+#emailbox{
+    border:black solid 3px
+}
+
+#smcfooter{
+    background-color: black;
+margin:0
+}
+.column33foot{
+    float: left;
+    width: 30%;
+    background-color: black;
+    height: auto; 
+    margin:1%;
+    margin-right: 2%;
+}
+.whitep{
+color:white;    
+}
+.carousel-indicators{
+    bottom:0
 }
