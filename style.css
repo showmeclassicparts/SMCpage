@@ -22,6 +22,14 @@ div{
 .backup_arrow:hover{
 opacity: 1;
 }
+.seachbar{
+    float: right;
+    padding: 6px;
+    border: none;
+    margin-top: 8px;
+    margin-right: 16px;
+    font-size: 17px;
+}
 .imgright{
    width: 50%;
     /* max-height: 50%;  */
@@ -236,6 +244,17 @@ right:0
         overflow: scroll;
     }
 }
+/* @media (max-width:350px){
+.detail-contentLeft{
+    visibility: hidden;
+}
+.detail-contentMiddle{
+    visibility: hidden;
+}
+.detail-contentRight{
+    visibility: hidden;
+}
+} */
 
 .dropdown-content {
     display: none;
@@ -381,19 +400,19 @@ hr {
 }
 
 #smcfooter{
-    background-color: black;
+    background-color: lightgray;
 margin:0
 }
 .column33foot{
     float: left;
     width: 30%;
-    background-color: black;
+    background-color: lightgray;
     height: auto; 
     margin:1%;
     margin-right: 2%;
 }
 .whitep{
-color:white;    
+color:black;    
 }
 .carousel-indicators{
     bottom:0
