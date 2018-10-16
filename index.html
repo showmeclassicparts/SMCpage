@@ -8,11 +8,17 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link href='https://fonts.googleapis.com/css?family=Oxygen' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Merienda One' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Sail' rel='stylesheet'>
+    <!-- <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet"> -->
+
     <link rel="stylesheet" type="text/css" href="style.css"><!-- css that I changed -->
     <script src="logic.js"></script>
     <title>SMC demo</title>
 </head>
 <body>
+      
 <a class="backup_arrow" href="#top"><p style="font-size:2%">To Top</p><img src="pic/arrow1.jpg" style="width:100%"></a>
 
   <div class="container" id="containerall"  >
@@ -21,32 +27,16 @@
   <a href="index.html" name="top"><img src="pic/SMCLogo.jpg" style="float:left;width:20%;height:20%"></a>
   <!-- input on right top -->
   <div class="welcometag"><marquee onMouseOver="this.stop()" onMouseOut="this.start()" height="100%" direction="up" scrolldelay="4" scrollamount="1" ><b>Welcome to Show Me Classic Parts <br> Bienvenido a Show Me Classic Parts <br> ようこそShow Me Classic Partsへ！<br> 歡迎光臨 </b></marquee></div>
-  <div  style="position:absolute;top:5%;right:0;margin-right:5%"><button class="popbutton"> signin</button></div>  
+  <div  style="position:absolute;top:5%;right:0;margin-right:5%"><button class="popbutton"> Signin</button></div>  
     
 
   <!-- input on right top end-->
-  <!-- show hide navi -->
-  <div class="showsidebar impactfont" id="shownavibutton" onclick="navi_open()" style="">
-    <button class="popbutton">Main&nbsp;Menu</button> </div>
-     <!-- closeplace -->
-  <div  id="mainclose" onclick="closeall()" >
-  </div>
-  <!-- close place -->  
-    <div  class="navbarpop" id="shownavi" >
-       
-      <!-- <a onclick="navi_close()" ><button class="dropbtn" id="closemark"style="width:5%;margin-right:1%">&times</button></a> -->
-      <a href="index.html"><button class="dropbtn" >Main page</button></a>
-      <a href=""><button class="dropbtn" >contact</button></a>
-      <a href=""><button class="dropbtn">Product</button></a>
-      <input class="searchbar" type="text" placeholder="Search.." style="float: right">
-      
-  </div>
-      <!-- show hide navi -->
   <!-- navibar -->
     <div  class="navbar" >
             <a href="index.html"><button class="dropbtn" >Main page</button></a>
-            <a href=""><button class="dropbtn" >contact</button></a>
-            <a href=""><button class="dropbtn">Product</button></a>
+            <a href=""><button class="dropbtn" >Contact Us</button></a>
+            <!-- used to be dropbtn -->
+            <!-- <a href=""><button class="pagebutton">Product</button></a> -->
             <input class="searchbar" type="text" placeholder="Search.." style="float: right">  
         </div>
 
@@ -58,76 +48,84 @@
 
  <!--sidebar on small screen  -->
   <div class="showsidebar impactfont" id="showbutton" onclick="side_open()" style="width:15%;">
-    <button class="popbutton">☰</button> </div>
+    <button class="popbutton" style="padding:0 10px 0 10px;">☰</button> </div>
       
 <!-- side bar hide -->
-<!--  -->
-  
-  <!--  -->
   <!-- closeplace -->
   <div  onclick="closeall()"id="showsidebarres">
   </div>
   <!-- close place -->
 <div class="columnsidebar20pop" style="margin:0; "id="showsidebar">
   
-    <div style="height:5%">
-      <div   class="sideres textsidebar" id="closemark" style="text-align:center">Account</div>
-      <div   class="sideres textsidebar" id="closemark" style="text-align:center">Carts</div>
-      <div  onclick="side_close()" class="sideres textsidebar" id="closemark" style="text-align:center;float:right;width:30%">&times;</div>
-    </div>
-  <div>
-  <h3 class="impactfont" style="text-align: center;border: gray solid 2px">Parts Models</h3>
-</div>
+    <!-- <div style="height:5%;background-color:#f2f2f2" >
+      <a href="index.html"><div class="sideres textsidebar" id="closemark" style="text-align:center;">Home</div></a>
+      
+      <div   class="sideres textsidebar" id="closemark" style="width:35%;position:relative">
+        Cart
+      </div>
+      <div  onclick="side_close()" class="sideres textsidebar" id="closemark" style="text-align:center;float:right;width:26%">&times;</div>
+    </div> -->
+    <div  onclick="side_close()" class="sideres textsidebar" id="closemark"><p>&times;</p></div>
+    <a href="index.html"><div class="hidesidebuttontop fontstyle" >&nbsp;&nbsp;Home</div> </a>
+    <a href=""><div class="hidesidebuttontop fontstyle" >&nbsp;&nbsp;Account</div> </a>
+    <a href=""><div class="hidesidebuttontop fontstyle" id="hidesidebuttontop_sub" >&nbsp;&nbsp;&nbsp;&nbsp;My Cart</div> </a>
+    <a href=""><div class="hidesidebuttontop fontstyle" id="hidesidebuttontop_sub" >&nbsp;&nbsp;&nbsp;&nbsp;Login</div> </a>
+
+    
+  <h3 class="fonttitlestyle">&nbsp;&nbsp;Parts Models</h3>
+
   <div class="sideres" >
-  <a href="model_page/240Z.html" class="textsidebar" id="sidetitle" style="width:70%;float: left" >Datsun 240Z</a>
-  <p onclick="side1open()" class="textsidebar" id="" style="width:30%;text-align: center;font-size: 2vw" >&gt;</p>
+  <a href="model_page/240z.html" class="textsidebar" id="sidetitle" style="" >Datsun 240Z</a>
+  <p onclick="side1open()" class="textsidebar" style="width:30%;text-align: center;font-size: 12px" >&gt;</p>
   </div>
         
   <div class="sideres" ><a href="/datsun510.html" class="textsidebar" id="sidetitle" style="width:70%;float: left" >Datsun 510</a>
-    <p onclick="side2open()" class="textsidebar" id="" style="width:30%;text-align: center;font-size: 2vw" >&gt;</p>
+    <p onclick="side2open()" class="textsidebar"  style="width:30%;text-align: center;font-size: 12px" >&gt;</p>
 
   </div>
 
   <div class="sideres"><a href="porsche356.html" class="textsidebar" id="sidetitle" style="width:70%;float: left">Porsche 356</a>
-    <p onclick="side3open()" class="textsidebar" id="" style="width:30%;text-align: center;font-size: 2vw" >&gt;</p>
+    <p onclick="side3open()" class="textsidebar"  style="width:30%;text-align: center;font-size: 12px" >&gt;</p>
 
   </div>
 
   <div class="sideres"><a href="porsche911.html" class="textsidebar" id="sidetitle" style="width:70%;float: left">Porsche 911</a>
-    <p onclick="side4open()" class="textsidebar" id="" style="width:30%;text-align: center;font-size: 2vw" >&gt;</p>
+    <p onclick="side4open()" class="textsidebar"  style="width:30%;text-align: center;font-size: 12px" >&gt;</p>
 
   </div>
 
   <div class="sideres"><a href="vwT25.html" class="textsidebar" id="sidetitle"style="width:70%;float: left" >VW T25/T3 bus (Vanagon)</a>
-    <p onclick="side5open()" class="textsidebar" id="" style="width:30%;text-align: center;font-size: 2vw" >&gt;</p>
+    <p onclick="side5open()" class="textsidebar"  style="width:30%;text-align: center;font-size: 12px;" >&gt;</p>
 
   </div>
 
   <div class="sideres"><a href="W113.html" class="textsidebar" id="sidetitle" style="width:70%;float: left">Mercedes-Benz W113</a>
-    <p onclick="side6open()" class="textsidebar" id="" style="width:30%;text-align: center;font-size: 2vw" >&gt;</p>
-
+    <p onclick="side6open()" class="textsidebar"  style="width:30%;text-align: center;font-size: 12px" >&gt;</p>
   </div>
-  
- </div> 
-<!--  -->
+  <div style="width:100%;margin:0;margin-top:20px;border-top:2px solid"> </div> 
+  <h3 class="fonttitlestyle" style="border:none">&nbsp;&nbsp;Other Reference</h3>
+  <a href=""><div class="hidesidebuttontop fontstyle" id="hidesidebuttontop_sub" >&nbsp;&nbsp;&nbsp;&nbsp;Contact Us</div> </a>
+  <a href=""><div class="hidesidebuttontop fontstyle" id="hidesidebuttontop_sub" >&nbsp;&nbsp;&nbsp;&nbsp;Our Facebook</div> </a>
 
-<!--  -->
+
+
+ </div> 
           <!-- side1 -->
 <div class="columnsidebar20pop" style="margin:0; "id="side240z">
     <div style="height:5%">
-      <div   class="sideres textsidebar" id="closemark" style="text-align:center">Account</div>
-      <div   class="sideres textsidebar" id="closemark" style="text-align:center">Carts</div>
-      <div  onclick="side1close()" class="sideres textsidebar" id="closemark" style="text-align:center;float:right;width:30%">&times;</div>
+        <a href="index.html"><div   class="sideres textsidebar" id="closemark" style="text-align:center;">Home</div></a>
+        <div   class="sideres textsidebar" id="closemark" style="width:35%;position:relative">
+            <img class="cartinsidehide" src="pic/cartmenu.png">
+          </div>      <div  onclick="side1close()" class="sideres textsidebar" id="closemark" style="text-align:center;float:right;width:26%">&times;</div>
     </div>
-  <h3 class="impactfont" style="text-align: center;border: gray solid 2px">Parts Models</h3>
-    
-  <div class="sideres" >
-      <p onclick="side1back()" class="textsidebar" id="240zSide" style="width:50%;text-align: center;font-size: 2vw" > &lt; Back</p>
+    <div class="hidesidebuttontop fontstyle" >Account</div> 
+
+    <h3 class="fonttitlestyle" style="text-align: center;border-top: gray solid 2px;">Parts Models</h3>
+    <div class="sideres" >
+      <p onclick="side1back()" class="textsidebar" id="240zSide" style="width:50%;text-align: center;font-size: 1vw" > &lt; Back</p>
       <!-- <div class="sideres" ><p  class="textsidebar" style="text-align:center;font-size:20px;background-color: red;color:white"  >Datsun 240Z</p>
       </div> -->
-
-  </div>
-        
+  </div>       
   <div class="sideres" ><a href="model_page/240z/240z-exterior.html" class="textsidebar" id="sidetitle"  >240/260/280Z Exterior</a>
   </div>
   <div class="sideres" ><a href="" class="textsidebar" id="sidetitle"  >240/260/280Z Interior</a>
@@ -136,27 +134,28 @@
   </div>
   <div class="sideres" ><a href="" class="textsidebar" id="sidetitle"  >240/260/280Z New Items</a>
   </div>
-
-  
-
+  <div style="width:100%;margin:0;margin-top:20%;border-top:2px solid"> </div> 
+  <div class="hidesidebuttontop fontstyle"style="margin-top:1px;">Contact Us</div> 
 </div>
 <!-- side1-->
 <!-- side2 -->
 <div class="columnsidebar20pop" style="margin:0; "id="side510">
     <div style="height:5%">
-      <div   class="sideres textsidebar" id="closemark" style="text-align:center">Account</div>
-      <div   class="sideres textsidebar" id="closemark" style="text-align:center">Carts</div>
-      <div  onclick="side2close()" class="sideres textsidebar" id="closemark" style="text-align:center;float:right;width:30%">&times;</div>
+        <a href="index.html"><div   class="sideres textsidebar" id="closemark" style="text-align:center;">Home</div></a>
+        <div   class="sideres textsidebar" id="closemark" style="width:35%;position:relative">
+            <img class="cartinsidehide" src="pic/cartmenu.png">
+          </div>      <div  onclick="side2close()" class="sideres textsidebar" id="closemark" style="text-align:center;float:right;width:26%">&times;</div>
     </div>
-  <h3 class="impactfont" style="text-align: center;border: gray solid 2px">Parts Models</h3>
+    <div class="hidesidebuttontop fontstyle" >Account</div> 
+
+    <h3 class="fonttitlestyle" style="text-align: center;border-top: gray solid 2px;">Parts Models</h3>
     
   <div class="sideres" >
-      <p onclick="side2back()" class="textsidebar" id="240zSide" style="width:50%;text-align: center;font-size: 2vw" > &lt; Back</p>
+      <p onclick="side2back()" class="textsidebar" id="240zSide" style="width:50%;text-align: center;font-size: 1vw" > &lt; Back</p>
       <!-- <div class="sideres" ><p  class="textsidebar" style="text-align:center;font-size:20px;background-color: red;color:white"  >Datsun 240Z</p>
       </div> -->
 
-  </div>
-        
+  </div>        
   <div class="sideres" ><a href="" class="textsidebar" id="sidetitle"  >510 Exterior</a>
   </div>
   <div class="sideres" ><a href="" class="textsidebar" id="sidetitle"  >510 Interior</a>
@@ -165,27 +164,27 @@
   </div>
   <div class="sideres" ><a href="" class="textsidebar" id="sidetitle"  >510 New Items</a>
   </div>
-
-  
-
+  <div style="width:100%;margin:0;margin-top:20%;border-top:2px solid"> </div> 
+  <div class="hidesidebuttontop fontstyle"style="margin-top:1px;">Contact Us</div> 
 </div>
 <!-- side2-->
 <!-- side3 -->
 <div class="columnsidebar20pop" style="margin:0; "id="side356">
     <div style="height:5%">
-      <div   class="sideres textsidebar" id="closemark" style="text-align:center">Account</div>
-      <div   class="sideres textsidebar" id="closemark" style="text-align:center">Carts</div>
-      <div  onclick="side3close()" class="sideres textsidebar" id="closemark" style="text-align:center;float:right;width:30%">&times;</div>
+        <a href="index.html"><div   class="sideres textsidebar" id="closemark" style="text-align:center;">Home</div></a>
+        <div   class="sideres textsidebar" id="closemark" style="width:35%;position:relative">
+            <img class="cartinsidehide" src="pic/cartmenu.png">
+          </div>      <div  onclick="side3close()" class="sideres textsidebar" id="closemark" style="text-align:center;float:right;width:26%">&times;</div>
     </div>
-  <h3 class="impactfont" style="text-align: center;border: gray solid 2px">Parts Models</h3>
+    <div class="hidesidebuttontop fontstyle" >Account</div> 
+
+    <h3 class="fonttitlestyle" style="text-align: center;border-top: gray solid 2px;">Parts Models</h3>
     
   <div class="sideres" >
-      <p onclick="side3back()" class="textsidebar" id="240zSide" style="width:50%;text-align: center;font-size: 2vw" > &lt; Back</p>
+      <p onclick="side3back()" class="textsidebar" id="240zSide" style="width:50%;text-align: center;font-size: 1vw" > &lt; Back</p>
       <!-- <div class="sideres" ><p  class="textsidebar" style="text-align:center;font-size:20px;background-color: red;color:white"  >Datsun 240Z</p>
       </div> -->
-
-  </div>
-        
+  </div>       
   <div class="sideres" ><a href="" class="textsidebar" id="sidetitle"  >356 Exterior</a>
   </div>
   <div class="sideres" ><a href="" class="textsidebar" id="sidetitle"  >356 Interior</a>
@@ -194,27 +193,28 @@
   </div>
   <div class="sideres" ><a href="" class="textsidebar" id="sidetitle"  >356 New Items</a>
   </div>
-
-  
-
+  <div style="width:100%;margin:0;margin-top:20%;border-top:2px solid"> </div> 
+  <div class="hidesidebuttontop fontstyle"style="margin-top:1px;">Contact Us</div> 
 </div>
 <!-- side3-->
 <!-- side4 -->
 <div class="columnsidebar20pop" style="margin:0; "id="side911">
     <div style="height:5%">
-      <div   class="sideres textsidebar" id="closemark" style="text-align:center">Account</div>
-      <div   class="sideres textsidebar" id="closemark" style="text-align:center">Carts</div>
-      <div  onclick="side4close()" class="sideres textsidebar" id="closemark" style="text-align:center;float:right;width:30%">&times;</div>
+        <a href="index.html"><div   class="sideres textsidebar" id="closemark" style="text-align:center;">Home</div></a>
+        <div   class="sideres textsidebar" id="closemark" style="width:35%;position:relative">
+            <img class="cartinsidehide" src="pic/cartmenu.png">
+          </div>      <div  onclick="side4close()" class="sideres textsidebar" id="closemark" style="text-align:center;float:right;width:26%">&times;</div>
     </div>
-  <h3 class="impactfont" style="text-align: center;border: gray solid 2px">Parts Models</h3>
+    <div class="hidesidebuttontop fontstyle" >Account</div> 
+
+    <h3 class="fonttitlestyle" style="text-align: center;border-top: gray solid 2px;">Parts Models</h3>
     
   <div class="sideres" >
-      <p onclick="side4back()" class="textsidebar" id="240zSide" style="width:50%;text-align: center;font-size: 2vw" > &lt; Back</p>
+      <p onclick="side4back()" class="textsidebar" id="240zSide" style="width:50%;text-align: center;font-size: 1vw" > &lt; Back</p>
       <!-- <div class="sideres" ><p  class="textsidebar" style="text-align:center;font-size:20px;background-color: red;color:white"  >Datsun 240Z</p>
       </div> -->
 
-  </div>
-        
+  </div>    
   <div class="sideres" ><a href="" class="textsidebar" id="sidetitle"  >911 Exterior</a>
   </div>
   <div class="sideres" ><a href="" class="textsidebar" id="sidetitle"  >911 Interior</a>
@@ -223,27 +223,25 @@
   </div>
   <div class="sideres" ><a href="" class="textsidebar" id="sidetitle"  >911 New Items</a>
   </div>
-
-  
-
+  <div style="width:100%;margin:0;margin-top:20%;border-top:2px solid"> </div> 
+  <div class="hidesidebuttontop fontstyle"style="margin-top:1px;">Contact Us</div> 
 </div>
 <!-- side4-->
 <!-- side5 -->
 <div class="columnsidebar20pop" style="margin:0; "id="sidevwt25">
     <div style="height:5%">
-      <div   class="sideres textsidebar" id="closemark" style="text-align:center">Account</div>
-      <div   class="sideres textsidebar" id="closemark" style="text-align:center">Carts</div>
-      <div  onclick="side5close()" class="sideres textsidebar" id="closemark" style="text-align:center;float:right;width:30%">&times;</div>
+        <a href="index.html"><div   class="sideres textsidebar" id="closemark" style="text-align:center;">Home</div></a>
+        <div   class="sideres textsidebar" id="closemark" style="width:35%;position:relative">
+            <img class="cartinsidehide" src="pic/cartmenu.png">
+          </div>      <div  onclick="side5close()" class="sideres textsidebar" id="closemark" style="text-align:center;float:right;width:26%">&times;</div>
     </div>
-  <h3 class="impactfont" style="text-align: center;border: gray solid 2px">Parts Models</h3>
+    <div class="hidesidebuttontop fontstyle" >Account</div> 
+
+    <h3 class="fonttitlestyle" style="text-align: center;border-top: gray solid 2px;">Parts Models</h3>
     
   <div class="sideres" >
-      <p onclick="side5back()" class="textsidebar" id="240zSide" style="width:50%;text-align: center;font-size: 2vw" > &lt; Back</p>
-      <!-- <div class="sideres" ><p  class="textsidebar" style="text-align:center;font-size:20px;background-color: red;color:white"  >Datsun 240Z</p>
-      </div> -->
-
-  </div>
-        
+      <p onclick="side5back()" class="textsidebar" id="240zSide" style="width:50%;text-align: center;font-size: 1vw" > &lt; Back</p>
+  </div> 
   <div class="sideres" ><a href="" class="textsidebar" id="sidetitle"  >Vanagon Exterior</a>
   </div>
   <div class="sideres" ><a href="" class="textsidebar" id="sidetitle"  >Vanagon Interior</a>
@@ -252,27 +250,24 @@
   </div>
   <div class="sideres" ><a href="" class="textsidebar" id="sidetitle"  >Vanagon New Items</a>
   </div>
-
-  
-
+  <div style="width:100%;margin:0;margin-top:20%;border-top:2px solid"> </div> 
+  <div class="hidesidebuttontop fontstyle"style="margin-top:1px;">Contact Us</div> 
 </div>
 <!-- side5-->
 <!-- side6 -->
 <div class="columnsidebar20pop" style="margin:0; "id="sidew113">
     <div style="height:5%">
-      <div   class="sideres textsidebar" id="closemark" style="text-align:center">Account</div>
-      <div   class="sideres textsidebar" id="closemark" style="text-align:center">Carts</div>
-      <div  onclick="side6close()" class="sideres textsidebar" id="closemark" style="text-align:center;float:right;width:30%">&times;</div>
+        <a href="index.html"><div   class="sideres textsidebar" id="closemark" style="text-align:center;">Home</div></a>
+        <div   class="sideres textsidebar" id="closemark" style="width:35%;position:relative">
+            <img class="cartinsidehide" src="pic/cartmenu.png">
+          </div>      <div  onclick="side6close()" class="sideres textsidebar" id="closemark" style="text-align:center;float:right;width:26%">&times;</div>
     </div>
-  <h3 class="impactfont" style="text-align: center;border: gray solid 2px">Parts Models</h3>
-    
-  <div class="sideres" >
-      <p onclick="side6back()" class="textsidebar" id="240zSide" style="width:50%;text-align: center;font-size: 2vw" > &lt; Back</p>
-      <!-- <div class="sideres" ><p  class="textsidebar" style="text-align:center;font-size:20px;background-color: red;color:white"  >Datsun 240Z</p>
-      </div> -->
+    <div class="hidesidebuttontop fontstyle" >Account</div> 
 
-  </div>
-        
+    <h3 class="fonttitlestyle" style="text-align: center;border-top: gray solid 2px;">Parts Models</h3>
+    <div class="sideres" >
+      <p onclick="side6back()" class="textsidebar" id="240zSide" style="width:50%;text-align: center;font-size: 1vw" > &lt; Back</p>
+  </div>      
   <div class="sideres" ><a href="" class="textsidebar" id="sidetitle"  >W113 Exterior</a>
   </div>
   <div class="sideres" ><a href="" class="textsidebar" id="sidetitle"  >W113 Interior</a>
@@ -281,13 +276,10 @@
   </div>
   <div class="sideres" ><a href="" class="textsidebar" id="sidetitle"  >W113 New Items</a>
   </div>
-
-  
-
+  <div style="width:100%;margin:0;margin-top:20%;border-top:2px solid"> </div> 
+  <div class="hidesidebuttontop fontstyle"style="margin-top:1px;">Contact Us</div> 
 </div>
 <!-- side6-->
-
-
   <!-- side bar hide end-->
   
 <!--sidebar on small screen  -->
@@ -299,7 +291,7 @@
 
 <div class="columnsidebar" style="margin:0; ">
                             
-  <h3 class="impactfont" style="text-align: center;border: gray solid 2px">Classic Models Parts</h3>
+  <h3 class="impactfont" style="text-align: center;border: gray solid 2px">Parts Models</h3>
     
        <div class="dropdownimg"><a href="model_page/240z.html"><img class="imglink" src="pic/z car.png" alt="z car"></a>
             <div class="dropdownimg-content" >
@@ -414,65 +406,54 @@
             <div class="column33" >
                 <div class="row50">
                 <a href="product_page.html"> <img class="newitemimg" src="pic/DS5101.png" alt="control arm" style="width:100%;">
-                </a><p>Datsun 240z Front Right Side Fender<br></p>
-                <!-- detail tooltip -->
-                <div class="seemoredetail" style="float:right">
-                  <div class="detail-contentLeft">
-                    <div class="column30indetail">
-                      <img src="pic/DS5101.png" style="width:100%;height: auto;float:left;margin:2%">
+                  <div class="seemoredetail" >
+                      
+                      <a class="detaillink" onclick="detailonmiddle(0)">
+                        <img class="plusdetail" src="pic/info.png">
+                        <div class="detailtooltip" >Detail</div> 
+                      </a>
                       
                     </div>
-                    <div><h4 style="text-align: center">OEM# :65100-N4200 </h4>
-                      <h4 style="text-align: center">buy it </h4>
-                      <h4 style="text-align: center">just buy it </h4>
-                      <h4 style="text-align: center">you know you want it</h4></div>
-                  </div>
-                  <a>See More Detail
-                    </a>
-                  
-                </div>
+                </a><p>Datsun 240z Front Right Side Fender<br></p>
+                <!-- detail tooltip -->
+                
                 <!-- detail tooltip end --><br>
                 </div>
                 
             </div>
             <div class="column33" >
               <a href="product_page.html"><img class="newitemimg" src="pic/DS5102.png" alt="control arm" style="width:100%;">
+                <div class="seemoredetail" style="float:right">
+                    
+                    <a class="detaillink" onclick="detailonmiddle(1)">
+                        <img class="plusdetail" src="pic/info.png">
+                        <div class="detailtooltip" >Detail</div> 
+                        
+                      </a>
+                  </div>
               </a>
               <p>Datsun 240z Front Left Side Fender<br>
               </p>
               <!-- detail tooltip -->
-              <div class="seemoredetail" style="float:right">
-                  <div class="detail-contentMiddle">
-                    <div class="column30indetail"><img src="pic/DS5102.png" style="width:100%;height: auto;float:left;margin:2%">
-                      <img src="pic/DS5102.png" style="width:33%;height: auto;float:left;margin:0%">
-                      <img src="pic/DS5102.png" style="width:33%;height: auto;float:left;margin:0%">
-                      <img src="pic/DS5102.png" style="width:33%;height: auto;float:left;margin:0%">
-                    </div>
-                    <div><h4 style="text-align: center">OEM# :65100-N4200 </h4>
-                    </div>
-                  </div>
-                  <a>See More Detail
-                    </a>
-                </div>
+              
                 <!-- detail tooltip end--><br> </div>
 
               <div class="column33" >
-                  <a href="product_page.html"><img class="newitemimg" src="pic/DS5301.png" alt="control arm" style="width:100%;"></a>
+                  <a href="product_page.html">
+                    <img class="newitemimg" src="pic/DS5301.png" alt="control arm" style="width:100%;">
+                    <div class="seemoredetail" style="float:right">
+                        
+                        <a class="detaillink" onclick="detailonmiddle(2)">
+                            <img class="plusdetail" src="pic/info.png">
+                            <div class="detailtooltip" >Detail</div> 
+                            
+                          </a>
+                      </div>
+                  </a>
                   <p>Datsun 240z Front Steel Hood<br><br>
                 </p>
                 <!-- detail tooltip -->
-                <div class="seemoredetail" style="float:right">
-                    <div class="detail-contentRight">
-                      <div class="column30indetail"><img src="pic/DS5301.png" style="width:100%;height: auto;float:left;margin:2%">
-                        <!-- <img src="pic/DS5301.png" style="width:33%;height: auto;float:left;margin:0%">
-                        <img src="pic/DS5301.png" style="width:33%;height: auto;float:left;margin:0%">
-                        <img src="pic/DS5301.png" style="width:33%;height: auto;float:left;margin:0%"> -->
-                      </div>
-                      <div><h4 style="text-align: center">OEM# :65100-N4200 </h4></div>
-                    </div>
-                    <a>See More Detail
-                      </a>
-                  </div>
+                
                   <!-- detail tooltip end--><br> <br></div>
             </div>
         </div>
@@ -568,7 +549,7 @@
       <img src="pic/smcLogo.png" style="width:50%">
   </div>
   <div class="column33foot">
-    <h4 class="whitep"><strong>Quick contact</strong></h4>  
+    <h4 class="whitep"><strong>Quick Contact</strong></h4>  
     <br>
     <p class="whitep">Email:
       amazon@
@@ -587,5 +568,50 @@
   </div>
 </div>
 <!-- footer end-->
+
+<!-- detail contents in middle -->
+<!-- <div class=""> -->
+    <div class="detailcenterbackground" onclick="closedetailonmiddle(0)"></div> 
+    <div class="detailcenter">
+        <div class="column30indetail">
+            <img src="pic/DS5101.png" style="width:100%;height: auto;float:left;margin:2%">
+            
+          </div>
+          <div><h4 style="text-align: center">OEM# :65100-N4200 </h4>
+            <h4 style="text-align: center">buy it </h4>
+            <h4 style="text-align: center">just buy it </h4>
+            <h4 style="text-align: center">you know you want it</h4></div>
+        </div> 
+    </div>
+
+    <div class="detailcenterbackground" onclick="closedetailonmiddle(1)"></div> 
+    <div class="detailcenter">
+        <div class="column30indetail"><img src="pic/DS5102.png" style="width:100%;height: auto;float:left;margin:2%">
+          <img src="pic/DS5102.png" style="width:33%;height: auto;float:left;margin:0%">
+          <img src="pic/DS5102.png" style="width:33%;height: auto;float:left;margin:0%">
+          <img src="pic/DS5102.png" style="width:33%;height: auto;float:left;margin:0%">
+        </div>
+        <div><h4 style="text-align: center">OEM# :65100-N4200 </h4>
+          <h4 style="text-align: center">buy it </h4>
+          <h4 style="text-align: center">just buy it </h4>
+          <h4 style="text-align: center">you know you want it</h4></div>
+        </div>
+    </div>
+    <div class="detailcenterbackground" onclick="closedetailonmiddle(2)"></div> 
+    <div class="detailcenter">
+        <div class="column30indetail"><img src="pic/DS5301.png" style="width:100%;height: auto;float:left;margin:2%">
+          <img src="pic/DS5301.png" style="width:33%;height: auto;float:left;margin:0%">
+          <img src="pic/DS5301.png" style="width:33%;height: auto;float:left;margin:0%">
+          <img src="pic/DS5301.png" style="width:33%;height: auto;float:left;margin:0%">
+        </div>
+        <div><h4 style="text-align: center">OEM# :65100-N4200 </h4>
+          <h4 style="text-align: center">buy it </h4>
+          <h4 style="text-align: center">just buy it </h4>
+          <h4 style="text-align: center">you know you want it</h4></div>
+      </div>
+    </div>
+    
+  <!-- </div> -->
+<!-- detail contents in middle end -->
 </body>
 </html>

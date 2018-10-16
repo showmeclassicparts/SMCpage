@@ -1,4 +1,12 @@
+function detailonmiddle(data){
+    document.getElementsByClassName("detailcenterbackground")[data].style.display="block";
+    document.getElementsByClassName("detailcenter")[data].style.display="block";
 
+}
+function closedetailonmiddle(data){
+    document.getElementsByClassName("detailcenterbackground")[data].style.display="none";
+    document.getElementsByClassName("detailcenter")[data].style.display="none";
+}
 function side_open() {
     document.getElementById("showsidebar").style.display = "block";
     document.getElementById("showsidebarres").style.display = "block";

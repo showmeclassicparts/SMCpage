@@ -1,10 +1,17 @@
 body{
     background-color: white;
+    margin-top:3%
     /* min-width:505px */
 }
 .containter{
     z-index: 4;
     /* position: relative; */
+}
+a{
+    text-decoration: none !important;
+}
+h3{
+    margin-top:10px;
 }
 div{
     background-color:white;
@@ -34,9 +41,9 @@ div{
     z-index: 1;
 }
 .cartmenu{
-    position: fixed;
+    position: absolute;
     top:1%;
-    right:1%;
+    right:0%;
     width:50px;
     height: auto;
     z-index: 1;
@@ -153,15 +160,18 @@ right:0
     margin-right:5%;
     float:left;
     /* border:green solid 3px; */
-    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
+    font-family: "Merienda One";
+    /* font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif */
 }
 .dropbtn:active{
     opacity: 0.7;
 }
 
 .impactfont{
-    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-family: "Sail";
+    /* font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; */
     font-size:2vw;
+    font-weight: bold;
 }
 .imglink{
     height:auto;
@@ -180,7 +190,7 @@ right:0
     opacity: 0.5;
 }
 .dropbtn:hover {
-    background-color: gray;
+    background-color: rgb(204, 204, 204);
 }
 
 .dropdown {
@@ -202,21 +212,26 @@ right:0
     display: inline-block;
     /* float: right; */
     background-color: none  ;
+    width:10%;
+    float:right
 }
 .textsidebar{
-    position: relative;
+    /* position: relative; */
     display: inline-block;
     width:100%;
-    margin: auto;
+    height:60px;
+    margin: 0;
     background-color: #f2f2f2;
-    margin-top:2%;
-    margin-bottom: 2%;
+    margin-top:0;
+    margin-bottom: 10px;
     padding:5%;
+    padding-left:30px;
     opacity: 0.8;
     text-align:left;
-    font-size: 1.5vw;
+    font-size: 15px;
     color:black;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-family: "Merienda One";
+    /* font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; */
 }
 
 #sidenow{
@@ -229,9 +244,10 @@ right:0
     margin-top:3%;
     opacity: 0.8;
     text-align:left;
-    font-size: 2vw;
+    font-size: 1.8vw;
     color:black;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-family: "Merienda One";
+    /* font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; */
 }
 #sidenow a{
     color:black;
@@ -252,7 +268,23 @@ right:0
     margin-left:0;
     margin-right: 0;
     text-align: left;
-    position:relative
+    /* position:relative */
+    
+}
+.carousel-indicators{
+    z-index: 2;
+}
+.fontstyle{
+    font-family: "Merienda One";
+}
+.fonttitlestyle{
+    /* font-family: "Sail"; */
+    font-family: "Merienda One";
+    font-weight: bold;
+    font-size:20px;
+    text-align: left;
+    padding-top:5px;
+    border-top: gray solid 2px;
     
 }
 #sidetitlenow{
@@ -264,17 +296,60 @@ right:0
     background-color:darkred;
     transition:0s;
 }
+#sidetitle{
+    width:70%;float: left;
+    font-size:17px;
+    padding-left:40px;
+}
+.hidesidebuttontop{
+    color:black;
+    margin-top:3%;
+
+    width:auto;
+    margin:0;
+    font-size: 20px;
+    padding:2% 0 2% 0;
+    text-align: left;
+    background-color:#f2f2f2;
+    font-weight: bold;
+
+}
+.hidesidebuttontop:hover{
+    background-color:lightgreen;
+    transition:0s;
+}
+.hidesidebuttontop:active{
+    background-color:rgb(122, 236, 122);
+    transition:0s;
+}
+#hidesidebuttontop_sub{
+    font-size:15px;
+    padding-left:20px;
+
+}
 #closemark{
     color:black;
     display: block;
-    /* margin:2%; */
-    width:auto;
-    height:100%;
-    float:left;
-    margin:0
-    
+    font-size: 20px;
+    text-align:center;
+    position:absolute;
+    top:0;
+    right:0;
+    width:20px;
+    height:20px;
+    /* position: relative; */
 }
+#closemark p{
+    position: absolute;
+    top:20%;
+    right:38%
+}
+.cartinsidehide{
+    width:75%;
+    position: absolute;
+    bottom:0;
 
+}
 #closemark:hover{
     background-color:lightgreen;
     transition:0s;
@@ -290,7 +365,8 @@ right:0
     margin-top:0;
     display: block;
     padding:10%;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: "Merienda One";
+    /* font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; */
     font-size:1.8vw;
 }
 .anow:hover{
@@ -384,7 +460,8 @@ right:0
     background-color: #f9f9f9;
     width:auto;
     font-size:2vw;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-family: "Merienda One";
+    /* font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; */
     margin:0;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
@@ -399,7 +476,8 @@ right:0
     width:50%;
     margin:0;
     font-size:2vw;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-family: "Merienda One";
+    /* font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; */
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
 }
@@ -444,14 +522,14 @@ transition: 0.5s;
 }
 
 .dropdown-content a:hover {background-color: #f1f1f1}
-.dropdownimg-content a:hover {background-color: #f1f1f1}
+.dropdownimg-content a:hover {background-color: #c7c7c7}
 .dropdown:hover .dropdown-content {
     display: block;
 }
-.seemoredetail:hover .detail-contentLeft{
+/* .seemoredetail:hover .detail-contentLeft{
     display:block;
 
-}
+} */
 .seemoredetail:hover .detail-contentMiddle{
     display:block;
 }
@@ -542,8 +620,62 @@ transition: 0.5s;
 .column30indetail{
     float: left;
     width: 30%;
-    z-index: 1;
+    height:100%;
+    /* z-index: 1; */
 }
+.detaillink{
+    float:right;
+    position:relative
+}
+.plusdetail{
+    opacity: 0.5;
+    width:100%;
+}
+.detailcenter{
+    position:fixed;
+    z-index: 17 ;
+    background-color: white;
+    margin:0;
+    width:50%;
+    height: 50%;
+    top:25%;
+    left:25%;
+    display:none;
+    /* top:50%;
+    left:50%; */
+}
+.detailcenterbackground{
+    position:fixed;
+    z-index: 16 ;
+    display:none;
+    width:100%;
+    height: 100%;
+    top:0;
+    left:0;
+    margin:0;
+    background-color: #000000;
+    opacity: 0.5;
+}
+
+.detailtooltip{
+    background-color: #000000;
+    color:white;
+    padding:5px 20px;
+    border-radius: 6px;
+    position: absolute;
+    top:8%;
+    right:100%;
+    display:none;
+}
+.plusdetail:hover{
+    opacity: 1;
+}
+.detaillink:hover .detailtooltip{
+   display:block;
+}
+/* .plusdetail:active{
+
+} */
 .column40R{
     width:40%;
     margin-bottom:3%;
@@ -702,12 +834,29 @@ border:0;
     width:30px;
     border-color: rgb(223, 161, 81);
 } */
+.pagebutton{
+    background-color: white;
+    color:black;
+    text-align: center;
+    font-family: "Merienda One";
+    /* font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; */
+    width:auto;
+    border-color: white;
+}
+.signin{
+    position:absolute;
+    top:5%;
+    right:0;
+    margin-right:5%;
+}
 .popbutton{
     background-color: rgb(223, 161, 81);
     color:black;
     text-align: center;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-family: "Merienda One";
+    /* font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; */
     width:auto;
+    
     border-color: rgb(223, 161, 81);
 }
 .pagenumberbtn{
@@ -715,7 +864,8 @@ border:0;
     border-color: rgb(182, 164, 136);
     color:black;
     text-align: center;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-family: "Merienda One";
+    /* font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; */
     width:auto;
     
 }
@@ -724,7 +874,7 @@ border:0;
 }
 .columnsidebar20pop{
     position:fixed;
-    width:150px;
+    width:500px;
     height:100%;    
     float: left;
     top:0;
@@ -732,6 +882,7 @@ border:0;
     z-index: 5;
     display:none;
     background-color:#f2f2f2;
+    overflow:scroll;
 }
 
 .welcometag{
@@ -768,7 +919,7 @@ width:100%;
 position:fixed;
 z-index: 1;
 top:0;
-/* left:115px; */
+left:0;
 background-color:gray;
 opacity: 0.5;
 
@@ -808,7 +959,7 @@ opacity: 0.5;
     height:100%;
     margin:0;
     margin-left:2%;
-    position: relative;
+    /* position: relative; */
     /* font-family; */
 }
 .detailright{
@@ -820,22 +971,47 @@ opacity: 0.5;
 
 }
 .price{
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-family: "Merienda One";
+    /* font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; */
     font-size:2em;
     text-align: right;
 }
 .detailquant{
+    position: absolute;
+    bottom:0%;
+    margin:0;
+    float:right; 
+}
+.detailquantR{
     float:right;
 }
-.middlebuttons{
 
-}
 .carttip{
+    position: relative;
+    width:10%;
+    float:left;
+    margin:0;
+    margin-right:5%;
+}
+.carttiptext{
+    display:none;
+    position: absolute;
+    width:auto;
+    bottom:100%;
+    right:-30%;
+    background-color:black;
+    border-radius: 5px;
+    /* opacity: 0.5; */
+    color:white;
+    text-align: center;
+    padding: 5% 10%
+}
+.carttipR{
     position: relative;
     width:100%;
     margin:0
 }
-.carttiptext{
+.carttiptextR{
     display:none;
     position: absolute;
     width:150%;
@@ -856,7 +1032,7 @@ opacity: 0.5;
 
 }
 .wish{
-    width:20%;
+    width:100%;
     z-index: 1;
 
 }
@@ -864,6 +1040,10 @@ opacity: 0.5;
     opacity: 0.5;
 }
 .carttip:hover .carttiptext{
+    display:block;
+    /* background-color:green; */
+}
+.carttipR:hover .carttiptextR{
     display:block;
     /* background-color:green; */
 }
@@ -932,6 +1112,18 @@ opacity: 0.5;
     color:white;
     /* opacity: 0.5; */
 }
+.modeltitle{
+    text-align:center;
+    font-family: "Sail";
+    font-weight: bold;
+}
+.modeldetail{
+    text-align:center;
+    margin-left: 10%;
+    margin-right: 10%;
+    font-family: "Merienda One";
+
+}
 @media (max-width:990px){
     .detail-addtocart{
         width:60px;
@@ -988,6 +1180,9 @@ opacity: 0.5;
     }
 }
 @media (max-width:800px){
+    body{
+        margin-top:10%;
+    }
     .columnsidebar{
         display: none;
     }
@@ -1029,13 +1224,23 @@ opacity: 0.5;
         width:100%;
     }
     .cartmenu{
-        display:none;
+        width:30px;
+    }
+    .signin{
+        position:absolute;
+        top:5%;
+        right:0;
+        margin-right:10%;
+        
     }
     .columnsidebar20{
         display:none;
     }
     .detail_pageselect_outer{
         width:100%;
+    }
+    .columnsidebar20pop{
+        width:500px
     }
 }
 @media (max-width:570px){
@@ -1053,10 +1258,24 @@ opacity: 0.5;
 .backup_arrow2{
     width:5%;
 }
+.seemoredetail{
+    width:20%;
 }
-@media (max-width:470px){
-    .detailquant p{
-        /* float:left; */
+.detailquant{
+    position: relative;
+}
+.carttip{
+    width:20%;
+}
+.columnsidebar20pop{
+    width:300px;
+}
+
+}
+@media (max-width:480px){
+
+    .column33foot{
+        width:90%;
     }
     
 }
