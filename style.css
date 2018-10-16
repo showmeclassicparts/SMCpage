@@ -2,6 +2,7 @@ body{
     background-color: white;
     margin-top:3%
     /* min-width:505px */
+    
 }
 .containter{
     z-index: 4;
@@ -836,6 +837,13 @@ border:0;
 #showbutton{
     display:none;
     /* background-color: aqua; */
+    position: absolute;
+    top:0;
+    left:0;
+    /* margin-top:1%; */
+}
+#menubuttonphone{
+    padding:6px 15px 6px 15px;
 }
 /* #showbutton button{
     background-color: rgb(223, 161, 81);
@@ -1254,6 +1262,9 @@ opacity: 0.5;
     }
 }
 @media (max-width:570px){
+    .welcometag{
+        width:500px;
+    }
 .price{
     font-size:1.4em;
     text-align: left;  
@@ -1290,7 +1301,9 @@ opacity: 0.5;
 
 }
 @media (max-width:480px){
-
+.detaillink:hover .detailtooltip{
+  display:none;
+}
     .column33foot{
         width:90%;
     }
