@@ -8,13 +8,17 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link href='https://fonts.googleapis.com/css?family=Oxygen' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Merienda One' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Sail' rel='stylesheet'>
+
     <link rel="stylesheet" type="text/css" href="../../style.css"><!-- css that I changed -->
     <script src="../../logic.js"></script>
     <title>240z</title>
 </head>
 <body>
     <!-- <div style="opacity:0.01;">Icons made by <a href="https://www.flaticon.com/authors/zurb" title="Zurb">Zurb</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div> -->
-<a class="backup_arrow2" href="#top"><p style="font-size:2%;text-align: center">Top</p><img src="../../pic/arrow1.jpg" style="width:100%"></a>
+<a class="backup_arrow" href="#top"><p style="font-size:2%;text-align: center">Top</p><img src="../../pic/arrow1.jpg" style="width:100%"></a>
 <a class="cartmenu" ><img src="../../pic/cartmenu.png" style="width:100%"></a>
 
   <div class="container">
@@ -23,28 +27,14 @@
     <a href="../../index.html" name="top"><img src="../../pic/SMCLogo.jpg" style="float:left;width:20%;height:20%"></a>
     <!-- input on right top -->
     <div class="welcometag"><marquee onMouseOver="this.stop()" onMouseOut="this.start()" height="100%" direction="up" scrolldelay="4" scrollamount="1" ><b>Welcome to Show Me Classic Parts <br> Bienvenido a Show Me Classic Parts <br> ようこそShow Me Classic Partsへ！<br> 歡迎光臨 </b></marquee></div>
-    <div  style="position:absolute;top:5%;right:0;margin-right:5%"><button class="popbutton"> signin</button></div>  
+    <div  style="position:absolute;top:5%;right:0;margin-right:5%"><button class="popbutton"> Signin</button></div>  
     <!-- input on right top end-->
-    <!-- show hide navi -->
-    <div class="showsidebar impactfont" id="shownavibutton" onclick="navi_open()" style="">
-        <button class="popbutton">Main&nbsp;Menu</button> </div> 
-       <!-- closeplace -->
-    <div  id="mainclose" onclick="navi_close()" >
-    </div>
-    <!-- close place -->  
-      <div  class="navbarpop" id="shownavi" >
-        <!-- <a onclick="navi_close()" ><button class="dropbtn" id="closemark"style="width:5%;margin-right:1%">&times</button></a> -->
-        <a href="../../index.html"><button class="dropbtn" >Main page</button></a>
-        <a href=""><button class="dropbtn" >contact</button></a>
-        <a href=""><button class="dropbtn">Product</button></a>
-        <input class="searchbar" type="text" placeholder="Search.." style="float: right">
-    </div>
-        <!-- show hide navi -->
+    
     <!-- navibar -->
       <div  class="navbar" >
               <a href="../../index.html"><button class="dropbtn" >Main page</button></a>
               <a href=""><button class="dropbtn" >contact</button></a>
-              <a href=""><button class="dropbtn">Product</button></a>
+              <!-- <a href=""><button class="dropbtn">Product</button></a> -->
               <input class="searchbar" type="text" placeholder="Search.." style="float: right">  
           </div>
           <!-- navibar -->
@@ -66,13 +56,13 @@
       <div class="columnsidebar20pop" style="margin:0; "id="showsidebar">
         
           <div style="height:5%">
-            <div   class="sideres textsidebar" id="closemark" style="text-align:center">Account</div>
+            <div   class="sideres textsidebar" id="closemark" style="text-align:center">Home</div>
             <div   class="sideres textsidebar" id="closemark" style="text-align:center">Carts</div>
-            <div  onclick="side_close()" class="sideres textsidebar" id="closemark" style="text-align:center;float:right;width:30%">&times;</div>
+            <div  onclick="side_close()" class="sideres textsidebar" id="closemark" style="text-align:center;float:right;width:26%">&times;</div>
           </div>
-        <div>
+        
         <h3 class="impactfont" style="text-align: center;border: gray solid 2px">Parts Models</h3>
-      </div>
+      
         <div class="sideres" >
         <a href="../240Z.html" class="textsidebar" id="sidetitle" style="width:70%;float: left" >Datsun 240Z</a>
         <p onclick="side1open()" class="textsidebar" id="" style="width:30%;text-align: center;font-size: 2vw" >&gt;</p>
@@ -107,9 +97,9 @@
                 <!-- side1 -->
       <div class="columnsidebar20pop" style="margin:0; "id="side240z">
           <div style="height:5%">
-            <div   class="sideres textsidebar" id="closemark" style="text-align:center">Account</div>
+            <div   class="sideres textsidebar" id="closemark" style="text-align:center">Home</div>
             <div   class="sideres textsidebar" id="closemark" style="text-align:center">Carts</div>
-            <div  onclick="side1close()" class="sideres textsidebar" id="closemark" style="text-align:center;float:right;width:30%">&times;</div>
+            <div  onclick="side1close()" class="sideres textsidebar" id="closemark" style="text-align:center;float:right;width:26%">&times;</div>
           </div>
         <h3 class="impactfont" style="text-align: center;border: gray solid 2px">Parts Models</h3>
           
@@ -132,9 +122,9 @@
       <!-- side2 -->
       <div class="columnsidebar20pop" style="margin:0; "id="side510">
           <div style="height:5%">
-            <div   class="sideres textsidebar" id="closemark" style="text-align:center">Account</div>
+            <div   class="sideres textsidebar" id="closemark" style="text-align:center">Home</div>
             <div   class="sideres textsidebar" id="closemark" style="text-align:center">Carts</div>
-            <div  onclick="side2close()" class="sideres textsidebar" id="closemark" style="text-align:center;float:right;width:30%">&times;</div>
+            <div  onclick="side2close()" class="sideres textsidebar" id="closemark" style="text-align:center;float:right;width:26%">&times;</div>
           </div>
         <h3 class="impactfont" style="text-align: center;border: gray solid 2px">Parts Models</h3>
           
@@ -154,9 +144,9 @@
       <!-- side3 -->
       <div class="columnsidebar20pop" style="margin:0; "id="side356">
           <div style="height:5%">
-            <div   class="sideres textsidebar" id="closemark" style="text-align:center">Account</div>
+            <div   class="sideres textsidebar" id="closemark" style="text-align:center">Home</div>
             <div   class="sideres textsidebar" id="closemark" style="text-align:center">Carts</div>
-            <div  onclick="side3close()" class="sideres textsidebar" id="closemark" style="text-align:center;float:right;width:30%">&times;</div>
+            <div  onclick="side3close()" class="sideres textsidebar" id="closemark" style="text-align:center;float:right;width:26%">&times;</div>
           </div>
         <h3 class="impactfont" style="text-align: center;border: gray solid 2px">Parts Models</h3>         
         <div class="sideres" >
@@ -176,9 +166,9 @@
       <!-- side4 -->
       <div class="columnsidebar20pop" style="margin:0; "id="side911">
           <div style="height:5%">
-            <div   class="sideres textsidebar" id="closemark" style="text-align:center">Account</div>
+            <div   class="sideres textsidebar" id="closemark" style="text-align:center">Home</div>
             <div   class="sideres textsidebar" id="closemark" style="text-align:center">Carts</div>
-            <div  onclick="side4close()" class="sideres textsidebar" id="closemark" style="text-align:center;float:right;width:30%">&times;</div>
+            <div  onclick="side4close()" class="sideres textsidebar" id="closemark" style="text-align:center;float:right;width:26%">&times;</div>
           </div>
         <h3 class="impactfont" style="text-align: center;border: gray solid 2px">Parts Models</h3>
           
@@ -200,9 +190,9 @@
       <!-- side5 -->
       <div class="columnsidebar20pop" style="margin:0; "id="sidevwt25">
           <div style="height:5%">
-            <div   class="sideres textsidebar" id="closemark" style="text-align:center">Account</div>
+            <div   class="sideres textsidebar" id="closemark" style="text-align:center">Home</div>
             <div   class="sideres textsidebar" id="closemark" style="text-align:center">Carts</div>
-            <div  onclick="side5close()" class="sideres textsidebar" id="closemark" style="text-align:center;float:right;width:30%">&times;</div>
+            <div  onclick="side5close()" class="sideres textsidebar" id="closemark" style="text-align:center;float:right;width:26%">&times;</div>
           </div>
         <h3 class="impactfont" style="text-align: center;border: gray solid 2px">Parts Models</h3>
           
@@ -222,9 +212,9 @@
       <!-- side6 -->
       <div class="columnsidebar20pop" style="margin:0; "id="sidew113">
           <div style="height:5%">
-            <div   class="sideres textsidebar" id="closemark" style="text-align:center">Account</div>
+            <div   class="sideres textsidebar" id="closemark" style="text-align:center">Home</div>
             <div   class="sideres textsidebar" id="closemark" style="text-align:center">Carts</div>
-            <div  onclick="side6close()" class="sideres textsidebar" id="closemark" style="text-align:center;float:right;width:30%">&times;</div>
+            <div  onclick="side6close()" class="sideres textsidebar" id="closemark" style="text-align:center;float:right;width:26%">&times;</div>
           </div>
         <h3 class="impactfont" style="text-align: center;border: gray solid 2px">Parts Models</h3>
           
@@ -258,7 +248,7 @@
               <a href="" class="anow" >&#160;Exterior</a>
               <a href="" class="anow">&#160;Interior</a>
               <a href="" class="anow">&#160;Others</a>
-              <a href="" class="anow">&#160;New Item</a>
+              <a href="" class="anow">&#160;New Item <img src="../../pic/new.gif" style="width:20%"></a>
             </div>
         </div>
         

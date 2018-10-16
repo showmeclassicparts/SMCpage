@@ -1291,5 +1291,8 @@ opacity: 0.5;
     .column33foot{
         width:90%;
     }
+    #footershop{
+        display:none;
+    }
     
 }
