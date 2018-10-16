@@ -1284,6 +1284,9 @@ opacity: 0.5;
     margin:0;
     padding-bottom: 23px;
 }
+#signin{
+    display:none;
+}
 
 }
 @media (max-width:480px){
