@@ -226,7 +226,6 @@ right:0
     margin-bottom: 10px;
     padding:5%;
     padding-left:30px;
-    opacity: 0.8;
     text-align:left;
     font-size: 15px;
     color:black;
@@ -277,6 +276,11 @@ right:0
 .fontstyle{
     font-family: "Merienda One";
 }
+#backside{
+    font-size:18px;
+    text-align: left;
+    width:50%;
+}
 .fonttitlestyle{
     /* font-family: "Sail"; */
     font-family: "Merienda One";
@@ -301,6 +305,10 @@ right:0
     font-size:17px;
     padding-left:40px;
 }
+#sidetitle2{
+    width:100%;
+    font-size:17px;
+}
 .hidesidebuttontop{
     color:black;
     margin-top:3%;
@@ -311,7 +319,7 @@ right:0
     padding:2% 0 2% 0;
     text-align: left;
     background-color:#f2f2f2;
-    font-weight: bold;
+    /* font-weight: bold; */
 
 }
 .hidesidebuttontop:hover{
@@ -325,7 +333,9 @@ right:0
 #hidesidebuttontop_sub{
     font-size:15px;
     padding-left:20px;
-
+}
+#textbold{
+    font-weight: bold;
 }
 #closemark{
     color:black;
@@ -1269,6 +1279,10 @@ opacity: 0.5;
 }
 .columnsidebar20pop{
     width:300px;
+}
+#closemark{
+    margin:0;
+    padding-bottom: 23px;
 }
 
 }
