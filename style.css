@@ -23,6 +23,9 @@ div{
     margin: 0 5% 0 5%;  
     
 }
+.myCarousel2{
+    -webkit-overflow-scrolling: touch;
+}
 .backup_arrow{
     opacity: 0.75;
     position: fixed;
@@ -41,6 +44,14 @@ div{
     height: auto;
     z-index: 1;
 }
+#mainpagecolor{
+color:rgb(2, 6, 255);
+font-weight:bold;
+}
+#contactuscolor{
+color:green;
+font-weight:bold;
+}
 .cartmenu{
     position: absolute;
     top:1%;
@@ -51,6 +62,13 @@ div{
 }
 .backup_arrow:hover{
 opacity: 1;
+}
+.logotop{
+    /* margin-left:10%; */
+    float:left;
+    z-index: 1;
+    /* display: none; */
+    width:30%;
 }
 .seachbar{
     float: right;
@@ -111,12 +129,12 @@ right:0
     list-style-type: none;
     margin: 0 0% 0 0%;  
     padding: 0;
-    width:80%;
+    width:70%;
     height: auto;
     float:right;
     position: absolute;
     bottom:0;
-    left:20%
+    right:0;
 }
 .navbarpop{
     background-color: white;
@@ -224,16 +242,24 @@ right:0
     margin: 0;
     background-color: #f2f2f2;
     margin-top:0;
-    margin-bottom: 10px;
+    /* margin-bottom: 10px; */
     padding:5%;
-    padding-left:30px;
+    /* padding-left:30px; */
     text-align:left;
     font-size: 15px;
     color:black;
     font-family: "Merienda One";
+    /* line-height: 20px; */
     /* font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; */
 }
-
+#arrowright{
+    background-color:rgb(233, 231, 231);
+    display:inline-block;
+    width:30%;
+    text-align: center;
+    border-bottom: rgb(190, 189, 189) solid 0.5px;
+    font-size: 20px;
+}
 #sidenow{
     background-color:red;
     position: relative;
@@ -267,7 +293,8 @@ right:0
     background-color:#f2f2f2;
     margin-left:0;
     margin-right: 0;
-    text-align: left;
+    text-align: center;
+
     /* position:relative */
     
 }
@@ -280,7 +307,7 @@ right:0
 #backside{
     font-size:18px;
     text-align: left;
-    width:50%;
+    width:100%;
 }
 .fonttitlestyle{
     /* font-family: "Sail"; */
@@ -312,8 +339,10 @@ right:0
 }
 #sidetitle{
     width:70%;float: left;
+    text-align: center;
     font-size:17px;
     padding-left:40px;
+    border-bottom: rgb(190, 189, 189) solid 0.5px;;
 }
 
 #sidetitle2{
@@ -611,7 +640,16 @@ transition: 0.5s;
     /* padding-left:2%;
     padding-right:2%; */
     /* margin-top:1%; */
-    border-top: 1px solid black;
+    /* border-top: 1px solid black;
+    margin-left: 5%;
+    margin-right:5%; */
+}
+.topborder{
+    border-top:1px solid;
+    position: absolute;
+    margin:0;
+    width:100%;
+    z-index: 2;
 }
 
 
@@ -862,14 +900,17 @@ border:0;
 }
 #showbutton{
     display:none;
-    /* background-color: aqua; */
-    position: absolute;
-    top:0;
-    left:0;
+    /* position: absolute;
+    top:10px;
+    left:0; */
+    margin:0;
+    margin-top:8px;
+    z-index: 1;
+    float:left;
     /* margin-top:1%; */
 }
 #menubuttonphone{
-    padding:6px 15px 6px 15px;
+    padding:5px 12px 5px 12px;
     font-size:20px;
 }
 /* #showbutton button{
@@ -888,9 +929,9 @@ border:0;
     width:auto;
     border-color: white;
 }
-.signin{
+#signin{
     position:absolute;
-    top:5%;
+    bottom:90%;
     right:0;
     margin-right:5%;
 }
@@ -1073,7 +1114,7 @@ opacity: 0.5;
     right:0;
     bottom:0; */
     float:right;
-    width:30%;
+    width:50%;
 
 }
 .wish{
@@ -1134,6 +1175,7 @@ opacity: 0.5;
     float:right;
     padding-top:1%;
     border-top:solid 1px;
+    margin-top:2%;
     
 }
 .page_selecttion{
@@ -1169,7 +1211,42 @@ opacity: 0.5;
     font-family: "Merienda One";
 
 }
-@media (max-width:990px){
+#searchbarMobile{
+    display:none;
+}
+.searchbar{
+    width:50%;
+    height:35px;
+    float:right;
+    margin:2%;
+    margin-right:0;
+    /* border-radius: 5px; */
+}
+.searchbarphone{
+    width:80%;
+    height:35px;
+    float:right;
+    margin:2%;
+    margin-right:0;
+    /* border-radius: 5px; */
+
+}
+.searchbarsubmit{
+    margin:2%;
+    height:35px;
+    margin-left:0;
+    float:right;
+    width:auto;
+    background-color:rgb(252, 53, 53);
+    border-radius: 5px;
+    opacity: 0.7;
+}
+.searchbarsubmit:hover{
+    opacity: 1;
+}
+
+/* media start */
+@media (max-width:999px){
     .detail-addtocart{
         width:60px;
         height:30px;
@@ -1180,6 +1257,9 @@ opacity: 0.5;
         height:30px;
         font-size:1vw;
 
+    }
+    .searchbar{
+        width:30%
     }
 
 }
@@ -1226,7 +1306,31 @@ opacity: 0.5;
 }
 @media (max-width:800px){
     body{
-        margin-top:10%;
+        margin-top:3%;
+    }
+    .topborder{
+        border-top:1px solid;
+        position: absolute;
+        margin:0;
+        margin-left:2.5%;
+        width:95%;
+        z-index: 2;
+    }
+    .container{
+        margin:0;
+        padding:0;
+    }
+    .detailnumber{
+        margin-left:10%
+    }
+    #searchbarMobile{
+        display:block;
+    }
+    #myCarousel{
+        margin:0;
+    }
+    .backup_arrow{
+        display:none;
     }
     .columnsidebar{
         display: none;
@@ -1270,13 +1374,14 @@ opacity: 0.5;
         width:100%;
     }
     .cartmenu{
-        width:30px;
+        width:40px;
     }
-    .signin{
+    #signin{
         position:absolute;
-        top:5%;
+        top:0%;
         right:0;
         margin-right:10%;
+        display:none;
         
     }
     .columnsidebar20{
@@ -1288,18 +1393,41 @@ opacity: 0.5;
     .columnsidebar20pop{
         width:500px
     }
+    #footershop{
+        display:none;
+    }
+    .logotop{
+        display:block;
+        width:170px;
+    }
+   
 }
 @media (max-width:570px){
+    body{
+
+    }
+    .detail_pageselect_outer{
+        margin-top:5%;
+    }
+    .topborder{
+        border-top:1px solid;
+        position: absolute;
+        margin:0;
+        margin-left:5%;
+        width:90%;
+        z-index: 2;
+    }
     .welcometag{
         left:20%;
-        width:250px;
+        width:200px;
     }
 .price{
     font-size:1.4em;
     text-align: left;  
 }
+
 .addcart{
-    width:50%;
+    width:80%;
     float:left;
 }
 .backup_arrow{
@@ -1322,6 +1450,7 @@ opacity: 0.5;
 }
 #closemark{
     margin:0;
+    width:50px;
     padding-bottom: 23px;
 }
 #signin{
@@ -1330,6 +1459,11 @@ opacity: 0.5;
 .carttip:not(.nohover):hover .carttiptext{
     display:none;
 }
+.hidesidebuttontop:not(.nohover):hover{
+    background-color:lightgreen;
+    transition:0s;
+}
+
 
 }
 @media (max-width:480px){
@@ -1342,8 +1476,29 @@ opacity: 0.5;
     #footershop{
         display:none;
     }
-#menubuttonphone{
+/* #menubuttonphone{
     padding:0 15px 0 15px;
+} */
+.columnsidebar20pop{
+    width:220px;
 }
-    
+#closemark{
+    margin:0;
+    padding-bottom: 25px;
+}
+.hidesidebuttontop{
+    font-size:18px;
+}
+#sidetitle{
+    font-size:15px;
+}
+.textsidebar{
+    height:60px;
+}
+#specialside a{
+    height:75px;
+}
+#specialside p{
+    height:75px;
+}
 }

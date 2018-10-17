@@ -18,33 +18,59 @@
     <title>240z</title>
 </head>
 <body>
-    <!-- hideside open  -->
-    <div class="showsidebar impactfont" id="showbutton" onclick="side_open()" style="width:15%;">
-        <button class="popbutton" id="menubuttonphone" >☰</button> </div>
-  <!-- hideside open  end-->
+
     <!-- <div style="opacity:0.01;">Icons made by <a href="https://www.flaticon.com/authors/zurb" title="Zurb">Zurb</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div> -->
 <a class="backup_arrow" href="#top"><p style="font-size:2%;text-align: center">Top</p><img src="../../pic/arrow1.png" style="width:100%"></a>
 
   <div class="container">
 <!-- top part header -->
 <div class="row" style="position:relative;margin:0;height:50">
-    <a class="cartmenu" ><img src="../../pic/cartmenu.png" style="width:100%"></a>
 
-    <a href="../../index.html" name="top"><img src="../../pic/SMCLogo.jpg" style="float:left;width:20%;height:20%"></a>
-    <!-- input on right top -->
-    <div class="welcometag"><marquee onMouseOver="this.stop()" onMouseOut="this.start()" height="100%" direction="up" scrolldelay="4" scrollamount="1" ><b>Welcome to Show Me Classic Parts <br> Bienvenido a Show Me Classic Parts <br> ようこそShow Me Classic Partsへ！<br> 歡迎光臨 </b></marquee></div>
-    <div class="signin"id="signin"><button class="popbutton"> Signin</button></div>  
-    <!-- input on right top end-->
+    <!-- hideside open  -->
+    <div class="showsidebar impactfont" id="showbutton" onclick="side_open()" style="width:60px;">
+        <button class="popbutton" id="menubuttonphone" >☰</button> </div>
+    <!-- hideside open  end-->
+    <a class="cartmenu" ><img src="../../pic/cartmenu.png" style="width:100%"></a>
     
-    <!-- navibar -->
+      <!-- <a href="index.html" name="top" class="logotop0"><img src="pic/SMCLogo.jpg" style="float:left;width:20%;height:20%"></a> -->
+      <a href="../../index.html" name="top" class="logotop"><img src="../../pic/SMC5.png" style="width:100%;"></a>
+    
+      <!-- input on right top -->
+      <!-- <div class="welcometag"><marquee onMouseOver="this.stop()" onMouseOut="this.start()" height="100%" direction="up" scrolldelay="4" scrollamount="1" ><b>Welcome to Show Me Classic Parts <br> Bienvenido a Show Me Classic Parts <br> ようこそShow Me Classic Partsへ！<br> 歡迎光臨 </b></marquee></div> -->
+      <div  id="signin"><button class="popbutton"> Signin</button></div>  
+        
+    
+      <!-- input on right top end-->
+      <!-- navibar -->
       <div  class="navbar" >
-              <a href="../../index.html"><button class="dropbtn" >Main page</button></a>
-              <a href=""><button class="dropbtn" >contact</button></a>
-              <!-- <a href=""><button class="dropbtn">Product</button></a> -->
-              <input class="searchbar" type="text" placeholder="Search.." style="float: right">  
+          <a href="../../index.html"><button class="dropbtn" id="mainpagecolor">Main Page</button></a>
+          <a href=""><button class="dropbtn"id="contactuscolor" >Contact Us</button></a>
+          <!-- used to be dropbtn -->
+          <!-- <a href=""><button class="pagebutton">Product</button></a> -->
+          <div>
+          <!-- <input class="searchbar" type="text" placeholder="Search.." style="float: right">
+          <input type="image" name="submit" src="pic/searchicon.png" border="0" alt="Submit" style="width: 29px;float:right;" /> -->
+          <form action="http://google.com/search?"+q.value>
+            <!-- <button type="submit" class="searchbarsubmit" ></button> -->
+            <input class="searchbarsubmit" type="image" src="../../pic/searchicon4.png"  alt="Submit Form" />
+            <input class="searchbar" type="text" placeholder="Search On Google.." name="q">
+    
+          </form>
           </div>
-          <!-- navibar -->
-    </div>
+      </div>
+    
+            <!-- navibar -->
+         
+      </div>
+    
+      <div class="row" id="searchbarMobile"style="position:relative;margin:0;">
+          <form action="http://google.com/search?"+q.value>
+            <!-- <button type="submit" class="searchbarsubmit" >S</button> -->
+            <input class="searchbarsubmit" type="image" src="../../pic/searchicon4.png"  alt="Submit Form" />
+            <input class="searchbarphone" type="text" placeholder="Search On Google.." name="q">
+    
+          </form>
+      </div>
         <!-- top part header end-->
 
         <!--sidebar on small screen  -->
@@ -62,9 +88,9 @@
       <div   class="sideres textsidebar" id="closemark" style="width:35%;position:relative">
         Cart
       </div>
-      <div  onclick="side_close()" class="sideres textsidebar" id="closemark" style="text-align:center;float:right;width:26%">&times;</div>
+      <div  onclick="closeall()()" class="sideres textsidebar" id="closemark" style="text-align:center;float:right;width:26%">&times;</div>
     </div> -->
-    <div  onclick="side_close()" class="sideres textsidebar" id="closemark"><p>&times;</p></div>
+    <div  onclick="closeall()()" class="sideres textsidebar" id="closemark"><p>&times;</p></div>
     <a href="../../index.html"><div class="hidesidebuttontop fontstyle"id="textbold" >&nbsp;&nbsp;Home</div> </a>
     <a href=""><div class="hidesidebuttontop fontstyle" id="textbold">&nbsp;&nbsp;Account</div> </a>
     <a href=""><div class="hidesidebuttontop fontstyle" id="hidesidebuttontop_sub" >&nbsp;&nbsp;&nbsp;&nbsp;My Cart</div> </a>
@@ -111,7 +137,7 @@
  </div> 
           <!-- side1 -->
 <div class="columnsidebar20pop" style="margin:0; "id="side240z">
-  <div  onclick="side_close()" class="sideres textsidebar" id="closemark"><p>&times;</p></div>
+  <div  onclick="closeall()()" class="sideres textsidebar" id="closemark"><p>&times;</p></div>
   <a href="../../index.html"><div class="hidesidebuttontop fontstyle"id="textbold" >&nbsp;&nbsp;Home</div> </a>
   <a href=""><div class="hidesidebuttontop fontstyle" id="textbold">&nbsp;&nbsp;Account</div> </a>
   <a href=""><div class="hidesidebuttontop fontstyle" id="hidesidebuttontop_sub" >&nbsp;&nbsp;&nbsp;&nbsp;My Cart</div> </a>
@@ -141,7 +167,7 @@
 <!-- side1-->
 <!-- side2 -->
 <div class="columnsidebar20pop" style="margin:0; "id="side510">
-  <div  onclick="side_close()" class="sideres textsidebar" id="closemark"><p>&times;</p></div>
+  <div  onclick="closeall()()" class="sideres textsidebar" id="closemark"><p>&times;</p></div>
   <a href="../../index.html"><div class="hidesidebuttontop fontstyle"id="textbold" >&nbsp;&nbsp;Home</div> </a>
   <a href=""><div class="hidesidebuttontop fontstyle" id="textbold">&nbsp;&nbsp;Account</div> </a>
   <a href=""><div class="hidesidebuttontop fontstyle" id="hidesidebuttontop_sub" >&nbsp;&nbsp;&nbsp;&nbsp;My Cart</div> </a>
@@ -172,7 +198,7 @@
 <!-- side2-->
 <!-- side3 -->
 <div class="columnsidebar20pop" style="margin:0; "id="side356">
-  <div  onclick="side_close()" class="sideres textsidebar" id="closemark"><p>&times;</p></div>
+  <div  onclick="closeall()()" class="sideres textsidebar" id="closemark"><p>&times;</p></div>
   <a href="../../index.html"><div class="hidesidebuttontop fontstyle"id="textbold" >&nbsp;&nbsp;Home</div> </a>
   <a href=""><div class="hidesidebuttontop fontstyle" id="textbold">&nbsp;&nbsp;Account</div> </a>
   <a href=""><div class="hidesidebuttontop fontstyle" id="hidesidebuttontop_sub" >&nbsp;&nbsp;&nbsp;&nbsp;My Cart</div> </a>
@@ -202,7 +228,7 @@
 <!-- side3-->
 <!-- side4 -->
 <div class="columnsidebar20pop" style="margin:0; "id="side911">
-  <div  onclick="side_close()" class="sideres textsidebar" id="closemark"><p>&times;</p></div>
+  <div  onclick="closeall()()" class="sideres textsidebar" id="closemark"><p>&times;</p></div>
   <a href="../../index.html"><div class="hidesidebuttontop fontstyle"id="textbold" >&nbsp;&nbsp;Home</div> </a>
   <a href=""><div class="hidesidebuttontop fontstyle" id="textbold">&nbsp;&nbsp;Account</div> </a>
   <a href=""><div class="hidesidebuttontop fontstyle" id="hidesidebuttontop_sub" >&nbsp;&nbsp;&nbsp;&nbsp;My Cart</div> </a>
@@ -233,7 +259,7 @@
 <!-- side4-->
 <!-- side5 -->
 <div class="columnsidebar20pop" style="margin:0; "id="sidevwt25">
-  <div  onclick="side_close()" class="sideres textsidebar" id="closemark"><p>&times;</p></div>
+  <div  onclick="closeall()()" class="sideres textsidebar" id="closemark"><p>&times;</p></div>
   <a href="../../index.html"><div class="hidesidebuttontop fontstyle"id="textbold" >&nbsp;&nbsp;Home</div> </a>
   <a href=""><div class="hidesidebuttontop fontstyle" id="textbold">&nbsp;&nbsp;Account</div> </a>
   <a href=""><div class="hidesidebuttontop fontstyle" id="hidesidebuttontop_sub" >&nbsp;&nbsp;&nbsp;&nbsp;My Cart</div> </a>
@@ -261,7 +287,7 @@
 <!-- side5-->
 <!-- side6 -->
 <div class="columnsidebar20pop" style="margin:0; "id="sidew113">
-  <div  onclick="side_close()" class="sideres textsidebar" id="closemark"><p>&times;</p></div>
+  <div  onclick="closeall()()" class="sideres textsidebar" id="closemark"><p>&times;</p></div>
   <a href="../../index.html"><div class="hidesidebuttontop fontstyle"id="textbold" >&nbsp;&nbsp;Home</div> </a>
   <a href=""><div class="hidesidebuttontop fontstyle" id="textbold">&nbsp;&nbsp;Account</div> </a>
   <a href=""><div class="hidesidebuttontop fontstyle" id="hidesidebuttontop_sub" >&nbsp;&nbsp;&nbsp;&nbsp;My Cart</div> </a>
@@ -377,11 +403,13 @@
     <p href="#" class="borderrightnum" style="color:green;float: left;padding: 3px 11px;text-decoration: none;"><strong><u><i>2</i></u></strong></p>
     <!-- <a href="#" class="borderrightnum">3</a>
     <a href="#" class="borderrightnum">4</a> -->
-    <a style="opacity:0.5" disabled>Next&nbsp;&raquo;</a>
+    <!-- <a style="opacity:0.5" disabled>Next&nbsp;&raquo;</a> -->
   </div>
 
 <!-- items -->
 <div class="columnmain80" id="parts">
+    <div class="topborder"></div>
+
 <div class="detailimg">
     <div class="detailnumber" >1</div>
 <img class="detailimgstyle" src="../../pic/DS5302.png" >
@@ -414,7 +442,7 @@
   <div class="detailquantR" style="margin:0;margin-top:5%;height:auto;width:80%">
     <div href="" class="carttipR" >
       <div class="carttiptextR">Add To Cart</div>
-      <img class="addcart" id="cart" src="../../pic/cart.png" >
+      <img class="addcart" id="cart" src="../../pic/cart1.png" >
     </div>
   </div>
   
@@ -426,6 +454,8 @@
 
     <!-- items -->
     <div class="columnmain80" id="parts" name="number1">
+        <div class="topborder"></div>
+
         <div class="detailimg">
             <div class="detailnumber" >(1)</div>
         <img class="detailimgstyle" src="../../pic/DS5301.png" >
@@ -455,7 +485,7 @@
           <div class="detailquantR" style="margin:0;margin-top:5%;height:auto;width:80%">
             <div href="" class="carttipR" >
               <div class="carttiptextR">Add To Cart</div>
-              <img class="addcart" id="cart" src="../../pic/cart.png" >
+              <img class="addcart" id="cart" src="../../pic/cart1.png" >
             </div>
           </div>
           
@@ -467,6 +497,8 @@
 
     <!-- items -->
     <div class="columnmain80" id="parts">
+        <div class="topborder"></div>
+
         <div class="detailimg">
             <div class="detailnumber" >2</div>
         <img class="detailimgstyle" src="../../pic/DS5102.png" >
@@ -496,7 +528,7 @@
           <div class="detailquantR" style="margin:0;margin-top:5%;height:auto;width:80%">
             <div href="" class="carttipR" >
               <div class="carttiptextR">Add To Cart</div>
-              <img class="addcart" id="cart" src="../../pic/cart.png" >
+              <img class="addcart" id="cart" src="../../pic/cart1.png" >
             </div>
           </div>
           
@@ -507,14 +539,14 @@
     <!-- items end-->
 
 <!-- page select -->
-        <div class="detail_pageselect_outer" style="margin-top:2%;">
+        <div class="detail_pageselect_outer" >
             <div class="page_selecttion">
                 <a href="240z-exterior.html" class="borderrightnum">&laquo;&nbsp;Previous</a>
                 <a href="240z-exterior.html" class="borderrightnum">1</a>
     <p href="#" class="borderrightnum" style="color:green;float: left;padding: 3px 11px;text-decoration: none;"><strong><u><i>2</i></u></strong></p>
                 <!-- <a href="#" class="borderrightnum">3</a>
                 <a href="#" class="borderrightnum">4</a> -->
-                <a style="opacity:0.5;" disabled>Next&nbsp;&raquo;</a>
+                <!-- <a style="opacity:0.5;" disabled>Next&nbsp;&raquo;</a> -->
               </div>
         </div>
 <!-- end pageselect -->
@@ -537,7 +569,7 @@
       <img src="../../pic/smclogo.png" style="width:50%">
   </div>
   <div class="column33foot">
-    <h4 class="whitep"><strong>Quick contact</strong></h4>  
+    <h4 class="whitep"><strong>Quick Contact</strong></h4>  
     <br>
     <p class="whitep">Email:
       amazon@
