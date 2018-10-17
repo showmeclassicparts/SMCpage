@@ -47,10 +47,13 @@ div{
 #mainpagecolor{
 color:rgb(2, 6, 255);
 font-weight:bold;
+/* margin-top:2%; */
 }
 #contactuscolor{
 color:green;
 font-weight:bold;
+/* margin-top:2%; */
+
 }
 .cartmenu{
     position: absolute;
@@ -348,6 +351,7 @@ right:0
 #sidetitle2{
     width:100%;
     font-size:17px;
+    position: relative;
 }
 .hidesidebuttontop{
     color:black;
@@ -417,7 +421,7 @@ right:0
     padding:10%;
     font-family: "Merienda One";
     /* font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; */
-    font-size:1.8vw;
+    font-size:18px;
 }
 .anow:hover{
     background-color: lightgreen;
@@ -668,7 +672,9 @@ transition: 0.5s;
     height:auto;
 }
 #newitem{
-position: relative;
+    margin:0;
+    position: relative;
+    width:180px;
 }
 .column33 {
     float: left;
@@ -720,16 +726,29 @@ position: relative;
 }
 .retatenewitem {
     -webkit-transform: rotate(10deg);
-    -moz-transform: rotat   e(10deg);
+    -moz-transform: rotate(10deg);
     -o-transform: rotate(10deg);
     -ms-transform: rotate(10deg);
     transform: rotate(10deg);
 }
+.retatenewitempop {
+    -webkit-transform: rotate(20deg);
+    -moz-transform: rotate(20deg);
+    -o-transform: rotate(20deg);
+    -ms-transform: rotate(20deg);
+    transform: rotate(20deg);
+}
 #newitemplace{
     width:30%;
     position: absolute;
-    top:15%;
-    right:15%;
+    top:10%;
+    right:20%;
+}
+#newitemplacepop{
+    width:30%;
+    position: absolute;
+    top:0%;
+    right:0%;
 }
 
 .detailtooltip{
@@ -972,14 +991,19 @@ border:0;
 }
 
 .welcometag{
-    float:left;
+    /* float:left; */
     position:absolute;
-    left:40%;
-    top:0%;
-    font-size: 1vw;
-    width:30%;
+    left:1%;
+    bottom:80%;
+    font-size: 10px;
+    width:40%;
     height:50%;
+    margin-left:0;
 }
+.welcometagtop{
+   display:none;
+}
+
 .navbarpop{
     display:none;
 }
@@ -1218,8 +1242,9 @@ opacity: 0.5;
     width:50%;
     height:35px;
     float:right;
-    margin:2%;
-    margin-right:0;
+    margin:0;
+    margin-left:2%;
+    /* margin-left:2%; */
     /* border-radius: 5px; */
 }
 .searchbarphone{
@@ -1232,7 +1257,9 @@ opacity: 0.5;
 
 }
 .searchbarsubmit{
-    margin:2%;
+    margin:0;
+    margin-left:2%;
+    margin-right:2%;
     height:35px;
     margin-left:0;
     float:right;
@@ -1260,6 +1287,22 @@ opacity: 0.5;
     }
     .searchbar{
         width:30%
+    }
+    .searchbarsubmit{
+        margin-top: 2%;
+        /* margin-right:20px ;  */
+    }
+    .searchbar{
+        margin-top: 2%;
+
+    }
+    #mainpagecolor{
+        margin-top: 2%;
+
+    }
+    #contactuscolor{
+        margin-top: 2%;
+
     }
 
 }
@@ -1308,6 +1351,9 @@ opacity: 0.5;
     body{
         margin-top:3%;
     }
+    .welcometagtop{
+        display:block;
+     }
     .topborder{
         border-top:1px solid;
         position: absolute;
@@ -1406,6 +1452,9 @@ opacity: 0.5;
     body{
 
     }
+    .columnmain80{
+        min-height:150px;
+    }
     .detail_pageselect_outer{
         margin-top:5%;
     }
@@ -1427,7 +1476,7 @@ opacity: 0.5;
 }
 
 .addcart{
-    width:80%;
+    width:60px;
     float:left;
 }
 .backup_arrow{
