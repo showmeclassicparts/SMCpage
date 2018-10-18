@@ -44,6 +44,9 @@ div{
     height: auto;
     z-index: 1;
 }
+area:hover{
+    opacity: 0.5;
+}
 #mainpagecolor{
 color:rgb(2, 6, 255);
 font-weight:bold;
@@ -574,7 +577,13 @@ transition: 0.5s;
     display: block;
     
 }
-
+.detailmiddleline{
+    width:100%;
+    border-bottom: 1px solid rgb(196, 196, 196);
+    margin:0;
+    margin-top:1%;
+    margin-bottom: 3%;
+}
 .dropdown-content a:hover {background-color: #f1f1f1}
 .dropdownimg-content a:hover {background-color: #c7c7c7}
 .dropdown:hover .dropdown-content {
@@ -1050,18 +1059,27 @@ opacity: 0.5;
     left:0%;
     margin:0;
     font-size:2vw;
+    z-index: 2;
 
 }
 .detailimgstyle{
     width:80%;
     float:right;
+    margin-top:1%;
 }
 .detailimg{
     float:left;
     width:35%;
     margin:0;
+    margin-top:1%;
+
     /* margin-left:2%; */
     position: relative;
+}
+.redbold{
+    color:red;
+    font-weight: bold;
+    font-size:20px;
 }
 .detailmiddle{
     float:left;
@@ -1069,6 +1087,7 @@ opacity: 0.5;
     height:100%;
     margin:0;
     margin-left:2%;
+    margin-top:2%;
     /* position: relative; */
     /* font-family; */
 }
@@ -1304,6 +1323,9 @@ opacity: 0.5;
         margin-top: 2%;
 
     }
+    #parts{
+        min-height: 180px;
+    }
 
 }
 @media (max-width:950px){
@@ -1346,6 +1368,8 @@ opacity: 0.5;
         z-index: 2;
         overflow: scroll;
     }
+
+
 }
 @media (max-width:800px){
     body{
@@ -1367,7 +1391,11 @@ opacity: 0.5;
         padding:0;
     }
     .detailnumber{
-        margin-left:10%
+        font-weight: bold;
+        margin-left:3%;
+        width:10px;
+        font-size:18px;
+        right:100px;
     }
     #searchbarMobile{
         display:block;
