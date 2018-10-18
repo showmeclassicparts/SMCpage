@@ -1,9 +1,24 @@
+
 body{
     background-color: white;
     margin-top:3%
     /* min-width:505px */
     
 }
+#loading{
+    position:fixed;
+    z-index: 100;
+    background-color: #3F51B5;
+    width:100%;
+    height:100%;
+    margin:0;
+    top:0;
+}
+svg {
+    width: 100%;
+    height: 100%;
+    visibility: hidden;
+  }
 .containter{
     z-index: 4;
     /* position: relative; */
@@ -76,6 +91,37 @@ opacity: 1;
     /* display: none; */
     width:30%;
 }
+.column25{
+    margin:0;
+    width:25%;
+    float:left;
+    position: relative;
+}
+#alldetailInitempage{
+    text-align: center;
+    border:1px solid;
+    font-weight: bold;
+    font-size:18px;
+    height:73px;
+    border-radius: 15px;
+    /* padding-top:2%;
+    padding-bottom:2%; */
+}
+.changingcontent{
+    font-size: 20px;
+}
+.textinitempage{
+    font-size:25px;
+    font-weight: bold;
+    /* padding-top:5% */
+}
+
+/* #middle{
+    position: absolute;
+    top:50%;
+    left:50%;
+    width:100%
+} */
 .seachbar{
     float: right;
     padding: 6px;
@@ -584,6 +630,7 @@ transition: 0.5s;
     margin-top:1%;
     margin-bottom: 3%;
 }
+
 .dropdown-content a:hover {background-color: #f1f1f1}
 .dropdownimg-content a:hover {background-color: #c7c7c7}
 .dropdown:hover .dropdown-content {
@@ -648,6 +695,12 @@ transition: 0.5s;
     height:auto;
     position: relative;
     /* padding:0; */
+}
+.itemtitle{
+    font-family: 'Merienda One'; 
+    font-size:30px;
+    font-weight: bold;
+    text-align: center;
 }
 #parts{
     /* padding-left:2%;
@@ -1067,6 +1120,17 @@ opacity: 0.5;
     float:right;
     margin-top:1%;
 }
+.detailimgstyle:hover{
+opacity: 0.8;
+}
+.itempage_bigimg{
+    width:50%;
+    float:left;
+}
+.itempage_smallimg{
+    width:15%;
+    float:left;
+}
 .detailimg{
     float:left;
     width:35%;
@@ -1091,6 +1155,9 @@ opacity: 0.5;
     /* position: relative; */
     /* font-family; */
 }
+/* .detailmiddle p{
+    margin-bottom:1%
+} */
 .detailright{
     float:right;
     width:25%;
@@ -1151,7 +1218,12 @@ opacity: 0.5;
     color:white;
     text-align: center;
 }
-
+.seealldetail{
+    float:right;
+    border-radius: 5px;
+    background-color: rgb(199, 112, 30);
+    color:white;
+}
 .addcart{
     /* position: absolute;
     right:0;
@@ -1293,6 +1365,9 @@ opacity: 0.5;
 
 /* media start */
 @media (max-width:999px){
+    .textinitempage{
+        font-size: 18px;
+    }
     .detail-addtocart{
         width:60px;
         height:30px;
@@ -1417,7 +1492,7 @@ opacity: 0.5;
         margin:0;
         margin-left:2%;
     }
-    
+  
     #showbutton{
         display:block;
     }
@@ -1480,11 +1555,22 @@ opacity: 0.5;
     body{
 
     }
+
+    .itemtitle{
+        font-size:18px;
+    }
+    .column25{
+        width:100100%;
+        text-align: center
+    }
     .columnmain80{
         min-height:150px;
     }
     .detail_pageselect_outer{
         margin-top:5%;
+    }
+    .seealldetail{
+        font-size:1px;
     }
     .topborder{
         border-top:1px solid;
@@ -1505,7 +1591,7 @@ opacity: 0.5;
 
 .addcart{
     width:60px;
-    float:left;
+    float:right;
 }
 .backup_arrow{
     width:5%;
