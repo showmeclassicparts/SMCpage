@@ -8,23 +8,16 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <script src='http://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.3/TweenMax.min.js'></script>
     <script src='http://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/MorphSVGPlugin.min.js'></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <link href='https://fonts.googleapis.com/css?family=Oxygen' rel='stylesheet'>
     <link href='https://fonts.googleapis.com/css?family=Merienda One' rel='stylesheet'>
     <link href='https://fonts.googleapis.com/css?family=Sail' rel='stylesheet'>
     <link rel="icon" href="pic/pagelogo.png">
-<script>
-    var myVar;
-    
-    function loadingfunction() {
-        myVar = setTimeout(showPage, 3000);
-    }
-    
-    function showPage() {
-      document.getElementById("loading").style.display = "none";
-    }
-    </script>
+
     <!-- <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet"> -->
 
     <link rel="stylesheet" type="text/css" href="style.css"><!-- css that I changed -->
@@ -32,7 +25,11 @@
 </head>
 <body onload="loadingfunction()">
 <!-- Loading -->
-<div id="loading"><p class="loadingtex">Loading</p>
+<div id="loading">
+      <div class="preloader">
+        <div class="preloader_inner">100%</div>
+      </div>
+
     <svg class="mainSVG" viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
    <defs>   
      <path id="puff" d="M4.5,8.3C6,8.4,6.5,7,6.5,7s2,0.7,2.9-0.1C10,6.4,10.3,4.1,9.1,4c2-0.5,1.5-2.4-0.1-2.9c-1.1-0.3-1.8,0-1.8,0
@@ -73,7 +70,10 @@
 
   <!-- input on right top -->
   <!-- <div class="welcometag"><marquee onMouseOver="this.stop()" onMouseOut="this.start()" height="100%" direction="up" scrolldelay="4" scrollamount="1" ><b>Welcome to Show Me Classic Parts <br> Bienvenido a Show Me Classic Parts <br> ようこそShow Me Classic Partsへ！<br> 歡迎光臨 </b></marquee></div> -->
-  
+  <div class="welcometagtop"><marquee onMouseOver="this.stop()" onMouseOut="this.start()" height="100%" direction="left" scrolldelay="4" scrollamount="3" >
+      <b>Welcome to Show Me Classic Parts&emsp;&emsp;&emsp;Bienvenido a Show Me Classic Parts&emsp;&emsp;&emsp;ようこそShow Me Classic Partsへ！&emsp;&emsp;&emsp;歡迎光臨 
+      </b></marquee>
+    </div>
 
   <div  id="signin"><button class="popbutton"> Signin</button></div>  
     
@@ -106,10 +106,6 @@
   </div>
 
   <div class="row" id="searchbarMobile"style="position:relative;margin:0;">
-      <div class="welcometagtop"><marquee onMouseOver="this.stop()" onMouseOut="this.start()" height="100%" direction="left" scrolldelay="4" scrollamount="3" >
-          <b>Welcome to Show Me Classic Parts&emsp;&emsp;&emsp;Bienvenido a Show Me Classic Parts&emsp;&emsp;&emsp;ようこそShow Me Classic Partsへ！&emsp;&emsp;&emsp;歡迎光臨 
-          </b></marquee>
-        </div>
       <form action="http://google.com/search?"+q.value>
         <!-- <button type="submit" class="searchbarsubmit" >S</button> -->
         <input class="searchbarsubmit" type="image" src="pic/searchicon4.png"  alt="Submit Form" />
@@ -673,6 +669,10 @@
       <p class="whitep">VW T2 Bay / T3 Vanagen</p><br>
       <p class="whitep">Mercedes Benz W113</p>
   </div>
+
+  <div class="page">
+      
+    </div>
 </div>
 <!-- footer end-->
 
@@ -758,7 +758,6 @@
     
   <!-- </div> -->
 <!-- detail contents in middle for new item end -->
-
 
 
 <script src="logic.js"></script>
