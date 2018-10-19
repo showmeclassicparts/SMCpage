@@ -1705,6 +1705,7 @@ opacity: 0.8;
     body{
 
     }
+
     .changingcontent{
         display:none !important;
     }
@@ -1818,6 +1819,16 @@ opacity: 0.8;
     background-color:lightgreen;
     transition:0s;
 }
+.preloader_inner {
+
+    margin: auto;
+    width: 3em;
+    height: 3em;
+    line-height: 3em;
+    font-size: 2em;
+    border-radius: 100px;
+    
+  }
 
 
 }
