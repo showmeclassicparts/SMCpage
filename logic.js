@@ -201,7 +201,7 @@ function opentab(evt, tagname) {
     document.getElementById(tagname).style.display = "block";
     evt.currentTarget.className += " active";   
 }
-document.getElementById("defaultOpen").click();
+// document.getElementById("defaultOpen").click();
 //tab open in detail page END
 
 
@@ -353,4 +353,15 @@ TweenMax.set('#circlePath', {
     ease: Linear.easeNone
   });
   mainTl.timeScale(1.1) 
+
+
+ var myVar;
+    
+    function loadingfunction() {
+        myVar = setTimeout(showPage, 3000);
+    }
+    
+    function showPage() {
+      document.getElementById("loading").style.display = "none";
+    }  
 // drift end
