@@ -1035,7 +1035,8 @@ hr {
 
 #smcfooter{
     background-color: black;
-margin:0
+margin:0;
+margin-top:5%
 }
 .column33foot{
     float: left;
@@ -1365,8 +1366,12 @@ opacity: 0.8;
 }
 .addcartindetail{
     float:left;
-    width:60px;
-    margin-top:10%
+    width:50px;
+    margin-top:20px;
+}
+#addcartindetailsmaller{
+    margin-top:10%;
+    width:70px;
 }
 #detailcart{
     width:70%
@@ -1775,9 +1780,12 @@ opacity: 0.8;
     width:33%;
 } */
 .addcartindetail{
-    width:60px;
+    width:50px;
     /* margin-left:40%;
     margin-right:40%; */
+}
+#addcartindetailsmaller{
+    width:60px;
 }
 #detailcart{
     width:70px;
