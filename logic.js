@@ -187,6 +187,66 @@ function watchForHover() {
 watchForHover();
 // remove hover end
 
+//tab open in detail page
+function opentab(evt, tagname) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("changingcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+    document.getElementById(tagname).style.display = "block";
+    evt.currentTarget.className += " active";   
+}
+document.getElementById("defaultOpen").click();
+//tab open in detail page END
+
+
+
+
+//droptab
+var dropdown = document.getElementsByClassName("tablinks2");
+var i;
+
+// tablinks = document.getElementsByClassName("tablinks2");
+//     for (i = 0; i < tablinks.length; i++) {
+//         tablinks[i].className = tablinks[i].className.replace(" active", "");
+//     }
+
+for (i = 0; i < dropdown.length; i++) {
+  dropdown[i].addEventListener("click", function() {
+    var tabcontent, tablinks2;
+    tabcontent = document.getElementsByClassName("tablinkdrop");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+    tablinks2 = document.getElementsByClassName("tablinks2");
+    for (i = 0; i < tablinks2.length; i++) {
+        tablinks2[i].className = tablinks2[i].className.replace(" active", "");
+    }
+
+
+    this.classList.toggle("active");
+    var dropdownContent = this.nextElementSibling;
+    if (dropdownContent.style.display === "block") {
+      dropdownContent.style.display = "none";
+    } else {
+      dropdownContent.style.display = "block";
+    }
+    
+  })
+  ;
+}
+
+//drop tab END
+
+
+
+
+
 
 // drift
 TweenMax.set('#circlePath', {
