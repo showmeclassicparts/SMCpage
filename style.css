@@ -202,6 +202,11 @@ opacity: 1;
     font-size: 17px;
 
 }
+.detailmiddletop{
+    width:100%;
+    margin:0;
+
+}
 .tab button:hover {
     background-color: #ddd;
 }
@@ -311,6 +316,12 @@ right:0
     position: absolute;
     bottom:0;
     right:0;
+}
+#middleshareicon{
+    /* float:none; */
+    /* width:0%; */
+    position: absolute;
+    bottom:0%;
 }
 .navbarpop{
     background-color: white;
@@ -758,6 +769,9 @@ transition: 0.5s;
     margin:0;
     margin-top:1%;
     margin-bottom: 3%;
+}
+.detailmiddle p{
+    margin:0;
 }
 
 .dropdown-content a:hover {background-color: #f1f1f1}
@@ -1343,8 +1357,9 @@ opacity: 0.8;
 .carttiptextR{
     display:none;
     position: absolute;
-    width:150%;
-    bottom:0%;
+    width:100%;
+    /* bottom:0%; */
+    top:0%;
     right:10%;
     background-color:black;
     opacity: 0.5;
@@ -1547,9 +1562,12 @@ opacity: 0.8;
 
     }
     #parts{
-        min-height: 180px;
+        min-height: 200px;
     }
+    .detailmiddle{
+        min-height: 180px;
 
+    }
 }
 @media (max-width:950px){
     .detail-contentLeft {
@@ -1711,7 +1729,17 @@ opacity: 0.8;
     body{
 
     }
+    .redbold{
+        font-size:15px;
+    }
+    .wish{
+        width:80%;
+    }
+    .carttiptextR{
+        width:100px;
+        /* bottom:1%; */
 
+    }
     .changingcontent{
         display:none !important;
     }
