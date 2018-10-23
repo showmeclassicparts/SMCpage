@@ -119,6 +119,22 @@ function side6back(){
     document.getElementById("showsidebar").style.display="block";
     document.getElementById("sidew113").style.display="none";
 }
+function side7open(){
+    document.getElementById("showsidebar").style.display="none";
+    document.getElementById("sidevwt2bay").style.display="block";
+}
+function side7close(){
+    document.getElementById("showsidebar").style.display="none";
+    document.getElementById("sidevwt2bay").style.display="none";
+    document.getElementById("showsidebarres").style.display="none";
+}
+function side7back(){
+    document.getElementById("showsidebar").style.display="block";
+    document.getElementById("sidevwt2bay").style.display="none";
+}
+
+
+
 var sidebar=document.getElementById('showsidebar');
 var allb=document.getElementById('containerall');
 var leftbut=document.getElementById('showbutton');
@@ -136,9 +152,9 @@ function closeall(){
 document.getElementById("side911").style.display="none";
 document.getElementById("sidevwt25").style.display="none";
 document.getElementById("sidew113").style.display="none";
-document.getElementById("shownavi").style.display = "none";
-document.getElementById("shownavibutton").style.display = "block";
-document.getElementById("mainclose").style.display = "none";
+document.getElementById("sidevwt2bay").style.display="none";
+
+
 }
 // var right=document.getElementsByClassName('detailright').style.height;
 // var left=document.getElementsByClassName('detailimg').style.height;
@@ -399,3 +415,74 @@ function loader(_success) {
 }
 
 //percent loader END
+
+
+
+
+
+// product detail page imgfunction
+showimg(1);
+function currentimg(n){
+    showimg(n);
+}
+function showimg(n){
+    var x=document.getElementsByClassName("bigimg");
+    var i=x.length;
+    for(var j=0;j<i;j++){
+        x[j].style.display="none"
+    }
+    x[n-1].style.display = "block";
+}
+function zoomimg(n){
+    document.getElementById("zoomedimg").style.display="block";
+    document.getElementById("bigimgzoom").style.display="block";
+
+    document.getElementById("bigimgzoom").src=n;
+}
+function closezoom(){
+    document.getElementById("zoomedimg").style.display="none";
+    document.getElementById("bigimgzoom").style.display="none";
+
+}
+// product detail page imgfunction END
+
+
+// slider
+$(document).on('ready', function() { 
+    $(".variable").slick({
+      dots: true,
+      infinite: false,
+      speed: 300,
+      slidesToShow: 2,
+      slidesToScroll: 2,
+      autoplay: true,
+      autoplaySpeed: 1000, 
+      responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2,
+          infinite: true,
+          dots: true
+        }
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2
+        }
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1
+        }
+      }
+    ]
+    });
+    
+  });
+// slider end
