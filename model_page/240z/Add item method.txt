@@ -1,0 +1,46 @@
+<!-- items -->
+<div class="columnmain80" id="parts">
+  <!-- map href= 'name' -->
+    <a  name=""></a>
+
+    <div class="topborder"></div>
+    <!-- Number on the Map -->
+    <div class="detailnumber" ></div>
+<div class="detailimg">
+<!-- item picture -->
+<img class="detailimgstyle" src="../../pic/.png" >
+</div>
+<div class="detailmiddle">
+  <strong>
+    <!-- title -->
+    <p></p>
+  </strong>
+  <div class="detailmiddleline"></div>
+  <!-- OEM number -->
+    <p>OEM#: </p>
+<div class="detailquant" style="">
+    <div href="" class="carttip" >
+      <div class="carttiptext">Add To WishList</div>
+      <a href="../../index.html"><img class="wish" id="" src="../../pic/whish2.png" ></a>
+    </div>
+    <div href="" class="carttip" >
+        <div class="carttiptext">Share in Facebook!</div>
+        <img class="wish" id="sharefacebook" src="../../pic/facebook.png" >
+      </div>
+  </div>
+</div>
+<div class="detailright">
+  <!-- Price -->
+  <div class="price">$</div>
+  <div class="detailquantR" style="margin-top:15%;width:100%">
+    <div style="margin:0;margin-left:20%;;float:right">
+    <p style="float:left;">QTY:</p><input type="text" style="float:left;margin:0;" size='1'value='1'></div></div>
+  <div class="detailquantR" style="margin:0;margin-top:5%;height:auto;width:80%">
+    <div href="" class="carttipR" >
+      <div class="carttiptextR">Add To Cart</div>
+      <img class="addcart" id="cart" src="../../pic/cart1.png" >
+    </div>
+  </div>
+</div>
+</div>
+<!-- items end-->
