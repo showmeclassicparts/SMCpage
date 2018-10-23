@@ -177,6 +177,9 @@ div{
     margin: 0 5% 0 5%
     
 }
+.Itemschanges{
+    margin:0;
+}
 .row{
     margin: 0 5% 0 5%;  
     
@@ -1102,7 +1105,9 @@ transition: 0.5s;
     float: right;
     margin-right:3%;
     position: relative;
-    background-color: white
+    background-color: white;
+    border-radius: 10px;
+    /* box-shadow: 5px 10px #888888; */
 }
 .column40R:hover{
     background-color:lightgreen; 
@@ -1118,7 +1123,10 @@ transition: 0.5s;
     margin-left:5%;
     float: left;
     position: relative;
-    background-color: white
+    background-color: white;
+    border-radius: 10px;
+
+    /* box-shadow: 5px 10px #888888; */
 }
 .column40L:hover{
     background-color:lightgreen; 
@@ -1384,6 +1392,7 @@ opacity: 0.5;
     width:80%;
     float:right;
     margin-top:1%;
+    
 }
 .detailimgstyle:hover{
 opacity: 0.8;
@@ -1665,6 +1674,9 @@ opacity: 0.8;
         font-size:1vw;
 
     }
+    .detailimgstyle{
+        margin-top:10%
+    }
     .searchbar{
         width:30%
     }
@@ -1854,6 +1866,9 @@ opacity: 0.8;
 @media (max-width:570px){
     body{
 
+    }
+    .detailimgstyle{
+        
     }
     .scrolla{
         width:80%
