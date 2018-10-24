@@ -486,3 +486,5 @@ $(document).on('ready', function() {
     
   });
 // slider end
+
+var menubuttonphone = document.getElementById("menubuttonphone").innerText="asd";
