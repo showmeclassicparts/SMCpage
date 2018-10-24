@@ -1109,8 +1109,17 @@ transition: 0.5s;
 /* .plusdetail:active{
 
 } */
+.column40{
+    Width:40%;
+    margin:0;
+    margin-left:2%;
+    margin-right:2%;
+    position: relative; 
+    float:left;
+}
 .column40R{
     width:40%;
+    margin:0;
     margin-bottom:3%;
     float: right;
     margin-right:3%;
@@ -1129,6 +1138,7 @@ transition: 0.5s;
 }
 .column40L{
     width:40%;
+    margin:0;
     margin-bottom:3%; 
     margin-left:5%;
     float: left;
@@ -1142,6 +1152,10 @@ transition: 0.5s;
     background-color:lightgreen; 
     transition: 1s;
 }
+/* .btmimg{
+    width:80%;
+    opacity: 0.5;
+} */
 .column40L:active{
     background-color:rgb(104, 231, 104); 
     transition: 0s;
@@ -1239,7 +1253,7 @@ margin-right: auto;
 .textcenter{
     position: absolute;
     top: 30%;
-    left: 30%;
+    left: 25%;
     /* transform: translate(-50%, -50%); */
     color:brown;
     font-size: 3vw;
