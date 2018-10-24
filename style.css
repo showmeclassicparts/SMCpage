@@ -1020,6 +1020,16 @@ transition: 0.5s;
     height:100%;
     /* z-index: 1; */
 }
+.popdetilimg{
+    float:left;
+    width:30%;
+}
+.mainpageimg{
+    width:100%;
+    height: auto;
+    float:left;
+    margin:2%
+}
 .detaillink{
     float:right;
     position:relative
@@ -1861,11 +1871,33 @@ opacity: 0.8;
         display:block;
         width:170px;
     }
-   
+    .column30indetail{
+        float:none;
+        width:60%;
+    }
+    .popdetilimg{
+        float:none;
+        margin-left:25%;
+        width:50%;
+    }
+    .popdetail h3{
+        font-size: 15px;
+    }
+    .popdetail h4{
+        font-size:12px;
+    }
+    .popdetailInMainPage{
+        display:none;
+    }
+    
 }
 @media (max-width:570px){
     body{
 
+    }
+    .popdetilimg{
+        margin-left:10%;
+        width:80%;
     }
     .detailimgstyle{
         margin-top:50px
