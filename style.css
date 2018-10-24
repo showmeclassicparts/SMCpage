@@ -1383,7 +1383,7 @@ opacity: 0.5;
     width:100%;
     /* border:1px solid; */
     /* opacity: 0.5; */
-    margin-left:5%;
+    /* margin-left:5%; */
     margin-right:5%;
 
 }
@@ -1788,6 +1788,7 @@ opacity: 0.8;
         padding:0;
     }
     .detailnumber{
+        /* top:30%; */
         font-weight: bold;
         margin-left:3%;
         width:10px;

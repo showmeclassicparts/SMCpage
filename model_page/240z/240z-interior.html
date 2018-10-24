@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link href='https://fonts.googleapis.com/css?family=Oxygen' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Merienda One' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Sail' rel='stylesheet'>
+    <link rel="icon" href="../../pic/pagelogo.png">
+
+    <link rel="stylesheet" type="text/css" href="../../style.css"><!-- css that I changed -->
+
+    <title>240z </title>
+</head>
+<body>
+
+    <!-- <div style="opacity:0.01;">Icons made by <a href="https://www.flaticon.com/authors/zurb" title="Zurb">Zurb</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div> -->
+<a class="backup_arrow" href="#top"><p style="font-size:2%;text-align: center">Top</p><img src="../../pic/arrow1.png" style="width:100%"></a>
+
+  <div class="container">
+<!-- top part header -->
+<div class="row" style="position:relative;margin:0;height:50">
+
+    <!-- hideside open  -->
+    <div class="showsidebar impactfont" id="showbutton" onclick="side_open()" style="width:60px;">
+        <button class="popbutton" id="menubuttonphone" >☰</button> </div>
+    <!-- hideside open  end-->
+    <a class="cartmenu" ><img src="../../pic/cartmenu.png" style="width:100%"></a>
+    
+      <!-- <a href="../../index.html" name="top" class="logotop0"><img src="pic/SMCLogo.jpg" style="float:left;width:20%;height:20%"></a> -->
+      <a href="../../index.html" name="top" class="logotop"><img src="../../pic/SMC5.png" style="width:100%;"></a>
+    
+      <!-- input on right top -->
+      <!-- <div class="welcometag"><marquee onMouseOver="this.stop()" onMouseOut="this.start()" height="100%" direction="up" scrolldelay="4" scrollamount="1" ><b>Welcome to Show Me Classic Parts <br> Bienvenido a Show Me Classic Parts <br> ようこそShow Me Classic Partsへ！<br> 歡迎光臨 </b></marquee></div> -->
+      <div  id="signin"><button class="popbutton"> Signin</button></div>  
+        
+    
+      <!-- input on right top end-->
+      <!-- navibar -->
+      <div  class="navbar" >
+          <a href="../../index.html"><button class="dropbtn" id="mainpagecolor">Main Page</button></a>
+          <a href="../contact.html"><button class="dropbtn"id="contactuscolor" >Contact Us</button></a>
+          <!-- used to be dropbtn -->
+          <!-- <a href=""><button class="pagebutton">Product</button></a> -->
+          <div>
+          <!-- <input class="searchbar" type="text" placeholder="Search.." style="float: right">
+          <input type="image" name="submit" src="pic/searchicon.png" border="0" alt="Submit" style="width: 29px;float:right;" /> -->
+          <form action="http://google.com/search?"+q.value>
+            <!-- <button type="submit" class="searchbarsubmit" ></button> -->
+            <input class="searchbarsubmit" type="image" src="../../pic/searchicon4.png"  alt="Submit Form" />
+            <input class="searchbar" type="text" placeholder="Search On Google.." name="q">
+    
+          </form>
+          </div>
+      </div>
+    
+            <!-- navibar -->
+         
+      </div>
+    
+      <div class="row" id="searchbarMobile"style="position:relative;margin:0;">
+          <form action="http://google.com/search?"+q.value>
+            <!-- <button type="submit" class="searchbarsubmit" >S</button> -->
+            <input class="searchbarsubmit" type="image" src="../../pic/searchicon4.png"  alt="Submit Form" />
+            <input class="searchbarphone" type="text" placeholder="Search On Google.." name="q">
+    
+          </form>
+      </div>
+        <!-- top part header end-->
+
+ <!--sidebar on small screen  -->
+  
+      
+<!-- side bar hide -->
+  <!-- closeplace -->
+  <div  onclick="closeall()"id="showsidebarres">
+    </div>
+    <!-- close place -->
+  <div class="columnsidebar20pop" style="margin:0; "id="showsidebar">
+    
+      
+      <div  onclick="closeall()" class="sideres textsidebar" id="closemark"><p>&times;</p></div>
+      <a href="../../index.html"><div class="hidesidebuttontop fontstyle"id="textbold" >&nbsp;&nbsp;Home</div> </a>
+      <a href=""><div class="hidesidebuttontop fontstyle" id="textbold">&nbsp;&nbsp;Account</div> </a>
+      <a href=""><div class="hidesidebuttontop fontstyle" id="hidesidebuttontop_sub" >&nbsp;&nbsp;&nbsp;&nbsp;My Cart</div> </a>
+      <a href=""><div class="hidesidebuttontop fontstyle" id="hidesidebuttontop_sub" >&nbsp;&nbsp;&nbsp;&nbsp;Login</div> </a>
+  
+      
+    <h3 class="fonttitlestyle"id="textbold">&nbsp;&nbsp;Parts Models</h3>
+  
+    <div class="sideres" >
+    <a href="../240z.html" class="textsidebar" id="sidetitle" style="" >Datsun 240Z</a>
+    <p onclick="side1open()" class="textsidebar" id="arrowright" >&gt;</p>
+    </div>
+          
+    <div class="sideres" ><a href="../510.html" class="textsidebar" id="sidetitle" style="width:70%;float: left" >Datsun 510</a>
+      <p onclick="side2open()" class="textsidebar" id="arrowright" >&gt;</p>
+  
+    </div>
+    <div class="sideres" id="specialside" ><a href="../vwT2.html" class="textsidebar" id="sidetitle"style="width:70%;float: left;" >VW T2 Bay Bus</a>
+      <p onclick="side7open()" class="textsidebar" id="arrowright"  >&gt;</p>
+  
+    </div>
+
+    <div class="sideres" id="specialside" ><a href="../VWT3.html" class="textsidebar" id="sidetitle"style="width:70%;float: left;" >VW T25/T3 bus (Vanagon)</a>
+      <p onclick="side5open()" class="textsidebar" id="arrowright"  >&gt;</p>
+  
+    </div>
+
+  
+    <div class="sideres"><a href="../w113.html" class="textsidebar" id="sidetitle" style="width:70%;float: left">Mercedes-Benz W113</a>
+      <p onclick="side6open()" class="textsidebar" id="arrowright" >&gt;</p>
+    </div>
+
+    <div class="sideres"><a href="../356.html" class="textsidebar" id="sidetitle" style="width:70%;float: left">Porsche 356</a>
+      <p onclick="side3open()" class="textsidebar" id="arrowright" >&gt;</p>
+  
+    </div>
+  
+    <div class="sideres"><a href="../911.html" class="textsidebar" id="sidetitle" style="width:70%;float: left">Porsche 911</a>
+      <p onclick="side4open()" class="textsidebar" id="arrowright" >&gt;</p>
+  
+    </div>
+
+    <div style="width:100%;margin:0;margin-top:20px;border-top:2px solid"> </div> 
+    <h3 class="fonttitlestyle" style="border:none">&nbsp;&nbsp;Other Reference</h3>
+    <a href="../contact.html"><div class="hidesidebuttontop fontstyle" id="hidesidebuttontop_sub" >&nbsp;&nbsp;&nbsp;&nbsp;Contact Us</div> </a>
+    <a href=""><div class="hidesidebuttontop fontstyle" id="hidesidebuttontop_sub" >&nbsp;&nbsp;&nbsp;&nbsp;Our Facebook</div> </a>
+  
+  
+  
+   </div> 
+            <!-- side1 -->
+  <div class="columnsidebar20pop" style="margin:0; "id="side240z">
+    <div  onclick="closeall()" class="sideres textsidebar" id="closemark"><p>&times;</p></div>
+    <a href="../../index.html"><div class="hidesidebuttontop fontstyle"id="textbold" >&nbsp;&nbsp;Home</div> </a>
+    <a href=""><div class="hidesidebuttontop fontstyle" id="textbold">&nbsp;&nbsp;Account</div> </a>
+    <a href=""><div class="hidesidebuttontop fontstyle" id="hidesidebuttontop_sub" >&nbsp;&nbsp;&nbsp;&nbsp;My Cart</div> </a>
+    <a href=""><div class="hidesidebuttontop fontstyle" id="hidesidebuttontop_sub" >&nbsp;&nbsp;&nbsp;&nbsp;Login</div> </a>
+  
+    
+  <h3 class="fonttitlestyle"id="textbold">&nbsp;&nbsp;Parts Models</h3>
+  
+      <div class="sideres" >
+        <p onclick="side1back()" class="textsidebar" id="backside"    > &lt; Back</p>
+        <!-- <div class="sideres" ><p  class="textsidebar" style="text-align:center;font-size:20px;background-color: red;color:white"  >Datsun 240Z</p>
+        </div> -->
+    </div>       
+    <div class="sideres" ><a href="../240z/240z-exterior.html" class="textsidebar" id="sidetitle2"  >240/260/280Z Exterior</a>
+    </div>
+    <div class="sideres" ><a href="../240z/240z-interior.html" class="textsidebar" id="sidetitle2"  >240/260/280Z Interior</a>
+    </div>
+    <div class="sideres" ><a href="../240z/240z-others.html" class="textsidebar" id="sidetitle2"  >240/260/280Z Other Parts</a>
+    </div>
+    <div class="sideres" ><a href="../240z/240z-new.html" class="textsidebar" id="sidetitle2"  >240/260/280Z New Items</a>
+    </div>
+    <div style="width:100%;margin:0;  margin-top:20px;border-top:2px solid"> </div> 
+    <h3 class="fonttitlestyle" style="border:none">&nbsp;&nbsp;Other Reference</h3>
+    <a href="../contact.html"><div class="hidesidebuttontop fontstyle" id="hidesidebuttontop_sub" >&nbsp;&nbsp;&nbsp;&nbsp;Contact Us</div> </a>
+    <a href=""><div class="hidesidebuttontop fontstyle" id="hidesidebuttontop_sub" >&nbsp;&nbsp;&nbsp;&nbsp;Our Facebook</div> </a>
+  </div>
+  <!-- side1-->
+  <!-- side2 -->  
+  <div class="columnsidebar20pop" style="margin:0; "id="side510">
+    <div  onclick="closeall()()" class="sideres textsidebar" id="closemark"><p>&times;</p></div>
+    <a href="../../index.html"><div class="hidesidebuttontop fontstyle"id="textbold" >&nbsp;&nbsp;Home</div> </a>
+    <a href=""><div class="hidesidebuttontop fontstyle" id="textbold">&nbsp;&nbsp;Account</div> </a>
+    <a href=""><div class="hidesidebuttontop fontstyle" id="hidesidebuttontop_sub" >&nbsp;&nbsp;&nbsp;&nbsp;My Cart</div> </a>
+    <a href=""><div class="hidesidebuttontop fontstyle" id="hidesidebuttontop_sub" >&nbsp;&nbsp;&nbsp;&nbsp;Login</div> </a>
+  
+    
+  <h3 class="fonttitlestyle"id="textbold">&nbsp;&nbsp;Parts Models</h3>
+      
+    <div class="sideres" >
+        <p onclick="side2back()" class="textsidebar" id="backside"> &lt; Back</p>
+        <!-- <div class="sideres" ><p  class="textsidebar" style="text-align:center;font-size:20px;background-color: red;color:white"  >Datsun 240Z</p>
+        </div> -->
+  
+    </div>        
+    <div class="sideres" ><a href="../510/510-exterior.html" class="textsidebar" id="sidetitle2"  >510 Exterior</a>
+    </div>
+    <div class="sideres" ><a href="../510/510-interior.html" class="textsidebar" id="sidetitle2"  >510 Interior</a>
+    </div>
+    <div class="sideres" ><a href="../510/510-others.html" class="textsidebar" id="sidetitle2"  >510 Other Parts</a>
+    </div>
+    <div class="sideres" ><a href="../510/510-new.html" class="textsidebar" id="sidetitle2"  >510 New Items</a>
+    </div>
+    <div style="width:100%;margin:0;  margin-top:20px;border-top:2px solid"> </div> 
+    <h3 class="fonttitlestyle" style="border:none">&nbsp;&nbsp;Other Reference</h3>
+    <a href="../contact.html"><div class="hidesidebuttontop fontstyle" id="hidesidebuttontop_sub" >&nbsp;&nbsp;&nbsp;&nbsp;Contact Us</div> </a>
+    <a href=""><div class="hidesidebuttontop fontstyle" id="hidesidebuttontop_sub" >&nbsp;&nbsp;&nbsp;&nbsp;Our Facebook</div> </a>
+  </div>
+  <!-- side2-->
+  <!-- side3 -->
+  <div class="columnsidebar20pop" style="margin:0; "id="side356">
+    <div  onclick="closeall()()" class="sideres textsidebar" id="closemark"><p>&times;</p></div>
+    <a href="../../index.html"><div class="hidesidebuttontop fontstyle"id="textbold" >&nbsp;&nbsp;Home</div> </a>
+    <a href=""><div class="hidesidebuttontop fontstyle" id="textbold">&nbsp;&nbsp;Account</div> </a>
+    <a href=""><div class="hidesidebuttontop fontstyle" id="hidesidebuttontop_sub" >&nbsp;&nbsp;&nbsp;&nbsp;My Cart</div> </a>
+    <a href=""><div class="hidesidebuttontop fontstyle" id="hidesidebuttontop_sub" >&nbsp;&nbsp;&nbsp;&nbsp;Login</div> </a>
+  
+    
+  <h3 class="fonttitlestyle"id="textbold">&nbsp;&nbsp;Parts Models</h3>
+      
+    <div class="sideres" >
+        <p onclick="side3back()" class="textsidebar" id="backside"> &lt; Back</p>
+        <!-- <div class="sideres" ><p  class="textsidebar" style="text-align:center;font-size:20px;background-color: red;color:white"  >Datsun 240Z</p>
+        </div> -->
+    </div>       
+    <div class="sideres" ><a href="../356/356-exterior.html" class="textsidebar" id="sidetitle2"  >356 Exterior</a>
+    </div>
+    <div class="sideres" ><a href="../356/356-interior.html" class="textsidebar" id="sidetitle2"  >356 Interior</a>
+    </div>
+    <div class="sideres" ><a href="../356/356-others.html" class="textsidebar" id="sidetitle2"  >356 Other Parts</a>
+    </div>
+    <div class="sideres" ><a href="../356/356-new.html" class="textsidebar" id="sidetitle2"  >356 New Items</a>
+    </div>
+    <div style="width:100%;margin:0;  margin-top:20px;border-top:2px solid"> </div> 
+    <h3 class="fonttitlestyle" style="border:none">&nbsp;&nbsp;Other Reference</h3>
+    <a href="../contact.html"><div class="hidesidebuttontop fontstyle" id="hidesidebuttontop_sub" >&nbsp;&nbsp;&nbsp;&nbsp;Contact Us</div> </a>
+    <a href=""><div class="hidesidebuttontop fontstyle" id="hidesidebuttontop_sub" >&nbsp;&nbsp;&nbsp;&nbsp;Our Facebook</div> </a>
+  </div>
+  <!-- side3-->
+  <!-- side4 -->
+  <div class="columnsidebar20pop" style="margin:0; "id="side911">
+    <div  onclick="closeall()" class="sideres textsidebar" id="closemark"><p>&times;</p></div>
+    <a href="../../index.html"><div class="hidesidebuttontop fontstyle"id="textbold" >&nbsp;&nbsp;Home</div> </a>
+    <a href=""><div class="hidesidebuttontop fontstyle" id="textbold">&nbsp;&nbsp;Account</div> </a>
+    <a href=""><div class="hidesidebuttontop fontstyle" id="hidesidebuttontop_sub" >&nbsp;&nbsp;&nbsp;&nbsp;My Cart</div> </a>
+    <a href=""><div class="hidesidebuttontop fontstyle" id="hidesidebuttontop_sub" >&nbsp;&nbsp;&nbsp;&nbsp;Login</div> </a>
+  
+    
+  <h3 class="fonttitlestyle"id="textbold">&nbsp;&nbsp;Parts Models</h3>
+      
+    <div class="sideres" >
+        <p onclick="side4back()" class="textsidebar" id="backside"    > &lt; Back</p>
+        <!-- <div class="sideres" ><p  class="textsidebar" style="text-align:center;font-size:20px;background-color: red;color:white"  >Datsun 240Z</p>
+        </div> -->
+  
+    </div>    
+    <div class="sideres" ><a href="../911/911-exterior.html" class="textsidebar" id="sidetitle2"  >911 Exterior</a>
+    </div>
+    <div class="sideres" ><a href="../911/911-interior.html" class="textsidebar" id="sidetitle2"  >911 Interior</a>
+    </div>
+    <div class="sideres" ><a href="../911/911-others.html" class="textsidebar" id="sidetitle2"  >911 Other Parts</a>
+    </div>
+    <div class="sideres" ><a href="../911/911-new.html" class="textsidebar" id="sidetitle2"  >911 New Items</a>
+    </div>
+    <div style="width:100%;margin:0;  margin-top:20px;border-top:2px solid"> </div> 
+    <h3 class="fonttitlestyle" style="border:none">&nbsp;&nbsp;Other Reference</h3>
+    <a href="../contact.html"><div class="hidesidebuttontop fontstyle" id="hidesidebuttontop_sub" >&nbsp;&nbsp;&nbsp;&nbsp;Contact Us</div> </a>
+    <a href=""><div class="hidesidebuttontop fontstyle" id="hidesidebuttontop_sub" >&nbsp;&nbsp;&nbsp;&nbsp;Our Facebook</div> </a>
+  </div>
+  <!-- side4-->
+  <!-- side5 -->
+  <div class="columnsidebar20pop" style="margin:0; "id="sidevwt25">
+    <div  onclick="closeall()" class="sideres textsidebar" id="closemark"><p>&times;</p></div>
+    <a href="../../index.html"><div class="hidesidebuttontop fontstyle"id="textbold" >&nbsp;&nbsp;Home</div> </a>
+    <a href=""><div class="hidesidebuttontop fontstyle" id="textbold">&nbsp;&nbsp;Account</div> </a>
+    <a href=""><div class="hidesidebuttontop fontstyle" id="hidesidebuttontop_sub" >&nbsp;&nbsp;&nbsp;&nbsp;My Cart</div> </a>
+    <a href=""><div class="hidesidebuttontop fontstyle" id="hidesidebuttontop_sub" >&nbsp;&nbsp;&nbsp;&nbsp;Login</div> </a>
+  
+    
+  <h3 class="fonttitlestyle"id="textbold">&nbsp;&nbsp;Parts Models</h3>
+      
+    <div class="sideres" >
+        <p onclick="side5back()" class="textsidebar" id="backside"    > &lt; Back</p>
+    </div> 
+    <div class="sideres" ><a href="../VWT3bus/VWT3-exterior.html" class="textsidebar" id="sidetitle2"  >Vanagon Exterior</a>
+    </div>
+    <div class="sideres" ><a href="../VWT3bus/VWT3-interior.html" class="textsidebar" id="sidetitle2"  >Vanagon Interior</a>
+    </div>
+    <div class="sideres" ><a href="../VWT3bus/VWT3-others.html" class="textsidebar" id="sidetitle2"  >Vanagon Other Parts</a>
+    </div>
+    <div class="sideres" ><a href="../VWT3bus/VWT3-new.html" class="textsidebar" id="sidetitle2"  >Vanagon New Items</a>
+    </div>
+    <div style="width:100%;margin:0;  margin-top:20px;border-top:2px solid"> </div> 
+    <h3 class="fonttitlestyle" style="border:none">&nbsp;&nbsp;Other Reference</h3>
+    <a href="../contact.html"><div class="hidesidebuttontop fontstyle" id="hidesidebuttontop_sub" >&nbsp;&nbsp;&nbsp;&nbsp;Contact Us</div> </a>
+    <a href=""><div class="hidesidebuttontop fontstyle" id="hidesidebuttontop_sub" >&nbsp;&nbsp;&nbsp;&nbsp;Our Facebook</div> </a>
+  </div>
+  <!-- side5-->
+  <!-- side6 -->
+  <div class="columnsidebar20pop" style="margin:0; "id="sidew113">
+    <div  onclick="closeall()" class="sideres textsidebar" id="closemark"><p>&times;</p></div>
+    <a href="../../index.html"><div class="hidesidebuttontop fontstyle"id="textbold" >&nbsp;&nbsp;Home</div> </a>
+    <a href=""><div class="hidesidebuttontop fontstyle" id="textbold">&nbsp;&nbsp;Account</div> </a>
+    <a href=""><div class="hidesidebuttontop fontstyle" id="hidesidebuttontop_sub" >&nbsp;&nbsp;&nbsp;&nbsp;My Cart</div> </a>
+    <a href=""><div class="hidesidebuttontop fontstyle" id="hidesidebuttontop_sub" >&nbsp;&nbsp;&nbsp;&nbsp;Login</div> </a>
+  
+    
+  <h3 class="fonttitlestyle"id="textbold">&nbsp;&nbsp;Parts Models</h3>
+      <div class="sideres" >
+        <p onclick="side6back()" class="textsidebar" id="backside"    > &lt; Back</p>
+    </div>      
+    <div class="sideres" ><a href="../W113/W113-exterior.html" class="textsidebar" id="sidetitle2"  >W113 Exterior</a>
+    </div>
+    <div class="sideres" ><a href="../W113/W113-interior.html" class="textsidebar" id="sidetitle2"  >W113 Interior</a>
+    </div>
+    <div class="sideres" ><a href="../W113/W113-others.html" class="textsidebar" id="sidetitle2"  >W113 Other Parts</a>
+    </div>
+    <div class="sideres" ><a href="../W113/W113-new.html" class="textsidebar" id="sidetitle2"  >W113 New Items</a>
+    </div>
+    <div style="width:100%;margin:0;  margin-top:20px;border-top:2px solid"> </div> 
+    <h3 class="fonttitlestyle" style="border:none">&nbsp;&nbsp;Other Reference</h3>
+    <a href="../contact.html"><div class="hidesidebuttontop fontstyle" id="hidesidebuttontop_sub" >&nbsp;&nbsp;&nbsp;&nbsp;Contact Us</div> </a>
+    <a href=""><div class="hidesidebuttontop fontstyle" id="hidesidebuttontop_sub" >&nbsp;&nbsp;&nbsp;&nbsp;Our Facebook</div> </a> 
+  </div>
+  <!-- side6-->
+  <!-- side7 -->
+  <div class="columnsidebar20pop" style="margin:0; "id="sidevwt2bay">
+      <div  onclick="closeall()" class="sideres textsidebar" id="closemark"><p>&times;</p></div>
+      <a href="../../index.html"><div class="hidesidebuttontop fontstyle"id="textbold" >&nbsp;&nbsp;Home</div> </a>
+      <a href=""><div class="hidesidebuttontop fontstyle" id="textbold">&nbsp;&nbsp;Account</div> </a>
+      <a href=""><div class="hidesidebuttontop fontstyle" id="hidesidebuttontop_sub" >&nbsp;&nbsp;&nbsp;&nbsp;My Cart</div> </a>
+      <a href=""><div class="hidesidebuttontop fontstyle" id="hidesidebuttontop_sub" >&nbsp;&nbsp;&nbsp;&nbsp;Login</div> </a>
+    
+      
+    <h3 class="fonttitlestyle"id="textbold">&nbsp;&nbsp;Parts Models</h3>
+        <div class="sideres" >
+          <p onclick="side7back()" class="textsidebar" id="backside" > &lt; Back</p>
+      </div>      
+      <div class="sideres" ><a href="../VWT2bus/VWt2bay-exterior.html" class="textsidebar" id="sidetitle2"  >T2 Bay Bus Exterior</a>
+      </div>
+      <!-- <div class="sideres" ><a href="" class="textsidebar" id="sidetitle2"  >T2 Bay Bus Interior</a>
+      </div> -->
+      <div class="sideres" ><a href="../VWT2bus/VWt2bay-others.html" class="textsidebar" id="sidetitle2"  >T2 Bay Bus Other Parts</a>
+      </div>
+      <!-- <div class="sideres" ><a href="" class="textsidebar" id="sidetitle2"  >T2 Bay Bus New Items</a>
+      </div> -->
+      <div style="width:100%;margin:0;  margin-top:20px;border-top:2px solid"> </div> 
+      <h3 class="fonttitlestyle" style="border:none">&nbsp;&nbsp;Other Reference</h3>
+      <a href="../contact.html"><div class="hidesidebuttontop fontstyle" id="hidesidebuttontop_sub" >&nbsp;&nbsp;&nbsp;&nbsp;Contact Us</div> </a>
+      <a href=""><div class="hidesidebuttontop fontstyle" id="hidesidebuttontop_sub" >&nbsp;&nbsp;&nbsp;&nbsp;Our Facebook</div> </a> 
+    </div>
+    <!-- side7-->
+    <!-- side bar hide end-->
+    
+  <!--sidebar on small screen  -->
+                    
+<div class="row " style="margin:0;">
+<!-- side bar large-->
+<div class="columnsidebar20" id="detailpageside"style="margin:0; ">
+  <h3 class="fontstyle" style="text-align: center;border: gray solid 2px">Parts</h3>
+    
+       <div class="" id="sidenow"><a href="../240Z.html" id="sidetitlenow" style="color:white;">Datsun 240Z</a>
+            <div class="dropdownimg-content-now" >
+              <a href="240z-exterior.html" class="anow" >&#160;Exterior</a>
+              <a href="240z-interior.html" class="anow">&#160;Interior</a>
+              <a href="240z-others.html" class="anow">&#160;Others</a>
+              <!-- <a href="" class="anow">&#160;New Item <img src="../../pic/fun.gif" style="width:20%"></a>
+              <a href="" class="anow">&#160;New Item <img src="../../pic/new.gif" style="width:20%"></a>
+              <a href="" class="anow"><img src="../../pic/new.gif" style="width:40%">Item</a> -->
+              <a href="240z-new.html" class="anow" id="newitem">New Item
+                <img class="retatenewitem" src="../../pic/new2.gif" id="newitemplace"></a>
+
+            </div>
+        </div>
+        
+        <div class="sideres" ><a href="../510.html" class="textsidebar" id="sidetitlefull"  >Datsun 510</a>
+
+      </div>
+
+<div class="sideres"><a href="../vwT2.html" class="textsidebar" id="sidetitlefull" >VW T2 Bay bus</a>
+
+</div>
+
+  <div class="sideres"><a href="../VWT3.html" class="textsidebar" id="sidetitlefull" >VW T25/T3 bus (Vanagon)</a>
+
+</div>
+
+<div class="sideres"><a href="../w113.html" class="textsidebar" id="sidetitlefull" >Mercedes-Benz W113</a>
+
+</div>
+
+<div class="sideres"><a href="../356.html" class="textsidebar" id="sidetitlefull" >Porsche 356</a>
+
+</div>
+
+<div class="sideres"><a href="../911.html" class="textsidebar" id="sidetitlefull" >Porsche 911</a>
+<!-- <div class="dropdownimg-contenttext" >
+  <a href="">Exterior</a>
+        <a href="">Interior</a>
+        <a href="">Others</a>
+        <a href="">New Item</a>
+</div> -->
+</div>
+
+</div>
+  <!-- side bar large end-->
+                              <!-- main content -->
+<div class="columnmain80"><h1 class="modeltitle" style="font-family: 'Merienda One'; font-size:30px" >Datsun 240z/260z/280z Interior</h1></div>
+
+
+
+
+
+<!-- email -->
+<div class="row">
+
+</div>
+<!-- email end -->
+
+<!-- footer -->
+<div class="row" id="smcfooter" >
+  <div class="column33foot" style="">
+      <img src="../../pic/smclogo.png" style="width:50%">
+  </div>
+  <div class="column33foot">
+    <h4 class="whitep"><strong>Quick Contact</strong></h4>  
+    <br>
+    <p class="whitep">Email:
+      amazon@
+      showmeclassicparts
+      .com</p>
+    <br>
+    <p class="whitep">Phone:1-314-737-0535</p>
+  </div>
+  <div class="column33foot"id="footershop">
+      <h4 class="whitep"><strong>Shop Categories</strong></h4>  
+      <p class="whitep">Datsun 240z</p><br>
+      <p class="whitep">Datsun 510</p><br>
+      <p class="whitep">Porsche 356 911 912</p><br>
+      <p class="whitep">VW T2 Bay / T3 Vanagen</p><br>
+      <p class="whitep">Mercedes Benz W113</p>
+  </div>
+</div>
+<!-- footer end-->
+
+<!-- <script src="../../rwdImageMaps.js"></script> -->
+<script src="../../logic.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script src="../../jquery.rwdImageMaps.min.js"></script>
+<script>
+  $(document).ready(function(e) {
+    $('img[usemap]').rwdImageMaps();
+    
+    // $('area').on('click', function() {
+    //   alert($(this).attr('alt') + ' clicked');
+    // });
+  });
+  </script>
+</body>
+</html>
