@@ -1278,6 +1278,7 @@ border:0;
 }
 #showbutton{
     display:none;
+    width:100px !important; 
     /* position: absolute;
     top:10px;
     left:0; */
@@ -1289,7 +1290,7 @@ border:0;
 }
 #menubuttonphone{
     padding:5px 12px 5px 12px;
-    font-size:20px;
+    font-size:18px;
 }
 /* #showbutton button{
     background-color: rgb(223, 161, 81);
@@ -1833,6 +1834,7 @@ opacity: 0.8;
   
     #showbutton{
         display:block;
+        /* width:500px; */
     }
     #shownavibutton{
         display:block;
@@ -1914,7 +1916,7 @@ opacity: 0.8;
 
     }
     .logotop{
-        margin-left:15%;
+        margin-left:5%;
     }
     .popdetilimg{
         margin-left:10%;
