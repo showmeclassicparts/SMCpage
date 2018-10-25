@@ -1126,6 +1126,7 @@ transition: 0.5s;
     position: relative;
     background-color: white;
     border-radius: 10px;
+    text-align: center;
     /* box-shadow: 5px 10px #888888; */
 }
 .column40R:hover{
@@ -1142,9 +1143,10 @@ transition: 0.5s;
     margin-bottom:3%; 
     margin-left:5%;
     float: left;
-    position: relative;
     background-color: white;
     border-radius: 10px;
+    position: relative;
+    text-align: center;
 
     /* box-shadow: 5px 10px #888888; */
 }
@@ -1242,8 +1244,8 @@ color:white;
 .modelimg{
 width:60%;
 opacity:0.5 ;
-margin-left: 20%;
-margin-right: auto;
+/* margin-left: 20%; */
+/* margin-right: auto; */
 
 
 }
@@ -1252,8 +1254,15 @@ margin-right: auto;
 }
 .textcenter{
     position: absolute;
+    font-weight: bold;
+    font-family: "Merienda One";
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* text-align: center;
+    position: absolute;
     top: 30%;
-    left: 25%;
+    left:   25%; */
     /* transform: translate(-50%, -50%); */
     color:brown;
     font-size: 3vw;
@@ -1791,6 +1800,10 @@ opacity: 0.8;
         display:block;
         
      }
+     .textcenter{
+        /* top:25%; */
+        font-size:28px;
+    }
     .topborder{
         border-top:1px solid;
         position: absolute;
@@ -1914,6 +1927,13 @@ opacity: 0.8;
 @media (max-width:570px){
     body{
 
+    }
+    .modeldetail{
+        font-size: 15px !important;
+    }
+    .textcenter{
+        top:25%;
+        font-size:20px;
     }
     .logotop{
         margin-left:5%;
