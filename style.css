@@ -1243,7 +1243,7 @@ color:white;
 }
 .modelimg{
 width:60%;
-opacity:0.5 ;
+opacity:0.3 ;
 /* margin-left: 20%; */
 /* margin-right: auto; */
 
@@ -1265,8 +1265,9 @@ opacity:0.5 ;
     left:   25%; */
     /* transform: translate(-50%, -50%); */
     color:brown;
-    font-size: 3vw;
+    font-size: 2.6vw;
 }
+
 #showsidebar{
 display:none;
 border:0;

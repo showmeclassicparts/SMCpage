@@ -444,6 +444,10 @@ function closezoom(){
     document.getElementById("bigimgzoom").style.display="none";
 
 }
+// document.addEventListener('DOMContentLoaded', init, false);
+// document.getElementById("bigimgzoom").addEventListener("click", function(){
+//     closezoom();
+// });
 // product detail page imgfunction END
 
 
