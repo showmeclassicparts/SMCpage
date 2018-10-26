@@ -969,6 +969,9 @@ transition: 0.5s;
 .redbold{
     font-family: 'Merienda One'; 
     font-size:15px;
+    text-align: left;
+}
+#redcenter{
     text-align: center;
 }
 .itemtitle{
