@@ -957,6 +957,20 @@ transition: 0.5s;
     position: relative;
     /* padding:0; */
 }
+.modeldescribtion{
+    font-family: 'Merienda One';
+    font-size:15px;
+    text-align: center;
+    font-weight: bold;  
+}
+#noMinHeight{
+    min-height: 0px;
+}
+.redbold{
+    font-family: 'Merienda One'; 
+    font-size:15px;
+    text-align: center;
+}
 .itemtitle{
     font-family: 'Merienda One'; 
     font-size:30px;
