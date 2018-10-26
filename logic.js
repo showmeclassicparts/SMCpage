@@ -492,3 +492,10 @@ $(document).on('ready', function() {
 // slider end
 
 var menubuttonphone = document.getElementById("menubuttonphone").innerText="asd";
+
+function working(){
+alert("Sorry, We are still working on this function!")
+}
+window.onload = function() {
+    document.getElementById("VW5802Price").innerHTML="$9999"
+    }

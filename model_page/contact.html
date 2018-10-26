@@ -432,19 +432,20 @@ Show Me Classic Parts<br><br>
 <strong>Quick Contact Form</strong></h2>
 <div class="modeldetail" style="text-align:left;font-size: 20px;">
 
-  <form action="/action_page.php">
+  <form action="mailto:amazon@showmeclassicparts.com" method="post" enctype="text/plain">
   Your Name:  <br>
   <input name="username" type="text" style="margin-bottom:2%;width:100%">
   <br>
   Email:  <br>
-  <input name="useremai" type="text" style="margin-bottom:2%;width:100%">
+  <input name="useremail" type="text" style="margin-bottom:2%;width:100%">
   <br>
   Phone:  <br>
-  <input name="useremai" type="text" style="margin-bottom:2%;width:100%">
+  <input name="userPhoneNumber" type="text" style="margin-bottom:2%;width:100%">
   <br>
   Message:  <br>
   <input name="userquestion" type="text" style="margin-bottom:2%;width:100%">  <br>
-  <input type="submit" value="Submit" style="margin-bottom:2%;width:50%">
+  <input type="submit" value="Submit" style="margin-bottom:2%;width:50%" onclick="working()">
+  <input type="reset" value="Reset" style="margin-bottom:2%;width:30%">
 </form>
 
 </div>
