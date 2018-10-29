@@ -5,10 +5,18 @@ body{
     /* min-width:505px */
     
 }
-
+#disabledlink{
+    pointer-events: none;
+}
 .slider {
     width: 50%;
     margin: 100px auto;
+}
+.smalltitle{
+    font-size: 30px;
+    text-align: center;
+    font-family: "Merienda One";
+
 }
 .submenu{
     position: relative;
@@ -1015,11 +1023,11 @@ transition: 0.5s;
 
 }
 #porschemodelsseperate{
-    width:40%;
+    width:47%;
     float:left;
 }
 #porschemodelsseperate2{
-    width:40%;
+    width:47%;
     float:right;
 }
 .porschemodeltext{
@@ -2053,6 +2061,9 @@ opacity: 0.8;
 @media (max-width:570px){
     body{
 
+    }
+    .smalltitle{
+        font-size:15px;
     }
     .porschemodels{
         font-size:15px;
