@@ -61,18 +61,35 @@ function side2back(){
 }
 
 
-function side3open(){
+// function side3open(){
+//     document.getElementById("showsidebar").style.display="none";
+//     document.getElementById("side356").style.display="block";
+// }
+// function side3close(){
+//     document.getElementById("showsidebar").style.display="none";
+//     document.getElementById("side356").style.display="none";
+//     document.getElementById("showsidebarres").style.display="none";
+// }
+// function side3back(){
+//     document.getElementById("showsidebar").style.display="block";
+//     document.getElementById("side356").style.display="none";
+// }
+function sidetoopen(x){
+    // console.log("sideto"+x)
     document.getElementById("showsidebar").style.display="none";
-    document.getElementById("side356").style.display="block";
+    // document.getElementById("side911").style.display="none";
+    document.getElementById("slide"+x).style.display="block";
+    
 }
-function side3close(){
+function sidetoclose(x){
     document.getElementById("showsidebar").style.display="none";
-    document.getElementById("side356").style.display="none";
-    document.getElementById("showsidebarres").style.display="none";
+    document.getElementById("slide"+x).style.display="none";
+    closeall();
+    // document.getElementById("showsidebarres").style.display="none";
 }
-function side3back(){
-    document.getElementById("showsidebar").style.display="block";
-    document.getElementById("side356").style.display="none";
+function sidetoback(x){
+    // document.getElementById("showsidebar").style.display="block";
+    document.getElementById("slide"+x).style.display="none";
 }
 
 function side4open(){
@@ -148,12 +165,15 @@ function closeall(){
     document.getElementById("showsidebar").style.display="none";
     document.getElementById("side240z").style.display="none";
     document.getElementById("side510").style.display="none";
-    document.getElementById("side356").style.display="none";
+    // document.getElementById("side356").style.display="none";
 document.getElementById("side911").style.display="none";
 document.getElementById("sidevwt25").style.display="none";
 document.getElementById("sidew113").style.display="none";
 document.getElementById("sidevwt2bay").style.display="none";
-
+document.getElementById("slide911").style.display="none";
+document.getElementById("slide356").style.display="none";
+    document.getElementById("slideBoxster").style.display="none";
+    document.getElementById("slidePanamera").style.display="none";
 
 }
 // var right=document.getElementsByClassName('detailright').style.height;

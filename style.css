@@ -10,7 +10,14 @@ body{
     width: 50%;
     margin: 100px auto;
 }
-
+.submenu{
+    position: relative;
+    margin:0;
+}
+.submenu2{
+    position: relative;
+    margin:0;
+}
 .slick-slide {
   margin: 0px 10px;
 }
@@ -509,6 +516,7 @@ right:0
     font-size: 15px;
     color:black;
     font-family: "Merienda One";
+    cursor: pointer;
     /* line-height: 20px; */
     /* font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; */
 }
@@ -655,6 +663,12 @@ width:15%;
 
 #sidetitle2{
     width:100%;
+    font-size:17px;
+    position: relative;
+}
+#sidetitle2-2{
+    width:70%;
+    float:left;
     font-size:17px;
     position: relative;
 }
@@ -820,13 +834,40 @@ width:15%;
     top:10%;
     background-color: #f9f9f9;
     width:auto;
-    font-size:2vw;
+    font-size:1.5vw;
     font-family: "Merienda One";
     /* font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; */
     margin:0;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
-    
+}
+.dropdownimg-content2{
+    display: none;
+    position: absolute;
+    left :100%;
+    top:0%;
+    background-color: #f9f9f9;
+    /* width:auto; */
+    font-size:1.5vw;
+    font-family: "Merienda One";
+    /* font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; */
+    margin:0;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 2;
+}
+.dropdownimg-content2-2{
+    display: none;
+    position: absolute;
+    left :100%;
+    top:0%;
+    background-color: #f9f9f9;
+    /* width:auto; */
+    font-size:1.5vw;
+    font-family: "Merienda One";
+    /* font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; */
+    margin:0;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 2;
 }
 .dropdownimg-contenttext {
     display: none;
@@ -865,6 +906,9 @@ transition: 0.5s;
 }
 .bottomborder{
     border-bottom: 0.1vw solid gray;
+    /* position: relative; */
+    /* display: inline-block; */
+    
 }
 
 
@@ -878,8 +922,20 @@ transition: 0.5s;
     color: black;
     padding: 12px 16px;
     text-decoration: none;
-    display: block;
-    
+    display: block;  
+}
+.dropdownimg-content2 a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;  
+}
+}
+.dropdownimg-content2-2 a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;  
 }
 .detailmiddleline{
     width:100%;
@@ -894,6 +950,9 @@ transition: 0.5s;
 
 .dropdown-content a:hover {background-color: #f1f1f1}
 .dropdownimg-content a:hover {background-color: #c7c7c7}
+.dropdownimg-content2 a:hover {background-color: #c7c7c7}
+.dropdownimg-content2-2 a:hover {background-color: #c7c7c7}
+
 .dropdown:hover .dropdown-content {
     display: block;
 }
@@ -908,6 +967,13 @@ transition: 0.5s;
     display:block;
 }
 .dropdownimg:hover .dropdownimg-content {
+    display: block;
+}
+
+.submenu:hover .dropdownimg-content2{
+    display: block;
+}
+.submenu2:hover .dropdownimg-content2-2{
     display: block;
 }
 .textsidebar:hover .dropdownimg-content{
@@ -933,6 +999,44 @@ transition: 0.5s;
     height: auto; 
     background-color: #f2f2f2
 }
+.porschemodels{
+    margin:1%;
+    background-color:rgb(212, 211, 211);
+    border-radius: 10px;
+    width:100%;
+    height:100px;
+    text-align: center;
+    font-family: "Merienda One";
+    font-size:28px;
+    color:rgb(46, 32, 32);
+    position:relative;
+    color:brown;
+    float: left;
+
+}
+#porschemodelsseperate{
+    width:40%;
+    float:left;
+}
+#porschemodelsseperate2{
+    width:40%;
+    float:right;
+}
+.porschemodeltext{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.porschemodels:hover{
+    background-color:lightgreen; 
+    transition: 1s;
+}
+.porschemodels:active{
+    background-color:rgb(104, 231, 104); 
+    transition: 0s;
+}
+
 .columnsidebar20 {
     float: left;
     width: 20%;
@@ -1269,6 +1373,7 @@ opacity:0.3 ;
 .modelimg:hover{
     opacity: 0.8;
 }
+
 .textcenter{
     position: absolute;
     font-weight: bold;
@@ -1715,6 +1820,9 @@ opacity: 0.8;
         font-size: 18px;
         /* margin-top:0 */
     }
+    .porschemodels{
+        font-size:20px;
+    }
     .detail-addtocart{
         width:60px;
         height:30px;
@@ -1945,6 +2053,9 @@ opacity: 0.8;
 @media (max-width:570px){
     body{
 
+    }
+    .porschemodels{
+        font-size:15px;
     }
     .modeldetail{
         font-size: 15px !important;
