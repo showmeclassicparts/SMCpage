@@ -23,7 +23,7 @@
 
   <link rel="stylesheet" type="text/css" href="../../../style.css"><!-- css that I changed -->
 
-  <title>510</title>
+  <title id="itemmodel">510</title>
 </head>
 
 <body>
@@ -43,7 +43,7 @@
         <button class="popbutton" id="menubuttonphone" >☰&nbsp;Menu</button> </div>
     <!-- hideside open  end-->
     <a class="cartmenu" ><img src="../../../pic/cartmenu.png" style="width:100%"></a>
-    
+    <button id="makenewitem" onclick="makenewitem()">Make new Item!</button>
       <!-- <a href="../index.html" name="top" class="logotop0"><img src="pic/SMCLogo.jpg" style="float:left;width:20%;height:20%"></a> -->
       <a href="../../../index.html" name="top" class="logotop"><img src="../../../pic/SMC5.png" style="width:100%;"></a>
     
@@ -777,7 +777,19 @@
       // });
     });
   </script>
-
+<script>
+    function makenewitem() {
+        var person = prompt("Please enter product model", "");
+        // var person2 = prompt("Please enter your name", "Harry Potter");
+        if (person != null) {
+            document.getElementById("itemmodel").innerHTML =
+            person;
+            // document.getElementById("demo2").innerHTML =
+            // "Hello " + person2 + "! How are you today?";
+        }
+    }
+    </script>
+    
 
 </body>
 
