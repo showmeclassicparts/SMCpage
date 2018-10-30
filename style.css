@@ -1029,6 +1029,11 @@ transition: 0.5s;
 #porschemodelsseperate2{
     width:47%;
     float:right;
+    position: relative;
+}
+#model911s{
+    height:auto;
+    width:60%;
 }
 .porschemodeltext{
     position: absolute;

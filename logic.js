@@ -422,7 +422,7 @@ function loader(_success) {
         t = setInterval(function() {
             w = w + 1;
             inner.textContent = w+'%';
-            if (w === 100){
+            if (w === 99){
                 obj.classList.remove('show');
                 page.classList.add('show');
                 clearInterval(t);
