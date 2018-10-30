@@ -1034,6 +1034,10 @@ transition: 0.5s;
 #model911s{
     height:auto;
     width:60%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 .porschemodeltext{
     position: absolute;
@@ -1927,6 +1931,10 @@ opacity: 0.8;
     #bigimgzoom{
         width:80%
     }
+    #model911s{
+        /* height:90%; */
+        width:70%;
+    }
     .textinitempage{
         padding-left:10%
     }
@@ -2069,6 +2077,9 @@ opacity: 0.8;
     }
     .smalltitle{
         font-size:15px;
+    }
+    #model911s{
+        width:90%;
     }
     .porschemodels{
         font-size:15px;
