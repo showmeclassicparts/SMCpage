@@ -8,6 +8,20 @@ body{
 table td{
     padding-bottom:1%
 }
+.slidertouchout{
+    margin:0;
+    width:100%;
+    height:200px;
+    position: relative;
+}
+#slidertouch{
+    width:80%;
+    margin:0;
+    position: absolute;
+    left:10%
+
+}
+
 #disabledlink{
     pointer-events: none;
 }
@@ -1933,6 +1947,9 @@ opacity: 0.8;
     body{
         margin-top:3%;
     }
+    .slidertouchout{
+    height:50vw;    
+    }
     #noMinHeight{
         padding-left:5%;
         padding-right:5%;
@@ -2088,6 +2105,9 @@ opacity: 0.8;
     table td{
         padding-bottom:3%
     }
+    .slidertouchout{
+        height:280px;    
+        }
     .smalltitle{
         font-size:15px;
     }

@@ -21,7 +21,9 @@
     <link rel="icon" href="pic/pagelogo.png">
 
     <!-- <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet"> -->
-
+  
+    <link rel='stylesheet' href='slick.css'>
+    <link rel='stylesheet' href='slick-theme.min.css'>
     <link rel="stylesheet" type="text/css" href="style.css"><!-- css that I changed -->
     <title>SMC demo</title>
 </head>
@@ -608,7 +610,7 @@
 
 
   <!-- slides img -->
-    <div class="columnmain" style="">            
+    <div class="columnmain" style="">    
                 <div id="myCarousel" class="carousel slide" data-ride="carousel" style="margin:2%" data-interval="20000">
                   <!-- Indicators -->
                   <ol class="carousel-indicators" >
@@ -648,128 +650,99 @@
 <!-- new Item slide -->
 <!-- detail contents in middle for newItem (in footer) -->
 
-<div class="columnmain" style="background-color: white;">            
-    <div id="myCarousel2" class="carousel slide" data-ride="carousel" style="margin:0" data-interval="30000">
-      <!-- Indicators -->
-      <ol class="carousel-indicators" >
-        <li data-target="#myCarousel2" data-slide-to="0" class="active"style="background-color : lightblue"></li>
-        <li data-target="#myCarousel2" data-slide-to="1"style="background-color: lightblue"></li>
-        
-      </ol>
-  
-      <!-- Wrapper for slides -->
-      <div class="carousel-inner" style="background-color: white ;margin:0" >
-        <!-- first area -->
-        <div class="item active" style="margin:0">
-          <div class="" style="margin:0">
-            <div class="column33" >
-                <!-- <div class="row50"> -->
-                <a href="model_page/240z/items/DS5101.html"> <img class="newitemimg" src="pic/DS5101.png" alt="control arm" style="width:100%;">
-                  <div class="seemoredetail" >
-                      <a class="detaillink" onclick="detailonmiddle(0)">
-                        <img class="plusdetail" src="pic/info.png">
-                        <div class="detailtooltip" >Detail</div> 
-                      </a>   
-                    </div>
-                </a><p>Datsun 240z Front Right Side Fender<br></p><br>
-                <!-- </div> -->
-            </div>
+<div class="columnmain" style="background-color: white;margin:0;">      
+  <div class="slidertouchout">
+    
+  <section class="variable slider" id="slidertouch" data-ride="carousel"  data-interval="20000">
 
-            <div class="column33" >
-              <a href="model_page/240z/items/DS5102.html"><img class="newitemimg" src="pic/DS5102.png" alt="control arm" style="width:100%;">
-                <div class="seemoredetail" style="float:right">
-                    
-                    <a class="detaillink" onclick="detailonmiddle(1)">
-                        <img class="plusdetail" src="pic/info.png">
-                        <div class="detailtooltip" >Detail</div> 
-                        
-                      </a>
-                  </div>
+    <div class="column33" id="touchslideritems" >
+      <!-- <div class="row50"> -->
+      <a href="model_page/240z/items/DS5101.html"> <img class="newitemimg" src="pic/DS5101.png" alt="control arm" style="width:100%;">
+        <div class="seemoredetail" >
+            <a class="detaillink" onclick="detailonmiddle(0)">
+              <img class="plusdetail" src="pic/info.png">
+              <div class="detailtooltip" >Detail</div> 
+            </a>   
+          </div>
+      </a><p>Datsun 240z Front Right Side Fender<br></p><br>
+      <!-- </div> -->
+  </div>
+
+  <div class="column33" id="touchslideritems" >
+    <a href="model_page/240z/items/DS5102.html"><img class="newitemimg" src="pic/DS5102.png" alt="control arm" style="width:100%;">
+      <div class="seemoredetail" style="float:right">
+          
+          <a class="detaillink" onclick="detailonmiddle(1)">
+              <img class="plusdetail" src="pic/info.png">
+              <div class="detailtooltip" >Detail</div> 
+              
+            </a>
+        </div>
+    </a>
+    <p>Datsun 240z Front Left Side Fender<br>
+    </p><br> </div>
+
+    <div class="column33" >
+      <a href="model_page/240z/items/DS5301.html">
+        <img class="newitemimg" src="pic/DS5301.png" alt="control arm" style="width:100%;">
+        <div class="seemoredetail" style="float:right">
+            <a class="detaillink" onclick="detailonmiddle(2)">
+                <img class="plusdetail" src="pic/info.png">
+                <div class="detailtooltip" >Detail</div> 
               </a>
-              <p>Datsun 240z Front Left Side Fender<br>
-              </p><br> </div>
-
-              <div class="column33" >
-                  <a href="model_page/240z/items/DS5301.html">
-                    <img class="newitemimg" src="pic/DS5301.png" alt="control arm" style="width:100%;">
-                    <div class="seemoredetail" style="float:right">
-                        <a class="detaillink" onclick="detailonmiddle(2)">
-                            <img class="plusdetail" src="pic/info.png">
-                            <div class="detailtooltip" >Detail</div> 
-                          </a>
-                      </div>
-                  </a>
-                  <p>Datsun 240z Front Steel Hood<br><br>
-                </p><br> <br></div>
-            </div>
-        </div>
-        <!-- first area end-->
-
-        <!-- second area -->
-        <div class="item" style="margin:0">
-            <div class="" style="margin:0">
-
-              <div class="column33" >
-                <a href="model_page/240z/items/DS5301.html">
-                  <img class="newitemimg" src="pic/DS5301.png" alt="control arm" style="width:100%;">
-                  <div class="seemoredetail" style="float:right">
-                      <a class="detaillink" onclick="detailonmiddle(2)">
-                          <img class="plusdetail" src="pic/info.png">
-                          <div class="detailtooltip" >Detail</div> 
-                        </a>
-                    </div>
-                </a>
-                <p>Datsun 240z Front Steel Hood<br><br>
-              </p><br> <br></div>
-
-                
-                    <div class="column33" >
-                      <a href="model_page/240z/items/DS5801.html"><img class="newitemimg" src="pic/DS5801.png" alt="control arm" style="width:100%;">
-                        <div class="seemoredetail" style="float:right">
-                            
-                            <a class="detaillink" onclick="detailonmiddle(4)">
-                                <img class="plusdetail" src="pic/info.png">
-                                <div class="detailtooltip" >Detail</div> 
-                                
-                              </a>
-                          </div>
-                      </a>
-                      <p>Datsun 240z Front Steel Chrome Bumper<br>
-                      </p><br> </div>
-
-                    
-                    <div class="column33" >
-                      <a href="model_page/240z/items/DS7901.html"><img class="newitemimg" src="pic/DS7901.png" alt="control arm" style="width:100%;">
-                        <div class="seemoredetail" style="float:right">
-                            
-                            <a class="detaillink" onclick="detailonmiddle(5)">
-                                <img class="plusdetail" src="pic/info.png">
-                                <div class="detailtooltip" >Detail</div> 
-                                
-                              </a>
-                          </div>
-                      </a>
-                      <p>Datsun 240z Front Steel Chrome Bumper<br>
-                      </p><br><br></div>
-
-
-
-                </div>  
-        </div>
-        <!-- second area -->
-
-      </div>
-      <!-- left and right -->
-      <!-- <a class="left carousel-control" href="#myCarousel2" data-slide="prev" style="width:10%;height:20%;margin-left:2%;top:80%;left:20%">
-        <span class="glyphicon glyphicon-chevron-left"></span>
-        <span class="sr-only">Previous</span>
+          </div>
       </a>
-      <a class="right carousel-control" href="#myCarousel2" data-slide="next" style="width:10%;height:20%;top:80%;right:20%">
-        <span class="glyphicon glyphicon-chevron-right"></span>
-        <span class="sr-only">Next</span>
-      </a> -->
-      <!-- left and right end -->
-    </div>  
+      <p>Datsun 240z Front Steel Hood<br><br>
+    </p><br> <br></div>
+    <div class="column33" >
+      <a href="model_page/240z/items/DS5302.html"><img class="newitemimg" src="pic/DS5302.png" alt="control arm" style="width:100%;">
+        <div class="seemoredetail" style="float:right">
+            
+            <a class="detaillink" onclick="detailonmiddle(3)">
+                <img class="plusdetail" src="pic/info.png">
+                <div class="detailtooltip" >Detail</div> 
+                
+              </a>
+          </div>
+      </a>
+      <p>Datsun 240z Front Steel Hood<br>
+      </p><br> </div>
+
+      
+          <div class="column33" id="touchslideritems" >
+            <a href="model_page/240z/items/DS5801.html"><img class="newitemimg" src="pic/DS5801.png" alt="control arm" style="width:100%;">
+              <div class="seemoredetail" style="float:right">
+                  
+                  <a class="detaillink" onclick="detailonmiddle(4)">
+                      <img class="plusdetail" src="pic/info.png">
+                      <div class="detailtooltip" >Detail</div> 
+                      
+                    </a>
+                </div>
+            </a>
+            <p>Datsun 240z Front Steel Chrome Bumper<br>
+            </p><br> </div>
+
+          
+          <div class="column33" id="touchslideritems" >
+            <a href="model_page/240z/items/DS7901.html"><img class="newitemimg" src="pic/DS7901.png" alt="control arm" style="width:100%;">
+              <div class="seemoredetail" style="float:right">
+                  
+                  <a class="detaillink" onclick="detailonmiddle(5)">
+                      <img class="plusdetail" src="pic/info.png">
+                      <div class="detailtooltip" >Detail</div> 
+                      
+                    </a>
+                </div>
+            </a>
+            <p>Datsun 240z Front Steel Chrome Bumper<br>
+            </p><br><br></div>
+  </section>
+</div>
+
+
+
+
 </div>  
   <!-- end new item slide -->
 </div>
@@ -904,7 +877,11 @@
 <!-- detail contents in middle for new item end -->
 
 
+<script src='jquery.min.js'></script>
+<script src='slick.js'></script>
+
 <script src="logic.js"></script>
 
+<script src="slide.js"></script>
 </body>
 </html>
