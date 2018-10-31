@@ -5,6 +5,9 @@ body{
     /* min-width:505px */
     
 }
+table td{
+    padding-bottom:1%
+}
 #disabledlink{
     pointer-events: none;
 }
@@ -1928,6 +1931,10 @@ opacity: 0.8;
     body{
         margin-top:3%;
     }
+    #noMinHeight{
+        padding-left:5%;
+        padding-right:5%;
+    }
     #bigimgzoom{
         width:80%
     }
@@ -2075,6 +2082,10 @@ opacity: 0.8;
     body{
 
     }
+    
+    table td{
+        padding-bottom:3%
+    }
     .smalltitle{
         font-size:15px;
     }
@@ -2145,6 +2156,7 @@ opacity: 0.8;
     }
     .seealldetail{
         font-size:12px;
+        margin-bottom: 50px;
     }
     .topborder{
         border-top:1px solid;
