@@ -1,0 +1,881 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link href='https://fonts.googleapis.com/css?family=Oxygen' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Merienda One' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Sail' rel='stylesheet'>
+    <link rel="icon" href="../../pic/pagelogo.png">
+
+    <link rel="stylesheet" type="text/css" href="../../style.css"><!-- css that I changed -->
+
+    <title>W113 exterior</title>
+</head>
+<body>
+
+    <!-- <div style="opacity:0.01;">Icons made by <a href="https://www.flaticon.com/authors/zurb" title="Zurb">Zurb</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div> -->
+<a class="backup_arrow" href="#top"><p style="font-size:2%;text-align: center">Top</p><img src="../../pic/arrow1.png" style="width:100%"></a>
+
+  <div class="container">
+<!-- top part header -->
+<div class="row" style="position:relative;margin:0;height:50">
+
+  <!-- hideside open  -->
+  <div class="showsidebar impactfont" id="showbutton" onclick="side_open()" style="width:60px;">
+      <button class="popbutton" id="menubuttonphone" >☰&nbsp;Menu</button> </div>
+  <!-- hideside open  end-->
+  <a class="cartmenu" ><img src="../../pic/cartmenu.png" style="width:100%"></a>
+  
+    <!-- <a href="../index.html" name="top" class="logotop0"><img src="pic/SMCLogo.jpg" style="float:left;width:20%;height:20%"></a> -->
+    <a href="../../index.html" name="top" class="logotop"><img src="../../pic/SMC5.png" style="width:100%;"></a>
+  
+    <!-- input on right top -->
+    <!-- <div class="welcometag"><marquee onMouseOver="this.stop()" onMouseOut="this.start()" height="100%" direction="up" scrolldelay="4" scrollamount="1" ><b>Welcome to Show Me Classic Parts <br> Bienvenido a Show Me Classic Parts <br> ようこそShow Me Classic Partsへ！<br> 歡迎光臨 </b></marquee></div> -->
+    <div  id="signin"><button class="popbutton"> Signin</button></div>  
+      
+  
+    <!-- input on right top end-->
+    <!-- navibar -->
+    <div  class="navbar" >
+        <a href="../../index.html"><button class="dropbtn" id="mainpagecolor">Main Page</button></a>
+        <a href="../contact.html"><button class="dropbtn"id="contactuscolor" >Contact Us</button></a>
+        <!-- used to be dropbtn -->
+        <!-- <a href=""><button class="pagebutton">Product</button></a> -->
+        <div>
+        <!-- <input class="searchbar" type="text" placeholder="Search.." style="float: right">
+        <input type="image" name="submit" src="pic/searchicon.png" border="0" alt="Submit" style="width: 29px;float:right;" /> -->
+        <form action="http://google.com/search?"+q.value>
+          <!-- <button type="submit" class="searchbarsubmit" ></button> -->
+          <input class="searchbarsubmit" type="image" src="../../pic/searchicon4.png"  alt="Submit Form" />
+          <input class="searchbar" type="text" placeholder="Search On Google.." name="q">
+  
+        </form>
+        </div>
+    </div>
+  
+          <!-- navibar -->
+       
+    </div>
+  
+    <div class="row" id="searchbarMobile"style="position:relative;margin:0;">
+        <form action="http://google.com/search?"+q.value>
+          <!-- <button type="submit" class="searchbarsubmit" >S</button> -->
+          <input class="searchbarsubmit" type="image" src="../../pic/searchicon4.png"  alt="Submit Form" />
+          <input class="searchbarphone" type="text" placeholder="Search On Google.." name="q">
+  
+        </form>
+    </div>
+      <!-- top part header end-->
+
+<!--sidebar on small screen  -->
+
+
+<!-- side bar hide -->
+<!-- closeplace -->
+<div  onclick="closeall()"id="showsidebarres">
+  </div>
+  <!-- close place -->
+<div class="columnsidebar20pop" style="margin:0; "id="showsidebar">
+  
+    
+    <div  onclick="closeall()()" class="sideres textsidebar" id="closemark"><p>&times;</p></div>
+    <a href="../../index.html"><div class="hidesidebuttontop fontstyle"id="textbold" >&nbsp;&nbsp;Home</div> </a>
+    <a href=""><div class="hidesidebuttontop fontstyle" id="textbold">&nbsp;&nbsp;Account</div> </a>
+    <a href=""><div class="hidesidebuttontop fontstyle" id="hidesidebuttontop_sub" >&nbsp;&nbsp;&nbsp;&nbsp;My Cart</div> </a>
+    <a href=""><div class="hidesidebuttontop fontstyle" id="hidesidebuttontop_sub" >&nbsp;&nbsp;&nbsp;&nbsp;Login</div> </a>
+   
+    
+  <h3 class="fonttitlestyle"id="textbold">&nbsp;&nbsp;Parts Models</h3>
+
+  <div class="sideres" >
+  <a href="../240z.html" class="textsidebar" id="sidetitle" style="" >Datsun 240Z</a>
+  <p onclick="side1open()" class="textsidebar" id="arrowright" >&gt;</p>
+  </div>
+        
+  <div class="sideres" ><a href="../510.html" class="textsidebar" id="sidetitle" style="width:70%;float: left" >Datsun 510</a>
+    <p onclick="side2open()" class="textsidebar" id="arrowright" >&gt;</p>
+
+  </div>
+  <div class="sideres" id="specialside" ><a href="../vwT2.html" class="textsidebar" id="sidetitle"style="width:70%;float: left;" >VW T2 Bay Bus</a>
+    <p onclick="side7open()" class="textsidebar" id="arrowright"  >&gt;</p>
+
+  </div>
+
+  <div class="sideres" id="specialside" ><a href="../VWT3.html" class="textsidebar" id="sidetitle"style="width:70%;float: left;" >VW T25/T3 bus (Vanagon)</a>
+    <p onclick="side5open()" class="textsidebar" id="arrowright"  >&gt;</p>
+
+  </div>
+
+  <div class="sideres"><a href="../W113.html" class="textsidebar" id="sidetitle" style="width:70%;float: left">Mercedes-Benz W113</a>
+    <p onclick="side6open()" class="textsidebar" id="arrowright" >&gt;</p>
+  </div>
+
+
+  <div class="sideres"><a href="../Porsche.html" class="textsidebar" id="sidetitle" style="width:70%;float: left">Porsche</a>
+    <p onclick="side4open()" class="textsidebar" id="arrowright" >&gt;</p>
+
+  </div>
+
+  <div style="width:100%;margin:0;margin-top:20px;border-top:2px solid"> </div> 
+  <h3 class="fonttitlestyle" style="border:none">&nbsp;&nbsp;Other Reference</h3>
+  <a href="../contact.html"><div class="hidesidebuttontop fontstyle" id="hidesidebuttontop_sub" >&nbsp;&nbsp;&nbsp;&nbsp;Contact Us</div> </a>
+  <a href=""><div class="hidesidebuttontop fontstyle" id="hidesidebuttontop_sub" >&nbsp;&nbsp;&nbsp;&nbsp;Our Facebook</div> </a>
+
+
+
+ </div> 
+          <!-- side1 -->
+<div class="columnsidebar20pop" style="margin:0; "id="side240z">
+  <div  onclick="closeall()" class="sideres textsidebar" id="closemark"><p>&times;</p></div>
+  <a href="../../index.html"><div class="hidesidebuttontop fontstyle"id="textbold" >&nbsp;&nbsp;Home</div> </a>
+  <a href=""><div class="hidesidebuttontop fontstyle" id="textbold">&nbsp;&nbsp;Account</div> </a>
+  <a href=""><div class="hidesidebuttontop fontstyle" id="hidesidebuttontop_sub" >&nbsp;&nbsp;&nbsp;&nbsp;My Cart</div> </a>
+  <a href=""><div class="hidesidebuttontop fontstyle" id="hidesidebuttontop_sub" >&nbsp;&nbsp;&nbsp;&nbsp;Login</div> </a>
+
+  
+<h3 class="fonttitlestyle"id="textbold">&nbsp;&nbsp;Parts Models</h3>
+
+    <div class="sideres" >
+      <p onclick="side1back()" class="textsidebar" id="backside"    > &lt; Back</p>
+      <!-- <div class="sideres" ><p  class="textsidebar" style="text-align:center;font-size:20px;background-color: red;color:white"  >Datsun 240Z</p>
+      </div> -->
+  </div>  
+  <div class="sideres" ><a href="../240z/240z-All Parts.html" class="textsidebar" id="sidetitle2"  >240/260/280Z All Parts</a>
+  </div>     
+  <div class="sideres" ><a href="../240z/240z-exterior.html" class="textsidebar" id="sidetitle2"  >240/260/280Z Exterior</a>
+  </div>
+  
+  <div class="sideres" ><a href="../240z/240z-others.html" class="textsidebar" id="sidetitle2"  >240/260/280Z Other Parts</a>
+  </div>
+  <div class="sideres" ><a href="../240z/240z-new.html" class="textsidebar" id="sidetitle2"  >240/260/280Z New Items</a>
+  </div>
+  <div style="width:100%;margin:0;  margin-top:20px;border-top:2px solid"> </div> 
+  <h3 class="fonttitlestyle" style="border:none">&nbsp;&nbsp;Other Reference</h3>
+  <a href="../contact.html"><div class="hidesidebuttontop fontstyle" id="hidesidebuttontop_sub" >&nbsp;&nbsp;&nbsp;&nbsp;Contact Us</div> </a>
+  <a href=""><div class="hidesidebuttontop fontstyle" id="hidesidebuttontop_sub" >&nbsp;&nbsp;&nbsp;&nbsp;Our Facebook</div> </a>
+</div>
+<!-- side1-->
+<!-- side2 -->  
+<div class="columnsidebar20pop" style="margin:0; "id="side510">
+  <div  onclick="closeall()()" class="sideres textsidebar" id="closemark"><p>&times;</p></div>
+  <a href="../../index.html"><div class="hidesidebuttontop fontstyle"id="textbold" >&nbsp;&nbsp;Home</div> </a>
+  <a href=""><div class="hidesidebuttontop fontstyle" id="textbold">&nbsp;&nbsp;Account</div> </a>
+  <a href=""><div class="hidesidebuttontop fontstyle" id="hidesidebuttontop_sub" >&nbsp;&nbsp;&nbsp;&nbsp;My Cart</div> </a>
+  <a href=""><div class="hidesidebuttontop fontstyle" id="hidesidebuttontop_sub" >&nbsp;&nbsp;&nbsp;&nbsp;Login</div> </a>
+
+  
+<h3 class="fonttitlestyle"id="textbold">&nbsp;&nbsp;Parts Models</h3>
+    
+  <div class="sideres" >
+      <p onclick="side2back()" class="textsidebar" id="backside"> &lt; Back</p>
+      <!-- <div class="sideres" ><p  class="textsidebar" style="text-align:center;font-size:20px;background-color: red;color:white"  >Datsun 240Z</p>
+      </div> -->
+
+  </div>   
+  <div class="sideres" ><a href="../510/510-All Parts.html" class="textsidebar" id="sidetitle2"  >510 All Parts</a>
+  </div>     
+  <div class="sideres" ><a href="../510/510-exterior.html" class="textsidebar" id="sidetitle2"  >510 Exterior</a>
+  </div>
+
+  <div class="sideres" ><a href="../510/510-others.html" class="textsidebar" id="sidetitle2"  >510 Other Parts</a>
+  </div>
+  <div class="sideres" ><a href="../510/510-new.html" class="textsidebar" id="sidetitle2"  >510 New Items</a>
+  </div>
+  <div style="width:100%;margin:0;  margin-top:20px;border-top:2px solid"> </div> 
+  <h3 class="fonttitlestyle" style="border:none">&nbsp;&nbsp;Other Reference</h3>
+  <a href="../contact.html"><div class="hidesidebuttontop fontstyle" id="hidesidebuttontop_sub" >&nbsp;&nbsp;&nbsp;&nbsp;Contact Us</div> </a>
+  <a href=""><div class="hidesidebuttontop fontstyle" id="hidesidebuttontop_sub" >&nbsp;&nbsp;&nbsp;&nbsp;Our Facebook</div> </a>
+</div>
+<!-- side2-->
+<!-- side3 -->
+<div class="columnsidebar20pop" style="margin:0; "id="side356">
+  <div  onclick="closeall()()" class="sideres textsidebar" id="closemark"><p>&times;</p></div>
+  <a href="../../index.html"><div class="hidesidebuttontop fontstyle"id="textbold" >&nbsp;&nbsp;Home</div> </a>
+  <a href=""><div class="hidesidebuttontop fontstyle" id="textbold">&nbsp;&nbsp;Account</div> </a>
+  <a href=""><div class="hidesidebuttontop fontstyle" id="hidesidebuttontop_sub" >&nbsp;&nbsp;&nbsp;&nbsp;My Cart</div> </a>
+  <a href=""><div class="hidesidebuttontop fontstyle" id="hidesidebuttontop_sub" >&nbsp;&nbsp;&nbsp;&nbsp;Login</div> </a>
+
+  
+<h3 class="fonttitlestyle"id="textbold">&nbsp;&nbsp;Parts Models</h3>
+    
+  <div class="sideres" >
+      <p onclick="side3back()" class="textsidebar" id="backside"> &lt; Back</p>
+      <!-- <div class="sideres" ><p  class="textsidebar" style="text-align:center;font-size:20px;background-color: red;color:white"  >Datsun 240Z</p>
+      </div> -->
+  </div>      
+  <div class="sideres" ><a href="../356/356-All Parts.html" class="textsidebar" id="sidetitle2"  >356 All Parts</a>
+  </div> 
+  <div class="sideres" ><a href="../356/356-exterior.html" class="textsidebar" id="sidetitle2"  >356 Exterior</a>
+  </div>
+
+  <div class="sideres" ><a href="../356/356-others.html" class="textsidebar" id="sidetitle2"  >356 Other Parts</a>
+  </div>
+  <div class="sideres" ><a href="../356/356-new.html" class="textsidebar" id="sidetitle2"  >356 New Items</a>
+  </div>
+  <div style="width:100%;margin:0;  margin-top:20px;border-top:2px solid"> </div> 
+  <h3 class="fonttitlestyle" style="border:none">&nbsp;&nbsp;Other Reference</h3>
+  <a href="../contact.html"><div class="hidesidebuttontop fontstyle" id="hidesidebuttontop_sub" >&nbsp;&nbsp;&nbsp;&nbsp;Contact Us</div> </a>
+  <a href=""><div class="hidesidebuttontop fontstyle" id="hidesidebuttontop_sub" >&nbsp;&nbsp;&nbsp;&nbsp;Our Facebook</div> </a>
+</div>
+<!-- side3-->
+<!-- side4 -->
+<div class="columnsidebar20pop" style="margin:0; "id="side911">
+  <div  onclick="closeall()" class="sideres textsidebar" id="closemark"><p>&times;</p></div>
+  
+  <a href="../../index.html"><div class="hidesidebuttontop fontstyle"id="textbold" >&nbsp;&nbsp;Home</div> </a>
+  <a href=""><div class="hidesidebuttontop fontstyle" id="textbold">&nbsp;&nbsp;Account</div> </a>
+  <a href=""><div class="hidesidebuttontop fontstyle" id="hidesidebuttontop_sub" >&nbsp;&nbsp;&nbsp;&nbsp;My Cart</div> </a>
+  <a href=""><div class="hidesidebuttontop fontstyle" id="hidesidebuttontop_sub" >&nbsp;&nbsp;&nbsp;&nbsp;Login</div> </a>
+
+  
+<h3 class="fonttitlestyle"id="textbold">&nbsp;&nbsp;Parts Models</h3>
+    
+  <div class="sideres" >
+      <p onclick="side4back()" class="textsidebar" id="backside"    > &lt; Back</p>
+  </div>
+  <div class="sideres" ><a href="../../model_page/356.html" class="textsidebar" id="sidetitle2-2"  style="pointer-events: none;">356</a>
+    <p onclick="sidetoopen('356')" class="textsidebar" id="arrowright" >&gt;</p>
+  </div>
+  <div class="sideres" ><a href="../../model_page/911.html" class="textsidebar" id="sidetitle2-2" style="pointer-events: none;" >911</a>
+    <p onclick="sidetoopen('911')" class="textsidebar" id="arrowright" >&gt;</p>
+  </div>    
+  <div class="sideres" ><a href="../../model_page/Boxster.html" class="textsidebar" id="sidetitle2-2"  style="pointer-events: none">Boxster</a>
+    <p onclick="sidetoopen('Boxster')" class="textsidebar" id="arrowright" >&gt;</p>
+  </div>
+  <div class="sideres" ><a href="../../model_page/Panamera.html" class="textsidebar" id="sidetitle2-2" style="pointer-events: none" >Panamera</a>
+    <p onclick="sidetoopen('Panamera')" class="textsidebar" id="arrowright" >&gt;</p>
+</div>
+
+  <div style="width:100%;margin:0;  margin-top:20px;border-top:2px solid"> </div> 
+  <h3 class="fonttitlestyle" style="border:none">&nbsp;&nbsp;Other Reference</h3>
+  <a href="../../model_page/contact.html"><div class="hidesidebuttontop fontstyle" id="hidesidebuttontop_sub" >&nbsp;&nbsp;&nbsp;&nbsp;Contact Us</div> </a>
+  <a href=""><div class="hidesidebuttontop fontstyle" id="hidesidebuttontop_sub" >&nbsp;&nbsp;&nbsp;&nbsp;Our Facebook</div> </a>
+</div>
+<!-- side4-->
+<!-- side5 -->
+<div class="columnsidebar20pop" style="margin:0; "id="sidevwt25">
+  <div  onclick="closeall()" class="sideres textsidebar" id="closemark"><p>&times;</p></div>
+  <a href="../../index.html"><div class="hidesidebuttontop fontstyle"id="textbold" >&nbsp;&nbsp;Home</div> </a>
+  <a href=""><div class="hidesidebuttontop fontstyle" id="textbold">&nbsp;&nbsp;Account</div> </a>
+  <a href=""><div class="hidesidebuttontop fontstyle" id="hidesidebuttontop_sub" >&nbsp;&nbsp;&nbsp;&nbsp;My Cart</div> </a>
+  <a href=""><div class="hidesidebuttontop fontstyle" id="hidesidebuttontop_sub" >&nbsp;&nbsp;&nbsp;&nbsp;Login</div> </a>
+
+  
+<h3 class="fonttitlestyle"id="textbold">&nbsp;&nbsp;Parts Models</h3>
+    
+  <div class="sideres" >
+      <p onclick="side5back()" class="textsidebar" id="backside"    > &lt; Back</p>
+  </div>
+  <div class="sideres" ><a href="../../model_page/VWT3bus/VWT3-All Parts.html" class="textsidebar" id="sidetitle2"  >Vanagon All Parts</a>
+  </div> 
+  <div class="sideres" ><a href="../../model_page/VWT3bus/VWT3-exterior.html" class="textsidebar" id="sidetitle2"  >Vanagon Exterior</a>
+  </div>
+  <div class="sideres" ><a href="../../model_page/VWT3bus/VWT3-others.html" class="textsidebar" id="sidetitle2"  >Vanagon Other Parts</a>
+  </div>
+  <div class="sideres" ><a href="../../model_page/VWT3bus/VWT3-new.html" class="textsidebar" id="sidetitle2"  >Vanagon New Items</a>
+  </div>
+  <div style="width:100%;margin:0;  margin-top:20px;border-top:2px solid"> </div> 
+  <h3 class="fonttitlestyle" style="border:none">&nbsp;&nbsp;Other Reference</h3>
+  <a href="../../model_page/contact.html"><div class="hidesidebuttontop fontstyle" id="hidesidebuttontop_sub" >&nbsp;&nbsp;&nbsp;&nbsp;Contact Us</div> </a>
+  <a href=""><div class="hidesidebuttontop fontstyle" id="hidesidebuttontop_sub" >&nbsp;&nbsp;&nbsp;&nbsp;Our Facebook</div> </a>
+</div>
+<!-- side5-->
+<!-- side6 -->
+<div class="columnsidebar20pop" style="margin:0; "id="sidew113">
+  <div  onclick="closeall()()" class="sideres textsidebar" id="closemark"><p>&times;</p></div>
+  <a href="../../index.html"><div class="hidesidebuttontop fontstyle"id="textbold" >&nbsp;&nbsp;Home</div> </a>
+  <a href=""><div class="hidesidebuttontop fontstyle" id="textbold">&nbsp;&nbsp;Account</div> </a>
+  <a href=""><div class="hidesidebuttontop fontstyle" id="hidesidebuttontop_sub" >&nbsp;&nbsp;&nbsp;&nbsp;My Cart</div> </a>
+  <a href=""><div class="hidesidebuttontop fontstyle" id="hidesidebuttontop_sub" >&nbsp;&nbsp;&nbsp;&nbsp;Login</div> </a>
+
+  
+<h3 class="fonttitlestyle"id="textbold">&nbsp;&nbsp;Parts Models</h3>
+    <div class="sideres" >
+      <p onclick="side6back()" class="textsidebar" id="backside"> &lt; Back</p>
+  </div>
+  <div class="sideres" ><a href="../../model_page/W113/W113-All Parts.html" class="textsidebar" id="sidetitle2"  >W113 All Parts</a>
+  </div>      
+  <div class="sideres" ><a href="../../model_page/W113/W113-exterior.html" class="textsidebar" id="sidetitle2"  >W113 Exterior</a>
+  </div>
+  <div class="sideres" ><a href="../../model_page/W113/W113-others.html" class="textsidebar" id="sidetitle2"  >W113 Other Parts</a>
+  </div>
+  <div class="sideres" ><a href="../../model_page/W113/W113-new.html" class="textsidebar" id="sidetitle2"  >W113 New Items</a>
+  </div>
+  <div style="width:100%;margin:0;  margin-top:20px;border-top:2px solid"> </div> 
+  <h3 class="fonttitlestyle" style="border:none">&nbsp;&nbsp;Other Reference</h3>
+  <a href="../../model_page/contact.html"><div class="hidesidebuttontop fontstyle" id="hidesidebuttontop_sub" >&nbsp;&nbsp;&nbsp;&nbsp;Contact Us</div> </a>
+  <a href=""><div class="hidesidebuttontop fontstyle" id="hidesidebuttontop_sub" >&nbsp;&nbsp;&nbsp;&nbsp;Our Facebook</div> </a> 
+</div>
+<!-- side6-->
+
+<!-- side7 -->
+<div class="columnsidebar20pop" style="margin:0; "id="sidevwt2bay">
+    <div  onclick="closeall()" class="sideres textsidebar" id="closemark"><p>&times;</p></div>
+    <a href="../../index.html"><div class="hidesidebuttontop fontstyle"id="textbold" >&nbsp;&nbsp;Home</div> </a>
+    <a href=""><div class="hidesidebuttontop fontstyle" id="textbold">&nbsp;&nbsp;Account</div> </a>
+    <a href=""><div class="hidesidebuttontop fontstyle" id="hidesidebuttontop_sub" >&nbsp;&nbsp;&nbsp;&nbsp;My Cart</div> </a>
+    <a href=""><div class="hidesidebuttontop fontstyle" id="hidesidebuttontop_sub" >&nbsp;&nbsp;&nbsp;&nbsp;Login</div> </a>
+    
+    
+  <h3 class="fonttitlestyle"id="textbold">&nbsp;&nbsp;Parts Models</h3>
+      <div class="sideres" >
+        <p onclick="side7back()" class="textsidebar" id="backside" > &lt; Back</p>
+    </div>
+    <div class="sideres" ><a href="" class="textsidebar" id="sidetitle2"  >T2 Bay Bus All Parts</a>
+    </div>      
+    <div class="sideres" ><a href="../../model_page/VWT2bus/VWt2bay-exterior.html" class="textsidebar" id="sidetitle2"  >T2 Bay Bus Exterior</a>
+    </div>
+    <div class="sideres" ><a href="../../model_page/VWT2bus/VWt2bay-others.html" class="textsidebar" id="sidetitle2"  >T2 Bay Bus Other Parts</a>
+    </div>
+
+    <div style="width:100%;margin:0;  margin-top:20px;border-top:2px solid"> </div> 
+    <h3 class="fonttitlestyle" style="border:none">&nbsp;&nbsp;Other Reference</h3>
+    <a href="../../model_page/contact.html"><div class="hidesidebuttontop fontstyle" id="hidesidebuttontop_sub" >&nbsp;&nbsp;&nbsp;&nbsp;Contact Us</div> </a>
+    <a href=""><div class="hidesidebuttontop fontstyle" id="hidesidebuttontop_sub" >&nbsp;&nbsp;&nbsp;&nbsp;Our Facebook</div> </a> 
+  </div>
+  <!-- side7-->
+  <!-- slide911 -->
+  <div class="columnsidebar20pop" style="margin:0; "id="slide911">
+    <div  onclick="closeall()" class="sideres textsidebar" id="closemark"><p>&times;</p></div>
+    <a href="../../index.html"><div class="hidesidebuttontop fontstyle"id="textbold" >&nbsp;&nbsp;Home</div> </a>
+    <a href=""><div class="hidesidebuttontop fontstyle" id="textbold">&nbsp;&nbsp;Account</div> </a>
+    <a href=""><div class="hidesidebuttontop fontstyle" id="hidesidebuttontop_sub" >&nbsp;&nbsp;&nbsp;&nbsp;My Cart</div> </a>
+    <a href=""><div class="hidesidebuttontop fontstyle" id="hidesidebuttontop_sub" >&nbsp;&nbsp;&nbsp;&nbsp;Login</div> </a>
+  <h3 class="fonttitlestyle"id="textbold">&nbsp;&nbsp;Parts Models</h3>
+      <div class="sideres" >
+        <p onclick="sidetoback('911')" class="textsidebar" id="backside" > &lt; Back</p>
+    </div>
+    <div class="sideres" ><a href="../911/911912-All Parts.html" class="textsidebar" id="sidetitle2" style="padding:1%;padding-left: 5%;" >1965&#8209;1968&nbsp;&nbsp;&nbsp;911<br>
+      1965&#8209;1969&nbsp;&nbsp;&nbsp;912&nbsp;&nbsp;</a>
+    </div>      
+    <div class="sideres" ><a href="../911/911930-All Parts.html" class="textsidebar" id="sidetitle2"  >1974&#8209;1989&nbsp;&nbsp;&nbsp;911/930&nbsp;&nbsp;</a>
+    </div>      
+    <div class="sideres" ><a href="../911/964993-All Parts.html" class="textsidebar" id="sidetitle2"  >1989&#8209;1998&nbsp;&nbsp;&nbsp;964/993&nbsp;&nbsp;</a>
+    </div>      
+    <div class="sideres" ><a href="../911/996997-All Parts.html" class="textsidebar" id="sidetitle2" style="padding:1%;padding-left: 5%;" > 1999&#8209;2005&nbsp;&nbsp;&nbsp;996<br>
+      2005&#8209;2012&nbsp;&nbsp;&nbsp;997&nbsp;&nbsp;</a>
+    </div>        
+
+    <div style="width:100%;margin:0;  margin-top:20px;border-top:2px solid"> </div> 
+    <h3 class="fonttitlestyle" style="border:none">&nbsp;&nbsp;Other Reference</h3>
+    <a href="../../model_page/contact.html"><div class="hidesidebuttontop fontstyle" id="hidesidebuttontop_sub" >&nbsp;&nbsp;&nbsp;&nbsp;Contact Us</div> </a>
+    <a href=""><div class="hidesidebuttontop fontstyle" id="hidesidebuttontop_sub" >&nbsp;&nbsp;&nbsp;&nbsp;Our Facebook</div> </a> 
+  </div>
+  <!-- slide911 -->
+  <!-- slide356 -->
+  <div class="columnsidebar20pop" style="margin:0; "id="slide356">
+      <div  onclick="closeall()" class="sideres textsidebar" id="closemark"><p>&times;</p></div>
+      <a href="../../index.html"><div class="hidesidebuttontop fontstyle"id="textbold" >&nbsp;&nbsp;Home</div> </a>
+      <a href=""><div class="hidesidebuttontop fontstyle" id="textbold">&nbsp;&nbsp;Account</div> </a>
+      <a href=""><div class="hidesidebuttontop fontstyle" id="hidesidebuttontop_sub" >&nbsp;&nbsp;&nbsp;&nbsp;My Cart</div> </a>
+      <a href=""><div class="hidesidebuttontop fontstyle" id="hidesidebuttontop_sub" >&nbsp;&nbsp;&nbsp;&nbsp;Login</div> </a>
+    <h3 class="fonttitlestyle"id="textbold">&nbsp;&nbsp;Parts Models</h3>
+        <div class="sideres" >
+          <p onclick="sidetoback('356')" class="textsidebar" id="backside" > &lt; Back</p>
+      </div>
+      <div class="sideres" ><a href="../356/356-All Parts.html" class="textsidebar" id="sidetitle2"  >1950&#8209;1965&nbsp;&nbsp;&nbsp;356 </a>
+      </div>      
+  
+      <div style="width:100%;margin:0;  margin-top:20px;border-top:2px solid"> </div> 
+      <h3 class="fonttitlestyle" style="border:none">&nbsp;&nbsp;Other Reference</h3>
+      <a href="../../model_page/contact.html"><div class="hidesidebuttontop fontstyle" id="hidesidebuttontop_sub" >&nbsp;&nbsp;&nbsp;&nbsp;Contact Us</div> </a>
+      <a href=""><div class="hidesidebuttontop fontstyle" id="hidesidebuttontop_sub" >&nbsp;&nbsp;&nbsp;&nbsp;Our Facebook</div> </a> 
+    </div>
+    <!-- slide356 -->
+    <!-- slideBoxster -->
+  <div class="columnsidebar20pop" style="margin:0; "id="slideBoxster">
+      <div  onclick="closeall()" class="sideres textsidebar" id="closemark"><p>&times;</p></div>
+      <a href="../../index.html"><div class="hidesidebuttontop fontstyle"id="textbold" >&nbsp;&nbsp;Home</div> </a>
+      <a href=""><div class="hidesidebuttontop fontstyle" id="textbold">&nbsp;&nbsp;Account</div> </a>
+      <a href=""><div class="hidesidebuttontop fontstyle" id="hidesidebuttontop_sub" >&nbsp;&nbsp;&nbsp;&nbsp;My Cart</div> </a>
+      <a href=""><div class="hidesidebuttontop fontstyle" id="hidesidebuttontop_sub" >&nbsp;&nbsp;&nbsp;&nbsp;Login</div> </a>
+    <h3 class="fonttitlestyle"id="textbold">&nbsp;&nbsp;Parts Models</h3>
+        <div class="sideres" >
+          <p onclick="sidetoback('Boxster')" class="textsidebar" id="backside" > &lt; Back</p>
+      </div>
+      
+      <div class="sideres" ><a href="../Boxster/986987-All Parts.html" class="textsidebar" id="sidetitle2"  style="padding:1%;padding-left: 5%;">
+1997&#8209;2004&nbsp;&nbsp;&nbsp;986&nbsp;&nbsp;<br>2005&#8209;2012&nbsp;&nbsp;&nbsp;987&nbsp;&nbsp;</a>
+      </div>    
+  
+      <div style="width:100%;margin:0;  margin-top:20px;border-top:2px solid"> </div> 
+      <h3 class="fonttitlestyle" style="border:none">&nbsp;&nbsp;Other Reference</h3>
+      <a href="../../model_page/contact.html"><div class="hidesidebuttontop fontstyle" id="hidesidebuttontop_sub" >&nbsp;&nbsp;&nbsp;&nbsp;Contact Us</div> </a>
+      <a href=""><div class="hidesidebuttontop fontstyle" id="hidesidebuttontop_sub" >&nbsp;&nbsp;&nbsp;&nbsp;Our Facebook</div> </a> 
+    </div>
+    <!-- slideBoxster -->
+    <!-- slidePanamera -->
+  <div class="columnsidebar20pop" style="margin:0; "id="slidePanamera">
+      <div  onclick="closeall()" class="sideres textsidebar" id="closemark"><p>&times;</p></div>
+      <a href="../../index.html"><div class="hidesidebuttontop fontstyle"id="textbold" >&nbsp;&nbsp;Home</div> </a>
+      <a href=""><div class="hidesidebuttontop fontstyle" id="textbold">&nbsp;&nbsp;Account</div> </a>
+      <a href=""><div class="hidesidebuttontop fontstyle" id="hidesidebuttontop_sub" >&nbsp;&nbsp;&nbsp;&nbsp;My Cart</div> </a>
+      <a href=""><div class="hidesidebuttontop fontstyle" id="hidesidebuttontop_sub" >&nbsp;&nbsp;&nbsp;&nbsp;Login</div> </a>
+    <h3 class="fonttitlestyle"id="textbold">&nbsp;&nbsp;Parts Models</h3>
+        <div class="sideres" >  
+          <p onclick="sidetoback('Panamera')" class="textsidebar" id="backside" > &lt; Back</p>
+      </div>
+      <div class="sideres" ><a href="../Panamera/Panamera-All Parts.html" class="textsidebar" id="sidetitle2"  >2010&#8209;2016&nbsp;&nbsp;&nbsp;Panamera</a>
+      </div>      
+  
+      <div style="width:100%;margin:0;  margin-top:20px;border-top:2px solid"> </div> 
+      <h3 class="fonttitlestyle" style="border:none">&nbsp;&nbsp;Other Reference</h3>
+      <a href="../../model_page/contact.html"><div class="hidesidebuttontop fontstyle" id="hidesidebuttontop_sub" >&nbsp;&nbsp;&nbsp;&nbsp;Contact Us</div> </a>
+      <a href=""><div class="hidesidebuttontop fontstyle" id="hidesidebuttontop_sub" >&nbsp;&nbsp;&nbsp;&nbsp;Our Facebook</div> </a> 
+    </div>
+    <!-- slidePanamera -->
+  <!-- side bar hide end-->
+  
+<!--sidebar on small screen  -->
+                  
+<div class="row " style="margin:0;">
+<!-- side bar large-->
+<div class="columnsidebar20" id="detailpageside"style="margin:0; ">
+<h3 class="fontstyle" style="text-align: center;border: gray solid 2px">Parts</h3>
+  
+<div class="sideres"><a href="../240z.html" class="textsidebar" id="sidetitlefull" >Datsun 240Z</a>
+
+</div>
+      
+      <div class="sideres" ><a href="../510.html" class="textsidebar" id="sidetitlefull"  >Datsun 510</a>
+
+    </div>
+
+<div class="sideres"><a href="../vwT2.html" class="textsidebar" id="sidetitlefull" >VW T2 Bay bus</a>
+
+</div>
+
+<div class="sideres"><a href="../VWT3.html" class="textsidebar" id="sidetitlefull" >VW T25/T3 bus (Vanagon)</a>
+
+</div>
+<div class="" id="sidenow"><a href="../w113.html" id="sidetitlenow" style="color:white;">Mercedes-Benz W113</a>
+  <div class="dropdownimg-content-now" >
+    <a href="W113-All Parts.html" class="anow">&#160;All Parts</a>
+    <a href="W113-exterior.html" class="anow" >&#160;Exterior</a>
+    <a href="W113-others.html" class="anow">&#160;Others</a>
+    <a href="W113-new.html" class="anow" id="newitem">New Item
+      <img class="retatenewitem" src="../../pic/new2.gif" id="newitemplace"></a>
+
+  </div>
+</div>
+
+
+<div class="sideres"><a href="../Porsche.html" class="textsidebar" id="sidetitlefull" >Porsche</a>
+<!-- <div class="dropdownimg-contenttext" >
+<a href="">Exterior</a>
+      <a href="">Interior</a>
+      <a href="">Others</a>
+      <a href="">New Item</a>
+</div> -->
+</div>
+
+</div>
+<!-- side bar large end-->
+                              <!-- main content -->
+<div class="columnmain80" id="noMinHeight"><h1 class="modeltitle" style="font-family: 'Merienda One'; font-size:30px" >Mercedes-Benz W113 Pagoda Exterior</h1></div>
+<div class="columnmain80" id="noMinHeight"><h3 class="modeldescribtion"  >
+  Hover over the part you'd like to search for, and click to view the variations we have in stock.<br>
+The wireframe is meant to be a visual aid for certain key parts, and is in no way a complete list.</h3></div>
+<div class="columnmain80" id="noMinHeight"><h3 class="redbold" id="redcenter"> *Disclaimer: Not all parts are displayed on this wireframe diagram!*</h3></div>
+
+<div class="columnmain80"  >
+<!-- <a> -->
+  <img src="pic/w113exterior.png" id="clickimg" usemap="#w113exterior" >
+<!-- </a> -->
+    <map name="w113exterior">
+      <area alt="" title="Front Bumper Set" href="W113-exterior.html#number_1" shape="poly" coords="550,1476,492,1508,486,1566,553,1642,636,1703,636,1831,630,2020,668,2071,694,2017,694,1767,710,1735,889,1780,994,1786,1039,1738,844,1710,716,1668,601,1601,537,1534" />
+      <area alt="" title="Front Bumper Bracket" href="W113-exterior.html#number_2" shape="poly" coords="988,2039,938,2039,960,1716,880,1684,845,1668,858,1636,883,1630,925,1633,960,1649,983,1681" />
+      <area alt="" title="Front Grille Molding Trim Right" href="W113-exterior.html#number_3" shape="poly" coords="694,1108,749,1108,727,1428,880,1518,883,1562,695,1447,669,1418" />
+      <area alt="" title="Front Grille Molding Trim Left" href="W113-exterior.html#number_4" shape="poly" coords="918,1598,1107,1690,1098,1969,1133,1988,1149,1687,1098,1630,938,1569,906,1588" />
+      <area alt="" title="Front Grille Surrond" href="W113-exterior.html#number_5" shape="poly" coords="911,1364,906,1431,983,1559,1194,1620,1184,1898,1194,1921,1226,1914,1229,1630,1232,1585,1219,1527,1088,1450,976,1367,915,1361" />
+      <area alt="" title="Front Grille Screen Right" href="W113-exterior2.html#number_6" shape="poly" coords="985,1239,935,1310,1047,1370,1146,1393,1162,1361,1210,1332,1139,1287,1063,1242,1053,1102,1066,1038,999,1038,960,1258" />
+      <area alt="" title="Front Grille Screen Left" href="W113-exterior2.html#number_7" shape="poly" coords="1266,1348,1267,1470,1389,1527,1376,1770,1376,1799,1402,1802,1418,1668,1421,1556,1456,1553,1482,1521,1482,1454,1456,1422,1338,1370,1296,1338" />
+      <area alt="" title="Front Nose Panel" href="W113-exterior2.html#number_8" shape="poly" coords="1250,1294,1232,1236,1274,1207,1277,1127,1280,1102,1325,1121,1405,1185,1527,1258,1635,1319,1655,1396,1667,1476,1680,1524,1536,1466,1533,1559,1527,1758,1536,1905,1482,1902,1488,1658,1482,1498,1495,1438" />
+      <area alt="" title="Headlight Chrome Trim" href="W113-exterior2.html#number_9" shape="poly" coords="1606,1719,1565,1690,1559,1553,1568,1521,1645,1540,1648,1620,1642,1726,1648,1818,1645,1892,1610,1879" />
+      <area alt="" title="Front Fender Right" href="W113-exterior2.html#number_10" shape="poly" coords="1215,1220,1165,1210,1123,1050,1143,964,1264,929,1274,855,1258,673,1306,638,1325,766,1325,913,1610,852,1923,794,1949,810,1792,865,1792,913,1767,1057,1571,1089,1501,990,1402,967,1331,1018" />
+      <area alt="" title="Front Fender Left" href="W113-exterior3.html#number_11" shape="poly" coords="1842,1719,1811,1460,2256,1329,2723,1252,2672,1322,2592,1604,2365,1604,2237,1534,2250,1761,2247,1905,2170,1908,2154,1594,2157,1550,1971,1716" />
+      <area alt="" title="Front Rocker Panel Outer Right" href="W113-exterior3.html#number_12" shape="poly" coords="2642,1607,3152,1463,3146,1748,3149,1860,3229,1857,3245,1438,3501,1364,3498,1316,3421,1326,3383,1319,3187,1367,2979,1428,2867,1460,2823,1495" />
+      <area alt="" title="Front Rocker Panel Outer Left" href="W113-exterior3.html#number_12" shape="poly" coords="2642,1607,3152,1463,3146,1748,3149,1860,3229,1857,3245,1438,3501,1364,3498,1316,3421,1326,3383,1319,3187,1367,2979,1428,2867,1460,2823,1495" />
+      <area alt="" title="Rear Bumper Bracket" href="W113-exterior3.html#number_13" shape="poly" coords="4390,762,4368,823,4448,906,4442,1153,4432,1262,4519,1268,4512,938,4506,922,4586,935,4599,865" />
+      <area alt="" title="Rear Bumper Set" href="W113-exterior3.html#number_14" shape="poly" coords="3980,545,4071,538,4176,526,4298,593,4381,654,4503,727,4621,791,4634,874,4643,919,4717,887,4781,814,4717,727,4586,647,4467,583,4467,314,4394,308,4362,503,4291,481,4186,430,4093,407,3984,442" />
+    </map>
+</div>  
+
+<div class="page_selecttion">
+    <!-- <a style="opacity:0.5;" disabled>&laquo;&nbsp;Previous</a> -->
+    <p href="#" class="borderrightnum" style="color:green;float: left;padding: 3px 11px;text-decoration: none;"><strong><u><i>1</i></u></strong></p>
+    <a href="W113-exterior2.html" class="borderrightnum">2</a>
+    <a href="W113-exterior3.html" class="borderrightnum">3</a>
+    <!-- <a href="#" class="borderrightnum">3</a>
+    <a href="#" class="borderrightnum">4</a> -->
+    <a href="W113-exterior2.html">Next&nbsp;&raquo;</a>
+  </div>
+
+<!-- all item start -->
+
+<!-- item 1 -->
+<div class="columnmain80" id="parts">
+    <!-- map href= 'name' -->
+      <a  name="number_1"></a>
+      <div class="topborder"></div>
+      <!-- Number on the Map -->
+      <div class="detailnumber" >1</div>
+  <div class="detailimg">
+  <!-- item picture -->
+  <img class="detailimgstyle" src="pic/BZ5801.png" >
+  </div>
+  <!-- middle detail -->
+  <div class="detailmiddle">
+      <!-- middle detail top part-->
+      <div style="width:100%;margin:0;">
+          <strong>
+              <!-- title -->
+              <p>Front Bumper Set</p>
+            </strong>
+            <div class="detailmiddleline"></div>
+            <!-- OEM number -->
+              <p>OEM#: A113-880-01-70 </p>
+      <a href="items/BZ5801.html" style=""><button class="seealldetail">See All Details</button></a>
+      </div>
+      <!-- middle detail top part end -->
+    <!-- whish facbook -->
+      <div style="width:100%;margin:0;">
+        <div class="detailquant" id="middleshareicon">
+          <div href="" class="carttip" >
+            <div class="carttiptext">Add To WishList</div>
+            <a href="../../index.html"><img class="wish" id="" src="../../pic/whish2.png" ></a>
+          </div>
+          <div href="" class="carttip" >
+              <div class="carttiptext">Share in Facebook!</div>
+              <img class="wish" id="sharefacebook" src="../../pic/facebook.png" >
+            </div>
+        </div>
+      </div>
+      <!-- whish facbook -->
+    
+    </div>
+    <!-- middle detail end-->
+  <div class="detailright">
+    <!-- Price -->
+    <div class="price">$474</div>
+    <div class="detailquantR" style="margin-top:15%;width:100%">
+      <div style="margin:0;margin-left:20%;;float:right">
+      <p style="float:left;">QTY:</p><input type="text" style="float:left;margin:0;" size='1'value='1'></div></div>
+    <div class="detailquantR" style="margin:0;margin-top:5%;height:auto;width:80%">
+      <div href="" class="carttipR" >
+        <div class="carttiptextR">Add To Cart</div>
+        <img class="addcart" id="cart" src="../../pic/cart1.png" >
+      </div>
+    </div>
+  </div>
+  </div>
+  <!-- items end-->
+  
+  <!-- item 2 -->
+  <div class="columnmain80" id="parts">
+      <!-- map href= 'name' -->
+        <a  name="number_2"></a>
+        <div class="topborder"></div>
+        <!-- Number on the Map -->
+        <div class="detailnumber" >2</div>
+    <div class="detailimg">
+    <!-- item picture -->
+    <img class="detailimgstyle" src="pic/BZ6121.png" >
+    </div>
+    <!-- middle detail -->
+  <div class="detailmiddle">
+      <!-- middle detail top part-->
+      <div style="width:100%;margin:0;">
+        <strong>
+          <!-- title -->
+        <p>Front Bumper Bracket</p>
+      </strong>
+      <div class="detailmiddleline"></div>
+      <!-- OEM number -->
+        <p>OEM#: A113-885-01-40 </p>
+      <a href="items/BZ6121.html" style=""><button class="seealldetail">See All Details</button></a>
+      </div>
+      <!-- middle detail top part end -->
+    <!-- whish facbook -->
+      <div style="width:100%;margin:0;">
+        <div class="detailquant" id="middleshareicon">
+          <div href="" class="carttip" >
+            <div class="carttiptext">Add To WishList</div>
+            <a href="../../index.html"><img class="wish" id="" src="../../pic/whish2.png" ></a>
+          </div>
+          <div href="" class="carttip" >
+              <div class="carttiptext">Share in Facebook!</div>
+              <img class="wish" id="sharefacebook" src="../../pic/facebook.png" >
+            </div>
+        </div>
+      </div>
+      <!-- whish facbook -->
+    
+    </div>
+    <!-- middle detail end-->
+    <div class="detailright">
+      <!-- Price -->
+      <div class="price">$57</div>
+      <div class="detailquantR" style="margin-top:15%;width:100%">
+        <div style="margin:0;margin-left:20%;;float:right">
+        <p style="float:left;">QTY:</p><input type="text" style="float:left;margin:0;" size='1'value='1'></div></div>
+      <div class="detailquantR" style="margin:0;margin-top:5%;height:auto;width:80%">
+        <div href="" class="carttipR" >
+          <div class="carttiptextR">Add To Cart</div>
+          <img class="addcart" id="cart" src="../../pic/cart1.png" >
+        </div>
+      </div>
+    </div>
+    </div>
+    <!-- items end-->
+  
+    <!-- item 3 -->
+  <div class="columnmain80" id="parts">
+      <!-- map href= 'name' -->
+        <a  name="number_3"></a>
+        <div class="topborder"></div>
+        <!-- Number on the Map -->
+        <div class="detailnumber" >3</div>
+    <div class="detailimg">
+    <!-- item picture -->
+    <img class="detailimgstyle" src="pic/BZ5503.png" >
+    </div>
+    <!-- middle detail -->
+  <div class="detailmiddle">
+      <!-- middle detail top part-->
+      <div style="width:100%;margin:0;">
+        <strong>
+         <!-- title -->
+        <p>Front Chrome Grille Molding Trim Right</p>
+      </strong>
+      <div class="detailmiddleline"></div>
+      <!-- OEM number -->
+        <p>OEM#: A113-888-01-22 </p>
+      <a href="items/BZ5503.html" style=""><button class="seealldetail">See All Details</button></a>
+      </div>
+      <!-- middle detail top part end -->
+    <!-- whish facbook -->
+      <div style="width:100%;margin:0;">
+        <div class="detailquant" id="middleshareicon">
+          <div href="" class="carttip" >
+            <div class="carttiptext">Add To WishList</div>
+            <a href="../../index.html"><img class="wish" id="" src="../../pic/whish2.png" ></a>
+          </div>
+          <div href="" class="carttip" >
+              <div class="carttiptext">Share in Facebook!</div>
+              <img class="wish" id="sharefacebook" src="../../pic/facebook.png" >
+            </div>
+        </div>
+      </div>
+      <!-- whish facbook -->
+    
+    </div>
+    <!-- middle detail end-->
+    <div class="detailright">
+      <!-- Price -->
+      <div class="price">$180</div>
+      <div class="detailquantR" style="margin-top:15%;width:100%">
+        <div style="margin:0;margin-left:20%;;float:right">
+        <p style="float:left;">QTY:</p><input type="text" style="float:left;margin:0;" size='1'value='1'></div></div>
+      <div class="detailquantR" style="margin:0;margin-top:5%;height:auto;width:80%">
+        <div href="" class="carttipR" >
+          <div class="carttiptextR">Add To Cart</div>
+          <img class="addcart" id="cart" src="../../pic/cart1.png" >
+        </div>
+      </div>
+    </div>
+    </div>
+    <!-- items end-->
+  
+  <!-- item 4 -->
+  <div class="columnmain80" id="parts">
+      <!-- map href= 'name' -->
+        <a  name="number_4"></a>
+        <div class="topborder"></div>
+        <!-- Number on the Map -->
+        <div class="detailnumber" >4</div>
+    <div class="detailimg">
+    <!-- item picture -->
+    <img class="detailimgstyle" src="pic/BZ5504.png" >
+    </div>
+    <!-- middle detail -->
+  <div class="detailmiddle">
+      <!-- middle detail top part-->
+      <div style="width:100%;margin:0;">
+          <strong>
+              <!-- title -->
+              <p>Front Chrome Grille Molding Trim Left</p>
+            </strong>
+            <div class="detailmiddleline"></div>
+            <!-- OEM number -->
+              <p>OEM#: A113-888-01-21</p>
+      <a href="items/BZ5504.html" style=""><button class="seealldetail">See All Details</button></a>
+      </div>
+      <!-- middle detail top part end -->
+    <!-- whish facbook -->
+      <div style="width:100%;margin:0;">
+        <div class="detailquant" id="middleshareicon">
+          <div href="" class="carttip" >
+            <div class="carttiptext">Add To WishList</div>
+            <a href="../../index.html"><img class="wish" id="" src="../../pic/whish2.png" ></a>
+          </div>
+          <div href="" class="carttip" >
+              <div class="carttiptext">Share in Facebook!</div>
+              <img class="wish" id="sharefacebook" src="../../pic/facebook.png" >
+            </div>
+        </div>
+      </div>
+      <!-- whish facbook -->
+    
+    </div>
+    <!-- middle detail end-->
+    <div class="detailright">
+      <!-- Price -->
+      <div class="price">$180</div>
+      <div class="detailquantR" style="margin-top:15%;width:100%">
+        <div style="margin:0;margin-left:20%;;float:right">
+        <p style="float:left;">QTY:</p><input type="text" style="float:left;margin:0;" size='1'value='1'></div></div>
+      <div class="detailquantR" style="margin:0;margin-top:5%;height:auto;width:80%">
+        <div href="" class="carttipR" >
+          <div class="carttiptextR">Add To Cart</div>
+          <img class="addcart" id="cart" src="../../pic/cart1.png" >
+        </div>
+      </div>
+    </div>
+    </div>
+    <!-- items end-->
+  
+  <!-- item 4 -->
+  <div class="columnmain80" id="parts">
+      <!-- map href= 'name' -->
+        <a  name="number_5"></a>
+        <div class="topborder"></div>
+        <!-- Number on the Map -->
+        <div class="detailnumber" >5</div>
+    <div class="detailimg">
+    <!-- item picture -->
+    <img class="detailimgstyle" src="pic/BZ55N7.png" >
+    </div>
+    <!-- middle detail -->
+  <div class="detailmiddle">
+      <!-- middle detail top part-->
+      <div style="width:100%;margin:0;">
+        <strong>
+           <!-- title -->
+        <p>Front Grille Surround</p>
+      </strong>
+      <div class="detailmiddleline"></div>
+      <!-- OEM number -->
+        <p>OEM#: A113-880-00-23 </p>
+  
+    
+      <a href="items/BZ55N7.html" style=""><button class="seealldetail">See All Details</button></a>
+      </div>
+      <!-- middle detail top part end -->
+    <!-- whish facbook -->
+      <div style="width:100%;margin:0;">
+        <div class="detailquant" id="middleshareicon">
+          <div href="" class="carttip" >
+            <div class="carttiptext">Add To WishList</div>
+            <a href="../../index.html"><img class="wish" id="" src="../../pic/whish2.png" ></a>
+          </div>
+          <div href="" class="carttip" >
+              <div class="carttiptext">Share in Facebook!</div>
+              <img class="wish" id="sharefacebook" src="../../pic/facebook.png" >
+            </div>
+        </div>
+      </div>
+      <!-- whish facbook -->
+    
+    </div>
+    <!-- middle detail end-->
+    <div class="detailright">
+      <!-- Price -->
+      <div class="price">$480</div>
+      <div class="detailquantR" style="margin-top:15%;width:100%">
+        <div style="margin:0;margin-left:20%;;float:right">
+        <p style="float:left;">QTY:</p><input type="text" style="float:left;margin:0;" size='1'value='1'></div></div>
+      <div class="detailquantR" style="margin:0;margin-top:5%;height:auto;width:80%">
+        <div href="" class="carttipR" >
+          <div class="carttiptextR">Add To Cart</div>
+          <img class="addcart" id="cart" src="../../pic/cart1.png" >
+        </div>
+      </div>
+    </div>
+    </div>
+    <!-- items end-->
+  
+  <!-- all item end -->
+<!-- page select -->
+        <div class="detail_pageselect_outer" >
+            <div class="page_selecttion">
+                <!-- <a style="opacity:0.5;" disabled>&laquo;&nbsp;Previous</a> -->
+                <p href="#" class="borderrightnum" style="color:green;float: left;padding: 3px 11px;text-decoration: none;"><strong><u><i>1</i></u></strong></p>
+                <a href="W113-exterior2.html" class="borderrightnum">2</a>
+                <a href="W113-exterior3.html" class="borderrightnum">3</a>
+                <!-- <a href="#" class="borderrightnum">3</a>
+                <a href="#" class="borderrightnum">4</a> -->
+                <a href="W113-exterior2.html">Next&nbsp;&raquo;</a>
+              </div>
+        </div>
+<!-- end pageselect -->
+</div> <!--row end-->
+
+
+                              <!-- main content -->
+   
+                                        <!-- end main body -->
+
+<!-- email -->
+<div class="row">
+
+</div>
+<!-- email end -->
+
+<!-- footer -->
+<div class="row" id="smcfooter" >
+  <div class="column33foot" style="">
+      <img src="../../pic/smclogo.png" style="width:50%">
+  </div>
+  <div class="column33foot">
+    <h4 class="whitep"><strong>Quick Contact</strong></h4>  
+    <br>
+    <p class="whitep">Email:
+      amazon@
+      showmeclassicparts
+      .com</p>
+    <br>
+    <p class="whitep">Phone:1-314-737-0535</p>
+  </div>
+  <div class="column33foot"id="footershop">
+      <h4 class="whitep"><strong>Shop Categories</strong></h4>  
+      <p class="whitep">Datsun 240z</p><br>
+      <p class="whitep">Datsun 510</p><br>
+      <p class="whitep">Porsche 356 911 912</p><br>
+      <p class="whitep">VW T2 Bay / T3 Vanagen</p><br>
+      <p class="whitep">Mercedes Benz W113</p>
+  </div>
+</div>
+<!-- footer end-->
+
+<!-- <script src="../../rwdImageMaps.js"></script> -->
+<script src="../../logic.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script src="../../jquery.rwdImageMaps.min.js"></script>
+<script>
+  $(document).ready(function(e) {
+    $('img[usemap]').rwdImageMaps();
+    
+    // $('area').on('click', function() {
+    //   alert($(this).attr('alt') + ' clicked');
+    // });
+  });
+  </script>
+</body>
+</html>
