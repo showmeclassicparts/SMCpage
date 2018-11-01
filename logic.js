@@ -1,5 +1,4 @@
 
-document.getElementsByClassName("slick-track").style.height=slickTrackHeight;
 
 function detailonmiddle(data){
     document.getElementsByClassName("detailcenterbackground")[data].style.display="block";
