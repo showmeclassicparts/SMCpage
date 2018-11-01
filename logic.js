@@ -1,3 +1,6 @@
+
+document.getElementsByClassName("slick-track").style.height=slickTrackHeight;
+
 function detailonmiddle(data){
     document.getElementsByClassName("detailcenterbackground")[data].style.display="block";
     document.getElementsByClassName("detailcenter")[data].style.display="block";
@@ -519,3 +522,4 @@ alert("Sorry, We are still working on this function!")
 window.onload = function() {
     document.getElementById("VW5802Price").innerHTML="$9999"
     }
+

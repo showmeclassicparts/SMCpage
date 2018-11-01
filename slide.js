@@ -13,6 +13,7 @@
         infinite: true,
         prevArrow: $('.prevsilde'),
         nextArrow: $('.nextslide'),
+
         // arrows: false,
         responsive: [
         {
