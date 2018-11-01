@@ -11,6 +11,8 @@
         autoplay: true,
         autoplaySpeed: 20000, 
         infinite: true,
+        prevArrow: $('.prevsilde'),
+        nextArrow: $('.nextslide'),
         // arrows: false,
         responsive: [
         {
