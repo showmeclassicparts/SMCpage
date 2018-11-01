@@ -1691,6 +1691,7 @@ opacity: 0.8;
     border-radius: 5px;
     background-color: rgb(199, 112, 30);
     color:white;
+    margin-bottom: 50px;
 }
 .addcart{
     /* position: absolute;
@@ -1817,7 +1818,7 @@ opacity: 0.8;
     display:none;
 }
 .searchbar{
-    width:50%;
+    width:40%;
     height:35px;
     float:right;
     margin:0;
@@ -1946,6 +1947,9 @@ opacity: 0.8;
 @media (max-width:800px){
     body{
         margin-top:3%;
+    }
+    .column33foot{
+        width:45%;
     }
     .slidertouchout{
     height:50vw;    

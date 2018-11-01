@@ -10,6 +10,7 @@
         swipeToSlide:true,
         autoplay: true,
         autoplaySpeed: 20000, 
+        infinite: true,
         // arrows: false,
         responsive: [
         {
@@ -25,6 +26,7 @@
           breakpoint: 600,
           settings: {
             slidesToShow: 3,
+            infinite: true,
             // slidesToScroll: 1
           }
         },
@@ -32,6 +34,7 @@
           breakpoint: 480,
           settings: {
             slidesToShow: 2,
+            infinite: true,
             // slidesToScroll: 1
             
           }
